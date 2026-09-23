@@ -1,10 +1,9 @@
+import type { Metric } from '@/lib/types'
 import { cn } from '@/lib/utils'
 import { Check, TriangleAlert } from 'lucide-react'
 
-export type MacroKind = 'calories' | 'protein'
-
 type Props = {
-  kind: MacroKind
+  kind: Metric
   label: string
   value: number
   target: number

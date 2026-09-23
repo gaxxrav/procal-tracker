@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/select'
 import { useAuth } from '@/hooks/use-auth'
 import { updateProfile } from '@/lib/api'
-import { bmi, num } from '@/lib/format'
+import { ageFrom, bmi, num, todayKey } from '@/lib/format'
 import { GENDERS, GENDER_LABELS, type Gender } from '@/lib/types'
 import { Loader2 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
@@ -27,7 +27,7 @@ export function SettingsPage() {
   // Personal stats
   const [heightCm, setHeightCm] = useState('')
   const [weightKg, setWeightKg] = useState('')
-  const [age, setAge] = useState('')
+  const [birthDate, setBirthDate] = useState('')
   const [gender, setGender] = useState<Gender | ''>('')
   const [bodyBusy, setBodyBusy] = useState(false)
 
@@ -38,7 +38,7 @@ export function SettingsPage() {
     setProteinTarget(String(profile.protein_target))
     setHeightCm(profile.height_cm == null ? '' : num(Number(profile.height_cm)))
     setWeightKg(profile.weight_kg == null ? '' : num(Number(profile.weight_kg)))
-    setAge(profile.age == null ? '' : String(profile.age))
+    setBirthDate(profile.birth_date ?? '')
     setGender(profile.gender ?? '')
   }, [profile])
 
@@ -49,12 +49,15 @@ export function SettingsPage() {
     [heightCm, weightKg],
   )
 
+  // Derived, so it never goes stale the way a stored age would.
+  const derivedAge = useMemo(() => ageFrom(birthDate || null), [birthDate])
+
   async function onSubmitBody(event: React.FormEvent) {
     event.preventDefault()
     if (!user) return
     const h = heightCm.trim() === '' ? null : Number(heightCm)
     const w = weightKg.trim() === '' ? null : Number(weightKg)
-    const a = age.trim() === '' ? null : Number(age)
+    const b = birthDate.trim() === '' ? null : birthDate
     if (h !== null && !(h > 0 && h < 300)) {
       toast.error('Height must be between 0 and 300 cm.')
       return
@@ -63,8 +66,8 @@ export function SettingsPage() {
       toast.error('Weight must be between 0 and 700 kg.')
       return
     }
-    if (a !== null && !(Number.isInteger(a) && a >= 1 && a <= 120)) {
-      toast.error('Age must be a whole number between 1 and 120.')
+    if (b !== null && ageFrom(b) === null) {
+      toast.error('Date of birth must be a valid date in the past.')
       return
     }
     setBodyBusy(true)
@@ -72,7 +75,7 @@ export function SettingsPage() {
       await updateProfile(user.id, {
         height_cm: h,
         weight_kg: w,
-        age: a,
+        birth_date: b,
         gender: gender === '' ? null : gender,
       })
       await refreshProfile()
@@ -191,7 +194,7 @@ export function SettingsPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="weight">Weight (kg)</Label>
+                <Label htmlFor="weight">Current weight (kg)</Label>
                 <Input
                   id="weight"
                   type="number"
@@ -202,6 +205,9 @@ export function SettingsPage() {
                   value={weightKg}
                   onChange={(e) => setWeightKg(e.target.value)}
                 />
+                <p className="text-xs text-muted-foreground">
+                  Updated automatically whenever you weigh in on Today.
+                </p>
               </div>
             </div>
 
@@ -233,18 +239,17 @@ export function SettingsPage() {
 
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="space-y-2">
-                <Label htmlFor="age">Age</Label>
+                <Label htmlFor="birth-date">Date of birth</Label>
                 <Input
-                  id="age"
-                  type="number"
-                  inputMode="numeric"
-                  step="1"
-                  min="1"
-                  max="120"
-                  placeholder="27"
-                  value={age}
-                  onChange={(e) => setAge(e.target.value)}
+                  id="birth-date"
+                  type="date"
+                  max={todayKey()}
+                  value={birthDate}
+                  onChange={(e) => setBirthDate(e.target.value)}
                 />
+                <p className="text-xs text-muted-foreground">
+                  {derivedAge === null ? 'Age is worked out from this.' : `Age ${derivedAge}.`}
+                </p>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="gender">Gender</Label>

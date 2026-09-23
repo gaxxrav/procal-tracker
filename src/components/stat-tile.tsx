@@ -1,12 +1,12 @@
 import { Card, CardContent } from '@/components/ui/card'
-import type { MacroKind } from '@/components/macro-meter'
+import type { Metric } from '@/lib/types'
 
 type Props = {
   label: string
   value: string
   detail?: string
   /** Shows a small colour key so the tile ties back to its chart. */
-  kind?: MacroKind
+  kind?: Metric
 }
 
 export function StatTile({ label, value, detail, kind }: Props) {

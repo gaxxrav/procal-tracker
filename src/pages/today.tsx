@@ -1,10 +1,11 @@
 import { AddFoodDialog } from '@/components/add-food-dialog'
 import { MacroMeter } from '@/components/macro-meter'
+import { WeighInField } from '@/components/weigh-in-field'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { useAuth } from '@/hooks/use-auth'
-import { deleteEntry, getDailyLog, listEntries, listFoods } from '@/lib/api'
+import { deleteEntry, getDailyLog, listEntries, listFoods, recordWeighIn } from '@/lib/api'
 import { grams, kcal, longDateLabel, num, todayKey, toDateKey, fromDateKey } from '@/lib/format'
 import { MEAL_LABELS, MEALS, type DailyLog, type Food, type FoodEntry, type Meal } from '@/lib/types'
 import { addDays, isAfter, startOfDay } from 'date-fns'
@@ -13,7 +14,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
 export function TodayPage() {
-  const { user, profile } = useAuth()
+  const { user, profile, refreshProfile } = useAuth()
   const [dateKey, setDateKey] = useState(todayKey)
   const [entries, setEntries] = useState<FoodEntry[]>([])
   const [foods, setFoods] = useState<Food[]>([])
@@ -95,6 +96,18 @@ export function TodayPage() {
     }
   }
 
+  async function onWeighIn(weightKg: number | null) {
+    if (!userId) return
+    try {
+      setDailyLog(await recordWeighIn(userId, dateKey, weightKg))
+      // The profile's current weight changed too, so BMI stays in step.
+      await refreshProfile()
+      toast.success(weightKg === null ? 'Weigh-in cleared' : `Weight saved: ${weightKg} kg`)
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'Could not save your weight')
+    }
+  }
+
   function openAdd(meal: Meal) {
     setAddMeal(meal)
     setAddOpen(true)
@@ -164,6 +177,14 @@ export function TodayPage() {
           )}
         </CardContent>
       </Card>
+
+      {!loading && (
+        <Card>
+          <CardContent>
+            <WeighInField value={dailyLog?.weight_kg ?? null} onSave={onWeighIn} />
+          </CardContent>
+        </Card>
+      )}
 
       {/* --------------------------------------------------------- meals */}
       <div className="space-y-4">

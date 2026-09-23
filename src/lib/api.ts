@@ -2,6 +2,7 @@ import { supabase } from '@/lib/supabase'
 import type {
   DailyLog,
   DailyTotals,
+  DailyWorkoutTotals,
   Food,
   FoodEntry,
   Meal,
@@ -26,7 +27,7 @@ export async function updateProfile(
       | 'protein_target'
       | 'height_cm'
       | 'weight_kg'
-      | 'age'
+      | 'birth_date'
       | 'gender'
     >
   >,
@@ -228,6 +229,36 @@ export async function listDailyTotals(
       .lte('logged_on', toKey)
       .order('logged_on', { ascending: true }),
   )
+}
+
+export async function listDailyWorkoutTotals(
+  userId: string,
+  fromKey: string,
+  toKey: string,
+): Promise<DailyWorkoutTotals[]> {
+  return unwrap(
+    await supabase
+      .from('daily_workout_totals')
+      .select('*')
+      .eq('user_id', userId)
+      .gte('logged_on', fromKey)
+      .lte('logged_on', toKey)
+      .order('logged_on', { ascending: true }),
+  )
+}
+
+/**
+ * Records a weigh-in for a day and mirrors it onto the profile as the current
+ * weight, so BMI follows the latest weigh-in without a second source of truth.
+ */
+export async function recordWeighIn(
+  userId: string,
+  dateKey: string,
+  weightKg: number | null,
+): Promise<DailyLog> {
+  const log = await upsertDailyLog(userId, dateKey, { weight_kg: weightKg })
+  if (weightKg !== null) await updateProfile(userId, { weight_kg: weightKg })
+  return log
 }
 
 export async function listDailyLogs(

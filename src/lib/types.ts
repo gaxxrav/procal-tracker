@@ -1,3 +1,6 @@
+/** Each metric owns a hue app-wide: meters, stat tiles and charts. */
+export type Metric = 'calories' | 'protein' | 'volume' | 'bodyweight'
+
 export const MEALS = ['breakfast', 'lunch', 'dinner', 'snack'] as const
 export type Meal = (typeof MEALS)[number]
 
@@ -39,7 +42,8 @@ export type Profile = {
   protein_target: number
   height_cm: number | null
   weight_kg: number | null
-  age: number | null
+  /** `yyyy-MM-dd`. Age is derived from this, never stored. */
+  birth_date: string | null
   gender: Gender | null
   created_at: string
   updated_at: string
@@ -109,4 +113,13 @@ export type DailyTotals = {
   calories: number
   protein: number
   entry_count: number
+}
+
+export type DailyWorkoutTotals = {
+  user_id: string
+  logged_on: string
+  volume: number
+  total_sets: number
+  total_reps: number
+  exercises: number
 }

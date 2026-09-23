@@ -1,4 +1,4 @@
-import { format, isToday, isYesterday, parseISO } from 'date-fns'
+import { differenceInYears, format, isAfter, isToday, isYesterday, parseISO } from 'date-fns'
 
 /** Local `yyyy-MM-dd` — never use toISOString(), it shifts across timezones. */
 export function toDateKey(date: Date): string {
@@ -41,6 +41,20 @@ export function grams(value: number): string {
 /** Trims trailing zeros: 200.00 -> "200", 1.50 -> "1.5". */
 export function num(value: number): string {
   return String(round(value, 2))
+}
+
+/**
+ * Age derived from a `yyyy-MM-dd` birth date, so it never goes stale. Null for
+ * a missing or future date.
+ */
+export function ageFrom(birthDate: string | null): number | null {
+  if (!birthDate) return null
+  const born = parseISO(birthDate)
+  if (Number.isNaN(born.getTime())) return null
+  // A future date inside the current year differences to 0, not a negative, so
+  // reject it explicitly rather than reporting someone as age 0.
+  if (isAfter(born, new Date())) return null
+  return differenceInYears(new Date(), born)
 }
 
 export type Bmi = { value: number; category: string }
