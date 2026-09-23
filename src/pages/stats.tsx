@@ -2,6 +2,7 @@ import { MetricChart, type ChartPoint } from '@/components/metric-chart'
 import { StatTile } from '@/components/stat-tile'
 import { Button } from '@/components/ui/button'
 import { Skeleton } from '@/components/ui/skeleton'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { useAuth } from '@/hooks/use-auth'
 import { listDailyLogs, listDailyTotals, listDailyWorkoutTotals } from '@/lib/api'
 import { round, toDateKey } from '@/lib/format'
@@ -131,7 +132,7 @@ export function StatsPage() {
     !loading && food.length === 0 && workouts.length === 0 && weightData.length === 0
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-lg font-semibold tracking-tight">Stats</h1>
         {/* One filter row above everything it scopes — every section below
@@ -171,11 +172,22 @@ export function StatsPage() {
           .
         </p>
       ) : (
-        <>
-          {/* ------------------------------------------------- nutrition */}
-          <section className="space-y-4">
-            <h2 className="text-sm font-semibold text-muted-foreground">Nutrition</h2>
+        <Tabs defaultValue="nutrition">
+          {/* The range filter above scopes every tab, so switching tabs keeps
+              the same slice of days. */}
+          <TabsList className="w-full">
+            <TabsTrigger value="nutrition" className="flex-1">
+              Nutrition
+            </TabsTrigger>
+            <TabsTrigger value="training" className="flex-1">
+              Training
+            </TabsTrigger>
+            <TabsTrigger value="body" className="flex-1">
+              Body
+            </TabsTrigger>
+          </TabsList>
 
+          <TabsContent value="nutrition" className="space-y-4 pt-4">
             {foodSummary ? (
               <>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -225,12 +237,9 @@ export function StatsPage() {
                 No food logged in this range.
               </p>
             )}
-          </section>
+          </TabsContent>
 
-          {/* -------------------------------------------------- training */}
-          <section className="space-y-4">
-            <h2 className="text-sm font-semibold text-muted-foreground">Training</h2>
-
+          <TabsContent value="training" className="space-y-4 pt-4">
             {trainingSummary ? (
               <>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -274,12 +283,9 @@ export function StatsPage() {
                 .
               </p>
             )}
-          </section>
+          </TabsContent>
 
-          {/* ------------------------------------------------------ body */}
-          <section className="space-y-4">
-            <h2 className="text-sm font-semibold text-muted-foreground">Body</h2>
-
+          <TabsContent value="body" className="space-y-4 pt-4">
             {weightSummary ? (
               <>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -314,16 +320,16 @@ export function StatsPage() {
                 .
               </p>
             )}
-          </section>
+          </TabsContent>
 
-          <p className="text-center text-xs text-muted-foreground">
+          <p className="pt-4 text-center text-xs text-muted-foreground">
             Every value here is also in{' '}
             <Link to="/history" className="underline underline-offset-4">
               History
             </Link>{' '}
             as a table.
           </p>
-        </>
+        </Tabs>
       )}
     </div>
   )
