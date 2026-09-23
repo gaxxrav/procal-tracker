@@ -2,10 +2,19 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { useAuth } from '@/hooks/use-auth'
 import { updateProfile } from '@/lib/api'
+import { bmi, num } from '@/lib/format'
+import { GENDERS, GENDER_LABELS, type Gender } from '@/lib/types'
 import { Loader2 } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
 export function SettingsPage() {
@@ -15,12 +24,65 @@ export function SettingsPage() {
   const [proteinTarget, setProteinTarget] = useState('')
   const [busy, setBusy] = useState(false)
 
+  // Personal stats
+  const [heightCm, setHeightCm] = useState('')
+  const [weightKg, setWeightKg] = useState('')
+  const [age, setAge] = useState('')
+  const [gender, setGender] = useState<Gender | ''>('')
+  const [bodyBusy, setBodyBusy] = useState(false)
+
   useEffect(() => {
     if (!profile) return
     setDisplayName(profile.display_name ?? '')
     setCalorieTarget(String(profile.calorie_target))
     setProteinTarget(String(profile.protein_target))
+    setHeightCm(profile.height_cm == null ? '' : num(Number(profile.height_cm)))
+    setWeightKg(profile.weight_kg == null ? '' : num(Number(profile.weight_kg)))
+    setAge(profile.age == null ? '' : String(profile.age))
+    setGender(profile.gender ?? '')
   }, [profile])
+
+  // Recomputed from whatever is currently in the two inputs, so it updates as
+  // you type rather than only after saving.
+  const currentBmi = useMemo(
+    () => bmi(Number(heightCm) || null, Number(weightKg) || null),
+    [heightCm, weightKg],
+  )
+
+  async function onSubmitBody(event: React.FormEvent) {
+    event.preventDefault()
+    if (!user) return
+    const h = heightCm.trim() === '' ? null : Number(heightCm)
+    const w = weightKg.trim() === '' ? null : Number(weightKg)
+    const a = age.trim() === '' ? null : Number(age)
+    if (h !== null && !(h > 0 && h < 300)) {
+      toast.error('Height must be between 0 and 300 cm.')
+      return
+    }
+    if (w !== null && !(w > 0 && w < 700)) {
+      toast.error('Weight must be between 0 and 700 kg.')
+      return
+    }
+    if (a !== null && !(Number.isInteger(a) && a >= 1 && a <= 120)) {
+      toast.error('Age must be a whole number between 1 and 120.')
+      return
+    }
+    setBodyBusy(true)
+    try {
+      await updateProfile(user.id, {
+        height_cm: h,
+        weight_kg: w,
+        age: a,
+        gender: gender === '' ? null : gender,
+      })
+      await refreshProfile()
+      toast.success('Personal stats updated')
+    } catch (error) {
+      toast.error(error instanceof Error ? error.message : 'Could not save your stats')
+    } finally {
+      setBodyBusy(false)
+    }
+  }
 
   async function onSubmit(event: React.FormEvent) {
     event.preventDefault()
@@ -101,6 +163,108 @@ export function SettingsPage() {
 
             <Button type="submit" disabled={busy}>
               {busy && <Loader2 className="animate-spin" />}
+              Save
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Personal stats</CardTitle>
+          <CardDescription>Used for BMI, and for future calorie estimates.</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={onSubmitBody} className="space-y-4">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-2">
+                <Label htmlFor="height">Height (cm)</Label>
+                <Input
+                  id="height"
+                  type="number"
+                  inputMode="decimal"
+                  step="any"
+                  min="0"
+                  placeholder="175"
+                  value={heightCm}
+                  onChange={(e) => setHeightCm(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="weight">Weight (kg)</Label>
+                <Input
+                  id="weight"
+                  type="number"
+                  inputMode="decimal"
+                  step="any"
+                  min="0"
+                  placeholder="72"
+                  value={weightKg}
+                  onChange={(e) => setWeightKg(e.target.value)}
+                />
+              </div>
+            </div>
+
+            {/* Derived, never stored — read-only so it can't be edited out of
+                sync with the height and weight above it. */}
+            <div className="space-y-2">
+              <Label htmlFor="bmi" className="text-muted-foreground">
+                BMI
+              </Label>
+              <div
+                id="bmi"
+                aria-live="polite"
+                className="flex h-9 items-center justify-between rounded-lg border border-border bg-muted px-3 text-sm text-muted-foreground"
+              >
+                {currentBmi ? (
+                  <>
+                    <span className="font-medium tabular-nums">{currentBmi.value}</span>
+                    <span className="text-xs">{currentBmi.category}</span>
+                  </>
+                ) : (
+                  <span className="text-xs">Enter height and weight</span>
+                )}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Calculated automatically. BMI ignores muscle mass, so treat it loosely if
+                you lift.
+              </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="space-y-2">
+                <Label htmlFor="age">Age</Label>
+                <Input
+                  id="age"
+                  type="number"
+                  inputMode="numeric"
+                  step="1"
+                  min="1"
+                  max="120"
+                  placeholder="27"
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="gender">Gender</Label>
+                <Select value={gender} onValueChange={(v) => setGender(v as Gender)}>
+                  <SelectTrigger id="gender" className="w-full">
+                    <SelectValue placeholder="Select" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {GENDERS.map((g) => (
+                      <SelectItem key={g} value={g}>
+                        {GENDER_LABELS[g]}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+
+            <Button type="submit" disabled={bodyBusy}>
+              {bodyBusy && <Loader2 className="animate-spin" />}
               Save
             </Button>
           </form>

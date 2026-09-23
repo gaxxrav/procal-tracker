@@ -1,5 +1,13 @@
 import { supabase } from '@/lib/supabase'
-import type { DailyLog, DailyTotals, Food, FoodEntry, Meal, Profile } from '@/lib/types'
+import type {
+  DailyLog,
+  DailyTotals,
+  Food,
+  FoodEntry,
+  Meal,
+  Profile,
+  WorkoutEntry,
+} from '@/lib/types'
 
 function unwrap<T>({ data, error }: { data: T | null; error: { message: string } | null }): T {
   if (error) throw new Error(error.message)
@@ -10,7 +18,18 @@ function unwrap<T>({ data, error }: { data: T | null; error: { message: string }
 
 export async function updateProfile(
   userId: string,
-  patch: Partial<Pick<Profile, 'display_name' | 'calorie_target' | 'protein_target'>>,
+  patch: Partial<
+    Pick<
+      Profile,
+      | 'display_name'
+      | 'calorie_target'
+      | 'protein_target'
+      | 'height_cm'
+      | 'weight_kg'
+      | 'age'
+      | 'gender'
+    >
+  >,
 ): Promise<Profile> {
   return unwrap(
     await supabase.from('profiles').update(patch).eq('id', userId).select('*').single(),
@@ -111,7 +130,9 @@ export async function getDailyLog(userId: string, dateKey: string): Promise<Dail
 export async function upsertDailyLog(
   userId: string,
   dateKey: string,
-  patch: Partial<Pick<DailyLog, 'calorie_target' | 'protein_target' | 'weight_kg' | 'notes'>>,
+  patch: Partial<
+    Pick<DailyLog, 'calorie_target' | 'protein_target' | 'weight_kg' | 'energy_level' | 'notes'>
+  >,
 ): Promise<DailyLog> {
   return unwrap(
     await supabase
@@ -120,6 +141,75 @@ export async function upsertDailyLog(
       .select('*')
       .single(),
   )
+}
+
+// ----------------------------------------------------------------- workouts
+
+export async function listWorkoutEntries(
+  userId: string,
+  dateKey: string,
+): Promise<WorkoutEntry[]> {
+  return unwrap(
+    await supabase
+      .from('workout_entries')
+      .select('*')
+      .eq('user_id', userId)
+      .eq('logged_on', dateKey)
+      .order('created_at', { ascending: true }),
+  )
+}
+
+export type NewWorkoutEntry = {
+  logged_on: string
+  exercise: string
+  weight_kg: number
+  reps: number
+  sets: number
+  notes?: string | null
+}
+
+export async function createWorkoutEntry(
+  userId: string,
+  entry: NewWorkoutEntry,
+): Promise<WorkoutEntry> {
+  return unwrap(
+    await supabase
+      .from('workout_entries')
+      .insert({ ...entry, user_id: userId })
+      .select('*')
+      .single(),
+  )
+}
+
+export async function updateWorkoutEntry(
+  id: string,
+  patch: Partial<NewWorkoutEntry>,
+): Promise<WorkoutEntry> {
+  return unwrap(
+    await supabase.from('workout_entries').update(patch).eq('id', id).select('*').single(),
+  )
+}
+
+export async function deleteWorkoutEntry(id: string): Promise<void> {
+  const { error } = await supabase.from('workout_entries').delete().eq('id', id)
+  if (error) throw new Error(error.message)
+}
+
+/**
+ * Distinct exercise names this user has logged before, most recent first.
+ * Backs the name autocomplete, so there's no separate exercise library to keep
+ * in sync.
+ */
+export async function listExerciseNames(userId: string): Promise<string[]> {
+  const rows = unwrap<Array<Pick<WorkoutEntry, 'exercise'>>>(
+    await supabase
+      .from('workout_entries')
+      .select('exercise')
+      .eq('user_id', userId)
+      .order('created_at', { ascending: false })
+      .limit(400),
+  )
+  return [...new Set(rows.map((r) => r.exercise))]
 }
 
 // ------------------------------------------------------------------ history

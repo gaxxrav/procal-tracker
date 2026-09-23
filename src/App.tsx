@@ -10,6 +10,7 @@ import { SettingsPage } from '@/pages/settings'
 import { SetupRequiredPage } from '@/pages/setup-required'
 import { StatsPage } from '@/pages/stats'
 import { TodayPage } from '@/pages/today'
+import { WorkoutsPage } from '@/pages/workouts'
 import { Loader2 } from 'lucide-react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
@@ -63,6 +64,7 @@ export default function App() {
               }
             >
               <Route index element={<TodayPage />} />
+              <Route path="gym" element={<WorkoutsPage />} />
               <Route path="history" element={<HistoryPage />} />
               <Route path="stats" element={<StatsPage />} />
               <Route path="foods" element={<FoodsPage />} />

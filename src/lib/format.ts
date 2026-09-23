@@ -42,3 +42,29 @@ export function grams(value: number): string {
 export function num(value: number): string {
   return String(round(value, 2))
 }
+
+export type Bmi = { value: number; category: string }
+
+/**
+ * BMI is always derived from current height and weight, never stored — so it
+ * can't go stale when either one changes. Null until both are known.
+ */
+export function bmi(heightCm: number | null, weightKg: number | null): Bmi | null {
+  if (!heightCm || !weightKg || heightCm <= 0 || weightKg <= 0) return null
+  const metres = heightCm / 100
+  const value = round(weightKg / (metres * metres), 1)
+  const category =
+    value < 18.5
+      ? 'Underweight'
+      : value < 25
+        ? 'Normal'
+        : value < 30
+          ? 'Overweight'
+          : 'Obese'
+  return { value, category }
+}
+
+/** Total load moved: weight x reps x sets. */
+export function volume(weightKg: number, reps: number, sets: number): number {
+  return round(weightKg * reps * sets, 1)
+}

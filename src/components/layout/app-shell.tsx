@@ -9,11 +9,22 @@ import {
 import { useAuth } from '@/hooks/use-auth'
 import { useTheme } from '@/hooks/use-theme'
 import { cn } from '@/lib/utils'
-import { CalendarDays, ChartLine, CircleUser, Monitor, Moon, Salad, Sun, Utensils } from 'lucide-react'
+import {
+  CalendarDays,
+  ChartLine,
+  CircleUser,
+  Dumbbell,
+  Monitor,
+  Moon,
+  Salad,
+  Sun,
+  Utensils,
+} from 'lucide-react'
 import { NavLink, Outlet } from 'react-router-dom'
 
 const NAV = [
   { to: '/', label: 'Today', icon: Utensils, end: true },
+  { to: '/gym', label: 'Gym', icon: Dumbbell, end: false },
   { to: '/history', label: 'History', icon: CalendarDays, end: false },
   { to: '/stats', label: 'Stats', icon: ChartLine, end: false },
   { to: '/foods', label: 'Foods', icon: Salad, end: false },
