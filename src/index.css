@@ -82,17 +82,21 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
 
-    /* Macro identity. Categorical slots 1 (blue) and 2 (orange); validated
-       for CVD separation and contrast against both surfaces. A macro keeps
-       its hue everywhere in the app — meters, charts, legends. */
+    /* Metric identity, in the documented categorical slot order: blue,
+       orange, aqua, yellow, magenta. The ORDER is the colour-vision safety
+       mechanism, not decoration — validated adjacent in both modes, and
+       all-pairs for the three nutrition metrics that share a view. A metric
+       keeps its hue everywhere: meters, tiles and charts. */
     --calories: #2a78d6;
     --calories-track: #cde2fb;
     --protein: #eb6834;
     --protein-track: #fbdfd2;
-    --volume: #1baf7a;
-    --volume-track: #c9efe0;
-    --bodyweight: #eda100;
-    --bodyweight-track: #fbeccc;
+    --fiber: #1baf7a;
+    --fiber-track: #c9efe0;
+    --volume: #eda100;
+    --volume-track: #fbeccc;
+    --bodyweight: #e87ba4;
+    --bodyweight-track: #fbe2ea;
 
     /* Chart chrome */
     --grid: #e1e0d9;
@@ -142,10 +146,12 @@
     --calories-track: #184f95;
     --protein: #d95926;
     --protein-track: #5c2410;
-    --volume: #199e70;
-    --volume-track: #0d3d2b;
-    --bodyweight: #c98500;
-    --bodyweight-track: #4a3100;
+    --fiber: #199e70;
+    --fiber-track: #0d3d2b;
+    --volume: #c98500;
+    --volume-track: #4a3100;
+    --bodyweight: #d55181;
+    --bodyweight-track: #4d1628;
 
     --grid: #2c2c2a;
     --axis: #383835;

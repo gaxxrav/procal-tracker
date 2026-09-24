@@ -66,14 +66,16 @@ export function TodayPage() {
         (acc, entry) => ({
           calories: acc.calories + Number(entry.calories),
           protein: acc.protein + Number(entry.protein),
+          fiber: acc.fiber + Number(entry.fiber ?? 0),
         }),
-        { calories: 0, protein: 0 },
+        { calories: 0, protein: 0, fiber: 0 },
       ),
     [entries],
   )
 
   const calorieTarget = dailyLog?.calorie_target ?? profile?.calorie_target ?? 2400
   const proteinTarget = dailyLog?.protein_target ?? profile?.protein_target ?? 140
+  const fiberTarget = dailyLog?.fiber_target ?? profile?.fiber_target ?? 30
 
   const byMeal = useMemo(() => {
     const groups = new Map<Meal, FoodEntry[]>(MEALS.map((m) => [m, []]))
@@ -150,9 +152,10 @@ export function TodayPage() {
 
       {/* ------------------------------------------------------- the meters */}
       <Card>
-        <CardContent className="grid gap-6 sm:grid-cols-2">
+        <CardContent className="grid gap-6 sm:grid-cols-3">
           {loading ? (
             <>
+              <Skeleton className="h-28" />
               <Skeleton className="h-28" />
               <Skeleton className="h-28" />
             </>
@@ -171,6 +174,13 @@ export function TodayPage() {
                 label="Protein"
                 value={totals.protein}
                 target={proteinTarget}
+                unit="g"
+              />
+              <MacroMeter
+                kind="fiber"
+                label="Fibre"
+                value={totals.fiber}
+                target={fiberTarget}
                 unit="g"
               />
             </>

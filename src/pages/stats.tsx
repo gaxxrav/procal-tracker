@@ -52,6 +52,7 @@ export function StatsPage() {
 
   const calorieTarget = profile?.calorie_target ?? 2400
   const proteinTarget = profile?.protein_target ?? 140
+  const fiberTarget = profile?.fiber_target ?? 30
 
   // ------------------------------------------------------------- nutrition
   const calorieData = useMemo<ChartPoint[]>(
@@ -62,11 +63,16 @@ export function StatsPage() {
     () => food.map((r) => ({ logged_on: r.logged_on, value: Number(r.protein) })),
     [food],
   )
+  const fiberData = useMemo<ChartPoint[]>(
+    () => food.map((r) => ({ logged_on: r.logged_on, value: Number(r.fiber ?? 0) })),
+    [food],
+  )
 
   const foodSummary = useMemo(() => {
     if (food.length === 0) return null
     let calories = 0
     let protein = 0
+    let fiber = 0
     let calorieDays = 0
     let proteinDays = 0
     for (const row of food) {
@@ -74,12 +80,14 @@ export function StatsPage() {
       const p = Number(row.protein)
       calories += c
       protein += p
+      fiber += Number(row.fiber ?? 0)
       if (c <= calorieTarget) calorieDays += 1
       if (p >= proteinTarget) proteinDays += 1
     }
     return {
       avgCalories: Math.round(calories / food.length),
       avgProtein: Math.round(protein / food.length),
+      avgFiber: Math.round(fiber / food.length),
       calorieDays,
       proteinDays,
       days: food.length,
@@ -204,13 +212,14 @@ export function StatsPage() {
                     detail={`target ${proteinTarget}g`}
                   />
                   <StatTile
-                    label="Days under calories"
-                    value={`${foodSummary.calorieDays}/${foodSummary.days}`}
-                    detail="days logged"
+                    kind="fiber"
+                    label="Avg fibre"
+                    value={`${foodSummary.avgFiber}g`}
+                    detail={`target ${fiberTarget}g`}
                   />
                   <StatTile
-                    label="Days hitting protein"
-                    value={`${foodSummary.proteinDays}/${foodSummary.days}`}
+                    label="Days under calories"
+                    value={`${foodSummary.calorieDays}/${foodSummary.days}`}
                     detail="days logged"
                   />
                 </div>
@@ -230,6 +239,14 @@ export function StatsPage() {
                   unit="g"
                   target={proteinTarget}
                   data={proteinData}
+                />
+                <MetricChart
+                  metric="fiber"
+                  title="Fibre per day"
+                  description={`Last ${range} days, against a ${fiberTarget}g target.`}
+                  unit="g"
+                  target={fiberTarget}
+                  data={fiberData}
                 />
               </>
             ) : (

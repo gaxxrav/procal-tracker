@@ -1,0 +1,6086 @@
+[
+  {
+    "food_name": "Hot tea (Garam Chai)",
+    "calories_kcal": 16.14,
+    "protein_g": 0.39,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Instant coffee",
+    "calories_kcal": 23.16,
+    "protein_g": 0.64,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Espreso coffee",
+    "calories_kcal": 51.54,
+    "protein_g": 1.75,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Iced tea",
+    "calories_kcal": 10.34,
+    "protein_g": 0.03,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Raw mango drink (Aam panna)",
+    "calories_kcal": 35.92,
+    "protein_g": 0.16,
+    "fiber_g": 0.61
+  },
+  {
+    "food_name": "Fruit Punch (with fresh juices)",
+    "calories_kcal": 36.12,
+    "protein_g": 0.14,
+    "fiber_g": 0.06
+  },
+  {
+    "food_name": "Fruit Punch (with squashes)",
+    "calories_kcal": 23.13,
+    "protein_g": 0.07,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Lemonade",
+    "calories_kcal": 20.8,
+    "protein_g": 0.03,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Lem-o-gin",
+    "calories_kcal": 21.52,
+    "protein_g": 0.08,
+    "fiber_g": 0.13
+  },
+  {
+    "food_name": "Cumin infused water (Jeere/Zeere ka pani)",
+    "calories_kcal": 9.09,
+    "protein_g": 0.17,
+    "fiber_g": 0.46
+  },
+  {
+    "food_name": "Coco pine cooler",
+    "calories_kcal": 32.75,
+    "protein_g": 0.56,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Summer cooler",
+    "calories_kcal": 22.43,
+    "protein_g": 0.37,
+    "fiber_g": 0.2
+  },
+  {
+    "food_name": "Hot cocoa",
+    "calories_kcal": 90.1,
+    "protein_g": 3.36,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold coffee with ice cream",
+    "calories_kcal": 67.85,
+    "protein_g": 1.57,
+    "fiber_g": 0.01
+  },
+  {
+    "food_name": "Banana milkshake (Kele milkshake)",
+    "calories_kcal": 65.31,
+    "protein_g": 1.84,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Mango milkshake (Aam milkshake)",
+    "calories_kcal": 56.9,
+    "protein_g": 1.73,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Pineapple milkshake (Ananas milkshake)",
+    "calories_kcal": 55.72,
+    "protein_g": 1.66,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Orange milkshake (Narangi milkshake)",
+    "calories_kcal": 57.42,
+    "protein_g": 1.86,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Egg nog",
+    "calories_kcal": 97.14,
+    "protein_g": 4.78,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Sweet Lassi (Meethi lassi)",
+    "calories_kcal": 35.66,
+    "protein_g": 1.29,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Lassi (salted)",
+    "calories_kcal": 18.84,
+    "protein_g": 1.35,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Cheese and chilli sandwich ",
+    "calories_kcal": 218.11,
+    "protein_g": 6.8,
+    "fiber_g": 2.08
+  },
+  {
+    "food_name": "Egg sandwich (Ande ka sandwich)",
+    "calories_kcal": 285.96,
+    "protein_g": 8.69,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Cucumber sandwich (Kheere ka sandwich)",
+    "calories_kcal": 188.6,
+    "protein_g": 4.8,
+    "fiber_g": 2.45
+  },
+  {
+    "food_name": "Cheese and pineapple sandwich (Cheese aur ananas ka sandwich)",
+    "calories_kcal": 257.71,
+    "protein_g": 8.2,
+    "fiber_g": 2.33
+  },
+  {
+    "food_name": "Cheese and tomato sandwich (Cheese aur tamatar ke sandwich)",
+    "calories_kcal": 243.32,
+    "protein_g": 7.92,
+    "fiber_g": 1.97
+  },
+  {
+    "food_name": "Chicken sandwich",
+    "calories_kcal": 253.27,
+    "protein_g": 13.12,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Peanut and tomato sandwich (Moongfali aur tamatar ka sandwich)",
+    "calories_kcal": 291.43,
+    "protein_g": 9.53,
+    "fiber_g": 4.03
+  },
+  {
+    "food_name": "Rainbow sandwich",
+    "calories_kcal": 272.75,
+    "protein_g": 7.75,
+    "fiber_g": 2.1
+  },
+  {
+    "food_name": "Club sandwich ",
+    "calories_kcal": 235.32,
+    "protein_g": 7.31,
+    "fiber_g": 1.81
+  },
+  {
+    "food_name": "Vegetarian club sandwich",
+    "calories_kcal": 198.33,
+    "protein_g": 5.45,
+    "fiber_g": 2.06
+  },
+  {
+    "food_name": "Pin wheel sandwich",
+    "calories_kcal": 311.52,
+    "protein_g": 8.77,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Carrot apple sandwich (Gajar aur seb ka sandwich)",
+    "calories_kcal": 214.11,
+    "protein_g": 5.3,
+    "fiber_g": 3.66
+  },
+  {
+    "food_name": "Salami sandwich",
+    "calories_kcal": 255.59,
+    "protein_g": 8.7,
+    "fiber_g": 1.97
+  },
+  {
+    "food_name": "Vegetable and mayonnaise sandwich",
+    "calories_kcal": 244.26,
+    "protein_g": 4.47,
+    "fiber_g": 2.35
+  },
+  {
+    "food_name": "Egg and tomato sandwich (Ande aur tamatar ka sandwich)",
+    "calories_kcal": 222.11,
+    "protein_g": 7.66,
+    "fiber_g": 1.77
+  },
+  {
+    "food_name": "Sweet open sandwich",
+    "calories_kcal": 244.25,
+    "protein_g": 4.99,
+    "fiber_g": 2.36
+  },
+  {
+    "food_name": "Mushroom and cheese sandwich (toasted)",
+    "calories_kcal": 227.42,
+    "protein_g": 7.79,
+    "fiber_g": 2.28
+  },
+  {
+    "food_name": "Cheese and tomato sandwich (toasted) (Cheese aur tamatar ke sandwich (toasted))",
+    "calories_kcal": 224.58,
+    "protein_g": 6.82,
+    "fiber_g": 1.78
+  },
+  {
+    "food_name": "Pea potato sandwich (toasted) (Matar aloo ka sandwich)",
+    "calories_kcal": 164.9,
+    "protein_g": 4.6,
+    "fiber_g": 2.89
+  },
+  {
+    "food_name": "Paneer pea sandwich (toasted) (Paneer matar ka sandwich)",
+    "calories_kcal": 249.56,
+    "protein_g": 12.4,
+    "fiber_g": 2.12
+  },
+  {
+    "food_name": "Chicken sandwich (toasted)",
+    "calories_kcal": 167.37,
+    "protein_g": 12.08,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Pea keema sandwich (toasted) (Matar aur keema ka sandwich)",
+    "calories_kcal": 171.78,
+    "protein_g": 11.06,
+    "fiber_g": 2.45
+  },
+  {
+    "food_name": "Classic club sandwich",
+    "calories_kcal": 200.83,
+    "protein_g": 6.74,
+    "fiber_g": 1.62
+  },
+  {
+    "food_name": "Sesame toast",
+    "calories_kcal": 495.19,
+    "protein_g": 1.9,
+    "fiber_g": 1.32
+  },
+  {
+    "food_name": "Cracked wheat porridge (Meetha daliya)",
+    "calories_kcal": 81.57,
+    "protein_g": 2.64,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Semolina porridge (Suji/Rava daliya)",
+    "calories_kcal": 100.89,
+    "protein_g": 3.75,
+    "fiber_g": 0.7
+  },
+  {
+    "food_name": "Oatmeal Porridge",
+    "calories_kcal": 72.85,
+    "protein_g": 2.6,
+    "fiber_g": 0.39
+  },
+  {
+    "food_name": "Cornflakes with milk",
+    "calories_kcal": 117.33,
+    "protein_g": 3.59,
+    "fiber_g": 0.78
+  },
+  {
+    "food_name": "Rice flakes (Chiwda/Aval)",
+    "calories_kcal": 112.44,
+    "protein_g": 3.62,
+    "fiber_g": 0.37
+  },
+  {
+    "food_name": "Wheat flakes",
+    "calories_kcal": 112.44,
+    "protein_g": 3.62,
+    "fiber_g": 0.37
+  },
+  {
+    "food_name": "Murmura (Puffed rice)",
+    "calories_kcal": 113.32,
+    "protein_g": 3.62,
+    "fiber_g": 0.28
+  },
+  {
+    "food_name": "Puffed wheat (Murmure/Moori)",
+    "calories_kcal": 113.32,
+    "protein_g": 3.62,
+    "fiber_g": 0.28
+  },
+  {
+    "food_name": "Boiled egg (Ubla anda)",
+    "calories_kcal": 45.35,
+    "protein_g": 4.43,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Fried Egg ",
+    "calories_kcal": 223.67,
+    "protein_g": 11.59,
+    "fiber_g": 0.29
+  },
+  {
+    "food_name": "Poached egg",
+    "calories_kcal": 123.87,
+    "protein_g": 11.98,
+    "fiber_g": 0.3
+  },
+  {
+    "food_name": "Scrambled egg (Ande ki bhurji)",
+    "calories_kcal": 155.97,
+    "protein_g": 10.29,
+    "fiber_g": 0.24
+  },
+  {
+    "food_name": "Baked egg ",
+    "calories_kcal": 218.85,
+    "protein_g": 11.88,
+    "fiber_g": 1.03
+  },
+  {
+    "food_name": "Plain omelette/omlet",
+    "calories_kcal": 272.41,
+    "protein_g": 9.66,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Stuffed egg omelette/omlet",
+    "calories_kcal": 203.51,
+    "protein_g": 8.6,
+    "fiber_g": 0.75
+  },
+  {
+    "food_name": "Pancake",
+    "calories_kcal": 203.36,
+    "protein_g": 5.68,
+    "fiber_g": 0.65
+  },
+  {
+    "food_name": "Keema pancake",
+    "calories_kcal": 176.27,
+    "protein_g": 9.01,
+    "fiber_g": 0.84
+  },
+  {
+    "food_name": "Vegetable pancake",
+    "calories_kcal": 125.18,
+    "protein_g": 3.87,
+    "fiber_g": 2.48
+  },
+  {
+    "food_name": "Jam and fruit pancake",
+    "calories_kcal": 162.02,
+    "protein_g": 3.79,
+    "fiber_g": 1.21
+  },
+  {
+    "food_name": "Khoa and coconut pancake",
+    "calories_kcal": 271.98,
+    "protein_g": 6.98,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Brown stock",
+    "calories_kcal": 21.32,
+    "protein_g": 1.95,
+    "fiber_g": 0.09
+  },
+  {
+    "food_name": "Vegetable stock",
+    "calories_kcal": 17.6,
+    "protein_g": 0.3,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Chicken stock",
+    "calories_kcal": 29.88,
+    "protein_g": 3.69,
+    "fiber_g": 0.1
+  },
+  {
+    "food_name": "Clear tomato soup (Tamatar ka soup)",
+    "calories_kcal": 80.07,
+    "protein_g": 4.79,
+    "fiber_g": 1.96
+  },
+  {
+    "food_name": "Lentil soup",
+    "calories_kcal": 31.17,
+    "protein_g": 9.65,
+    "fiber_g": 2.57
+  },
+  {
+    "food_name": "Chicken consomme (Clear chicken soup)",
+    "calories_kcal": 47.94,
+    "protein_g": 11.47,
+    "fiber_g": 1.57
+  },
+  {
+    "food_name": "Cream of tomato soup",
+    "calories_kcal": 97.81,
+    "protein_g": 4.61,
+    "fiber_g": 1.38
+  },
+  {
+    "food_name": "Cream of green peas soup",
+    "calories_kcal": 127.84,
+    "protein_g": 7.13,
+    "fiber_g": 2.95
+  },
+  {
+    "food_name": "Cream of spinach soup",
+    "calories_kcal": 100.54,
+    "protein_g": 5.21,
+    "fiber_g": 1.74
+  },
+  {
+    "food_name": "Cream of mixed vegetable soup",
+    "calories_kcal": 59.65,
+    "protein_g": 6.84,
+    "fiber_g": 2.14
+  },
+  {
+    "food_name": "Cream of mushroom soup",
+    "calories_kcal": 117.28,
+    "protein_g": 6.64,
+    "fiber_g": 1.34
+  },
+  {
+    "food_name": "Chicken sweet corn soup",
+    "calories_kcal": 28.32,
+    "protein_g": 14.48,
+    "fiber_g": 0.47
+  },
+  {
+    "food_name": "Minestrone soup",
+    "calories_kcal": 42.66,
+    "protein_g": 9.3,
+    "fiber_g": 1.92
+  },
+  {
+    "food_name": "Egg drop soup",
+    "calories_kcal": 26.64,
+    "protein_g": 12.93,
+    "fiber_g": 0.81
+  },
+  {
+    "food_name": "Chinese cabbage and meat ball soup",
+    "calories_kcal": 484.31,
+    "protein_g": 5.21,
+    "fiber_g": 0.57
+  },
+  {
+    "food_name": "French onion soup",
+    "calories_kcal": 55.61,
+    "protein_g": 11.41,
+    "fiber_g": 1.01
+  },
+  {
+    "food_name": "Hot and sour soup",
+    "calories_kcal": 31.51,
+    "protein_g": 3.12,
+    "fiber_g": 0.6
+  },
+  {
+    "food_name": "Talaumein soup",
+    "calories_kcal": 35.63,
+    "protein_g": 10.12,
+    "fiber_g": 1.94
+  },
+  {
+    "food_name": "Cold cucumber soup (Thanda kheere ka soup)",
+    "calories_kcal": 48.03,
+    "protein_g": 2.99,
+    "fiber_g": 0.88
+  },
+  {
+    "food_name": "Cold summer garden soup",
+    "calories_kcal": 49.19,
+    "protein_g": 8.57,
+    "fiber_g": 1.86
+  },
+  {
+    "food_name": "Chapati/Roti",
+    "calories_kcal": 202.31,
+    "protein_g": 5.88,
+    "fiber_g": 6.31
+  },
+  {
+    "food_name": "Plain parantha/paratha",
+    "calories_kcal": 298.3,
+    "protein_g": 5.06,
+    "fiber_g": 5.43
+  },
+  {
+    "food_name": "Potato parantha/paratha (Aloo ka parantha/paratha)",
+    "calories_kcal": 205.04,
+    "protein_g": 3.7,
+    "fiber_g": 4.18
+  },
+  {
+    "food_name": "Radish parantha/paratha (Mooli ka parantha/paratha)",
+    "calories_kcal": 183.52,
+    "protein_g": 3.3,
+    "fiber_g": 4.32
+  },
+  {
+    "food_name": "Cauliflower parantha/paratha (Phoolgobhi ka parantha/paratha)",
+    "calories_kcal": 178.07,
+    "protein_g": 3.73,
+    "fiber_g": 4.68
+  },
+  {
+    "food_name": "Dal parantha/paratha",
+    "calories_kcal": 268.24,
+    "protein_g": 6.78,
+    "fiber_g": 6.46
+  },
+  {
+    "food_name": "Sprouted moong parantha/paratha",
+    "calories_kcal": 228.59,
+    "protein_g": 4.29,
+    "fiber_g": 4.49
+  },
+  {
+    "food_name": "Pea parantha/paratha (Matar ka parantha/paratha)",
+    "calories_kcal": 190.73,
+    "protein_g": 5.59,
+    "fiber_g": 5.61
+  },
+  {
+    "food_name": "Keema parantha/paratha",
+    "calories_kcal": 238.09,
+    "protein_g": 9.41,
+    "fiber_g": 3.44
+  },
+  {
+    "food_name": "Paneer parantha/paratha",
+    "calories_kcal": 262.97,
+    "protein_g": 7.98,
+    "fiber_g": 4.0
+  },
+  {
+    "food_name": "Besan and spinach parantha/paratha (Besan aur palak ka parantha/paratha)",
+    "calories_kcal": 216.49,
+    "protein_g": 5.54,
+    "fiber_g": 4.39
+  },
+  {
+    "food_name": "Poori",
+    "calories_kcal": 737.63,
+    "protein_g": 1.35,
+    "fiber_g": 1.46
+  },
+  {
+    "food_name": "Spinach poori (Palak poori)",
+    "calories_kcal": 684.25,
+    "protein_g": 1.42,
+    "fiber_g": 1.55
+  },
+  {
+    "food_name": "Methi poori",
+    "calories_kcal": 710.02,
+    "protein_g": 1.45,
+    "fiber_g": 1.61
+  },
+  {
+    "food_name": "Dal stuffed poori",
+    "calories_kcal": 785.16,
+    "protein_g": 2.08,
+    "fiber_g": 1.96
+  },
+  {
+    "food_name": "Potato stuffed poori (Aloo ki poori)",
+    "calories_kcal": 776.74,
+    "protein_g": 1.52,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Tandoori parantha/paratha",
+    "calories_kcal": 295.37,
+    "protein_g": 5.08,
+    "fiber_g": 5.44
+  },
+  {
+    "food_name": "Boiled rice (Uble chawal)",
+    "calories_kcal": 117.19,
+    "protein_g": 2.6,
+    "fiber_g": 1.25
+  },
+  {
+    "food_name": "Plain pulao",
+    "calories_kcal": 140.21,
+    "protein_g": 2.34,
+    "fiber_g": 1.69
+  },
+  {
+    "food_name": "Mixed vegetable pulao",
+    "calories_kcal": 113.05,
+    "protein_g": 2.72,
+    "fiber_g": 2.67
+  },
+  {
+    "food_name": "Mushroom pulao",
+    "calories_kcal": 124.29,
+    "protein_g": 2.52,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Sprouted moong pulao",
+    "calories_kcal": 112.97,
+    "protein_g": 2.19,
+    "fiber_g": 1.78
+  },
+  {
+    "food_name": "Paneer pulao",
+    "calories_kcal": 581.91,
+    "protein_g": 1.98,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Peanut pulao ",
+    "calories_kcal": 193.28,
+    "protein_g": 5.32,
+    "fiber_g": 2.9
+  },
+  {
+    "food_name": "Navratan pulao",
+    "calories_kcal": 261.71,
+    "protein_g": 6.2,
+    "fiber_g": 3.82
+  },
+  {
+    "food_name": "Green chickpeas pulao (Choliya pulao/Hare chane ka pulao)",
+    "calories_kcal": 173.43,
+    "protein_g": 4.88,
+    "fiber_g": 3.15
+  },
+  {
+    "food_name": "Mutton biryani/biriyani",
+    "calories_kcal": 190.76,
+    "protein_g": 7.38,
+    "fiber_g": 2.42
+  },
+  {
+    "food_name": "Vegetable biryani/biriyani",
+    "calories_kcal": 174.61,
+    "protein_g": 3.16,
+    "fiber_g": 3.31
+  },
+  {
+    "food_name": "Lemon rice (Pulihora, Elumichai sadam, Chitranna)",
+    "calories_kcal": 176.3,
+    "protein_g": 4.26,
+    "fiber_g": 2.52
+  },
+  {
+    "food_name": "Sweet rice (Meethe chawal)",
+    "calories_kcal": 215.41,
+    "protein_g": 2.1,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Curd rice (Dahi bhaat/Dahi chawal/ Perugu annam/Daddojanam/Thayir saadam)",
+    "calories_kcal": 195.74,
+    "protein_g": 5.75,
+    "fiber_g": 2.13
+  },
+  {
+    "food_name": "Tamarind rice (Chintapandu pulihora/Puliyodharai/Puli sadam/Huli anna)",
+    "calories_kcal": 373.04,
+    "protein_g": 7.45,
+    "fiber_g": 5.12
+  },
+  {
+    "food_name": "Spanish rice",
+    "calories_kcal": 164.24,
+    "protein_g": 4.19,
+    "fiber_g": 2.78
+  },
+  {
+    "food_name": "Chinese fried rice",
+    "calories_kcal": 120.58,
+    "protein_g": 4.05,
+    "fiber_g": 2.31
+  },
+  {
+    "food_name": "Macroni cheese pie",
+    "calories_kcal": 170.63,
+    "protein_g": 5.85,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Vegetable chowmein",
+    "calories_kcal": 129.71,
+    "protein_g": 3.07,
+    "fiber_g": 1.86
+  },
+  {
+    "food_name": "Chicken chowmein",
+    "calories_kcal": 151.33,
+    "protein_g": 6.33,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Cheese noodle ring",
+    "calories_kcal": 133.67,
+    "protein_g": 6.22,
+    "fiber_g": 1.27
+  },
+  {
+    "food_name": "Spaghetti and cheese balls in tomato sauce",
+    "calories_kcal": 508.32,
+    "protein_g": 2.41,
+    "fiber_g": 0.59
+  },
+  {
+    "food_name": "Penne platter",
+    "calories_kcal": 177.4,
+    "protein_g": 5.04,
+    "fiber_g": 1.09
+  },
+  {
+    "food_name": "Pasta hot pot",
+    "calories_kcal": 125.17,
+    "protein_g": 5.84,
+    "fiber_g": 0.8
+  },
+  {
+    "food_name": "Chicken lasagne",
+    "calories_kcal": 187.49,
+    "protein_g": 10.45,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Fettuccine with spinach sauce",
+    "calories_kcal": 129.21,
+    "protein_g": 3.1,
+    "fiber_g": 0.77
+  },
+  {
+    "food_name": "Naan",
+    "calories_kcal": 286.45,
+    "protein_g": 8.05,
+    "fiber_g": 1.91
+  },
+  {
+    "food_name": "Bhatura",
+    "calories_kcal": 793.2,
+    "protein_g": 1.63,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Idli",
+    "calories_kcal": 137.54,
+    "protein_g": 4.64,
+    "fiber_g": 2.31
+  },
+  {
+    "food_name": "Masala dosa",
+    "calories_kcal": 164.58,
+    "protein_g": 3.29,
+    "fiber_g": 2.52
+  },
+  {
+    "food_name": "Semolina dosa (Suji/Rava dosa)",
+    "calories_kcal": 227.05,
+    "protein_g": 7.3,
+    "fiber_g": 4.04
+  },
+  {
+    "food_name": "Onion tomato uttapam",
+    "calories_kcal": 462.02,
+    "protein_g": 1.91,
+    "fiber_g": 1.26
+  },
+  {
+    "food_name": "Paneer kaathi roll",
+    "calories_kcal": 285.94,
+    "protein_g": 6.92,
+    "fiber_g": 2.4
+  },
+  {
+    "food_name": "Makki ki roti",
+    "calories_kcal": 263.97,
+    "protein_g": 3.49,
+    "fiber_g": 5.19
+  },
+  {
+    "food_name": "Washed moong dal (Dhuli moong ki dal)",
+    "calories_kcal": 50.0,
+    "protein_g": 2.68,
+    "fiber_g": 1.17
+  },
+  {
+    "food_name": "Washed urad dal (Dhuli urad ki dal)",
+    "calories_kcal": 61.32,
+    "protein_g": 2.51,
+    "fiber_g": 1.53
+  },
+  {
+    "food_name": "Split bengal gram with bottle gourd (Channa dal with ghiya/lauki)",
+    "calories_kcal": 73.25,
+    "protein_g": 2.79,
+    "fiber_g": 2.72
+  },
+  {
+    "food_name": "Dry washed urad",
+    "calories_kcal": 124.71,
+    "protein_g": 6.85,
+    "fiber_g": 4.06
+  },
+  {
+    "food_name": "Mixed dal",
+    "calories_kcal": 61.93,
+    "protein_g": 2.51,
+    "fiber_g": 1.62
+  },
+  {
+    "food_name": "Whole moong (Moong ki dal)",
+    "calories_kcal": 53.7,
+    "protein_g": 2.25,
+    "fiber_g": 2.02
+  },
+  {
+    "food_name": "Whole masoor (Masoor ki dal)",
+    "calories_kcal": 54.05,
+    "protein_g": 2.28,
+    "fiber_g": 1.98
+  },
+  {
+    "food_name": "Whole moth (Moth ki dal)",
+    "calories_kcal": 55.0,
+    "protein_g": 2.01,
+    "fiber_g": 1.85
+  },
+  {
+    "food_name": "Whole urad (Urad ki dal)",
+    "calories_kcal": 53.8,
+    "protein_g": 2.21,
+    "fiber_g": 2.32
+  },
+  {
+    "food_name": "Moti mahal dal (Urad rajmah mix dal)",
+    "calories_kcal": 103.13,
+    "protein_g": 3.93,
+    "fiber_g": 3.38
+  },
+  {
+    "food_name": "Black channa curry/Bengal gram curry (Kale chane ki curry)",
+    "calories_kcal": 140.68,
+    "protein_g": 5.67,
+    "fiber_g": 7.99
+  },
+  {
+    "food_name": "Chickpeas curry (Safed channa curry)",
+    "calories_kcal": 163.43,
+    "protein_g": 6.1,
+    "fiber_g": 4.73
+  },
+  {
+    "food_name": "Lobia curry",
+    "calories_kcal": 148.99,
+    "protein_g": 6.06,
+    "fiber_g": 4.57
+  },
+  {
+    "food_name": "Soyabean curry",
+    "calories_kcal": 163.28,
+    "protein_g": 10.43,
+    "fiber_g": 7.34
+  },
+  {
+    "food_name": "Kidney bean curry (Rajmah curry)",
+    "calories_kcal": 143.73,
+    "protein_g": 5.95,
+    "fiber_g": 5.83
+  },
+  {
+    "food_name": "Sambar",
+    "calories_kcal": 96.92,
+    "protein_g": 3.35,
+    "fiber_g": 3.52
+  },
+  {
+    "food_name": "Besan kadhi with pakodies",
+    "calories_kcal": 403.35,
+    "protein_g": 1.64,
+    "fiber_g": 0.81
+  },
+  {
+    "food_name": "Khatta channa",
+    "calories_kcal": 202.57,
+    "protein_g": 6.3,
+    "fiber_g": 5.26
+  },
+  {
+    "food_name": "Sprouted moong dal chat",
+    "calories_kcal": 32.47,
+    "protein_g": 1.35,
+    "fiber_g": 1.35
+  },
+  {
+    "food_name": "Potato cauliflower (Aloo gobhi)",
+    "calories_kcal": 106.18,
+    "protein_g": 1.9,
+    "fiber_g": 3.02
+  },
+  {
+    "food_name": "Potato capsicum (Shimla mirch aloo)",
+    "calories_kcal": 125.53,
+    "protein_g": 1.41,
+    "fiber_g": 2.02
+  },
+  {
+    "food_name": "Cabbage and peas (Pattagobhi aur matar)",
+    "calories_kcal": 63.88,
+    "protein_g": 3.24,
+    "fiber_g": 3.99
+  },
+  {
+    "food_name": "Carrot and fenugreek leaves (Gajar methi)",
+    "calories_kcal": 61.92,
+    "protein_g": 2.1,
+    "fiber_g": 4.43
+  },
+  {
+    "food_name": "Potato fenugreek (Aloo methi)",
+    "calories_kcal": 135.15,
+    "protein_g": 2.25,
+    "fiber_g": 2.93
+  },
+  {
+    "food_name": "Brinjal bhartha (Baingan ka bhartha)",
+    "calories_kcal": 65.12,
+    "protein_g": 1.38,
+    "fiber_g": 3.27
+  },
+  {
+    "food_name": "Dry potato (Sookhe aloo)",
+    "calories_kcal": 103.15,
+    "protein_g": 1.62,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Beans with coconut (Nariyal aur sem/phali; Beans thoran)",
+    "calories_kcal": 131.63,
+    "protein_g": 2.62,
+    "fiber_g": 5.59
+  },
+  {
+    "food_name": "Cauliflower with coconut (Nariyal ke saath phoolgobhi)",
+    "calories_kcal": 132.11,
+    "protein_g": 2.64,
+    "fiber_g": 5.27
+  },
+  {
+    "food_name": "Carrot and cabbage with coconut (Nariyal ke saath pattagobhi aur gajar)",
+    "calories_kcal": 106.61,
+    "protein_g": 1.82,
+    "fiber_g": 4.52
+  },
+  {
+    "food_name": "Raw turnip with coconut ",
+    "calories_kcal": 132.15,
+    "protein_g": 1.8,
+    "fiber_g": 2.79
+  },
+  {
+    "food_name": "Raw papaya with coconut (Papaya thoran)",
+    "calories_kcal": 132.75,
+    "protein_g": 1.54,
+    "fiber_g": 4.31
+  },
+  {
+    "food_name": "Stuffed okra (Bharwa bhindi)",
+    "calories_kcal": 94.34,
+    "protein_g": 2.08,
+    "fiber_g": 4.15
+  },
+  {
+    "food_name": "Stuffed round gourd (Bharwa tinde)",
+    "calories_kcal": 72.8,
+    "protein_g": 1.1,
+    "fiber_g": 2.1
+  },
+  {
+    "food_name": "Stuffed capsicum (Bharwa shimla mirch)",
+    "calories_kcal": 90.94,
+    "protein_g": 1.34,
+    "fiber_g": 2.01
+  },
+  {
+    "food_name": "Stuffed brinjal (Bharwa baingan)",
+    "calories_kcal": 93.0,
+    "protein_g": 1.53,
+    "fiber_g": 4.09
+  },
+  {
+    "food_name": "Stuffed tomatoes (Bharwa tamatar)",
+    "calories_kcal": 93.35,
+    "protein_g": 3.28,
+    "fiber_g": 2.2
+  },
+  {
+    "food_name": "Pea potato curry (Aloo matar)",
+    "calories_kcal": 100.92,
+    "protein_g": 3.48,
+    "fiber_g": 3.61
+  },
+  {
+    "food_name": "Pea paneer curry (Matar paneer)",
+    "calories_kcal": 134.83,
+    "protein_g": 6.61,
+    "fiber_g": 3.3
+  },
+  {
+    "food_name": "Pea mushroom curry (Matar mushroom)",
+    "calories_kcal": 93.3,
+    "protein_g": 3.87,
+    "fiber_g": 3.86
+  },
+  {
+    "food_name": "Pea curry (Matar ki sabzi)",
+    "calories_kcal": 102.99,
+    "protein_g": 4.51,
+    "fiber_g": 4.44
+  },
+  {
+    "food_name": "Pea vadi curry",
+    "calories_kcal": 101.95,
+    "protein_g": 4.64,
+    "fiber_g": 4.28
+  },
+  {
+    "food_name": "Paneer curry",
+    "calories_kcal": 176.52,
+    "protein_g": 7.8,
+    "fiber_g": 1.4
+  },
+  {
+    "food_name": "Lotus stem curry (Kamal kakdi curry)",
+    "calories_kcal": 110.34,
+    "protein_g": 1.53,
+    "fiber_g": 3.14
+  },
+  {
+    "food_name": "Gravy for kofta",
+    "calories_kcal": 125.59,
+    "protein_g": 1.75,
+    "fiber_g": 1.96
+  },
+  {
+    "food_name": "Pea kofta curry (Matar kofta curry)",
+    "calories_kcal": 595.66,
+    "protein_g": 2.01,
+    "fiber_g": 1.7
+  },
+  {
+    "food_name": "Spinach kofta curry (Palak kofta curry)",
+    "calories_kcal": 571.78,
+    "protein_g": 1.09,
+    "fiber_g": 0.92
+  },
+  {
+    "food_name": "Paneer kofta curry",
+    "calories_kcal": 670.91,
+    "protein_g": 2.39,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Lotus stem kofta curry (Kamal kakdi kofta curry)",
+    "calories_kcal": 633.56,
+    "protein_g": 0.96,
+    "fiber_g": 1.01
+  },
+  {
+    "food_name": "Raw banana kofta curry (Kela kofta curry)",
+    "calories_kcal": 627.27,
+    "protein_g": 0.62,
+    "fiber_g": 0.59
+  },
+  {
+    "food_name": "Cauliflower kofta curry (Phoolgobhi kofta curry)",
+    "calories_kcal": 641.1,
+    "protein_g": 1.04,
+    "fiber_g": 1.0
+  },
+  {
+    "food_name": "Cabbage kofta curry (Pattagobhi kofta curry)",
+    "calories_kcal": 639.81,
+    "protein_g": 0.98,
+    "fiber_g": 0.9
+  },
+  {
+    "food_name": "Ghiya/Lauki Kofta Curry",
+    "calories_kcal": 638.71,
+    "protein_g": 0.89,
+    "fiber_g": 0.83
+  },
+  {
+    "food_name": "Spinach paneer kofta curry (Palak paneer kofta curry)",
+    "calories_kcal": 606.03,
+    "protein_g": 1.43,
+    "fiber_g": 0.75
+  },
+  {
+    "food_name": "Vegetarian egg kofta curry",
+    "calories_kcal": 627.41,
+    "protein_g": 1.33,
+    "fiber_g": 0.64
+  },
+  {
+    "food_name": "Baked vegetables",
+    "calories_kcal": 88.99,
+    "protein_g": 3.67,
+    "fiber_g": 2.34
+  },
+  {
+    "food_name": "Cauliflower musallam (Phoolgobhi musallam)",
+    "calories_kcal": 58.83,
+    "protein_g": 1.89,
+    "fiber_g": 3.06
+  },
+  {
+    "food_name": "Baked vegetables with spinach ",
+    "calories_kcal": 77.79,
+    "protein_g": 3.22,
+    "fiber_g": 2.33
+  },
+  {
+    "food_name": "Baked potato with skin ",
+    "calories_kcal": 135.77,
+    "protein_g": 3.43,
+    "fiber_g": 1.2
+  },
+  {
+    "food_name": "Shepherd's pie (vegetarian)",
+    "calories_kcal": 135.63,
+    "protein_g": 5.04,
+    "fiber_g": 2.23
+  },
+  {
+    "food_name": "Baked brinjal in tomato sauce",
+    "calories_kcal": 38.63,
+    "protein_g": 1.58,
+    "fiber_g": 2.34
+  },
+  {
+    "food_name": "Dum aloo",
+    "calories_kcal": 682.33,
+    "protein_g": 0.7,
+    "fiber_g": 0.68
+  },
+  {
+    "food_name": "Spinach paneer (Palak paneer)",
+    "calories_kcal": 77.68,
+    "protein_g": 4.03,
+    "fiber_g": 1.91
+  },
+  {
+    "food_name": "Methi chaman",
+    "calories_kcal": 475.62,
+    "protein_g": 1.54,
+    "fiber_g": 0.53
+  },
+  {
+    "food_name": "Sarson ka saag",
+    "calories_kcal": 87.84,
+    "protein_g": 3.0,
+    "fiber_g": 3.69
+  },
+  {
+    "food_name": "Jackfruit sabzi (Kathal ki sabzi)",
+    "calories_kcal": 625.4,
+    "protein_g": 0.69,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Avial",
+    "calories_kcal": 124.56,
+    "protein_g": 2.46,
+    "fiber_g": 5.44
+  },
+  {
+    "food_name": "Al yakhani",
+    "calories_kcal": 147.54,
+    "protein_g": 2.86,
+    "fiber_g": 1.27
+  },
+  {
+    "food_name": "Shahi paneer",
+    "calories_kcal": 156.5,
+    "protein_g": 5.06,
+    "fiber_g": 1.4
+  },
+  {
+    "food_name": "Paneer in butter sauce",
+    "calories_kcal": 145.61,
+    "protein_g": 6.99,
+    "fiber_g": 1.5
+  },
+  {
+    "food_name": "Methi malai paneer",
+    "calories_kcal": 194.98,
+    "protein_g": 7.34,
+    "fiber_g": 1.47
+  },
+  {
+    "food_name": "Chilli paneer",
+    "calories_kcal": 777.51,
+    "protein_g": 2.1,
+    "fiber_g": 0.5
+  },
+  {
+    "food_name": "Paneer makhana korma",
+    "calories_kcal": 775.82,
+    "protein_g": 3.24,
+    "fiber_g": 0.21
+  },
+  {
+    "food_name": "Kadhai Paneer",
+    "calories_kcal": 107.99,
+    "protein_g": 4.33,
+    "fiber_g": 2.07
+  },
+  {
+    "food_name": "Roghan josh",
+    "calories_kcal": 139.59,
+    "protein_g": 9.56,
+    "fiber_g": 2.08
+  },
+  {
+    "food_name": "Spinach mutton (Palak mutton)",
+    "calories_kcal": 80.32,
+    "protein_g": 5.74,
+    "fiber_g": 2.23
+  },
+  {
+    "food_name": "Pea keema curry (Matar keema ki sabzi)",
+    "calories_kcal": 133.0,
+    "protein_g": 8.43,
+    "fiber_g": 2.96
+  },
+  {
+    "food_name": "Keema kofta curry",
+    "calories_kcal": 154.45,
+    "protein_g": 9.77,
+    "fiber_g": 1.51
+  },
+  {
+    "food_name": "Kashmiri mutton koftas (Gushtaba)",
+    "calories_kcal": 97.42,
+    "protein_g": 6.33,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Mutton yakhni",
+    "calories_kcal": 104.13,
+    "protein_g": 8.27,
+    "fiber_g": 0.67
+  },
+  {
+    "food_name": "Chicken yakhni",
+    "calories_kcal": 99.0,
+    "protein_g": 10.66,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Mutton do piaza",
+    "calories_kcal": 183.3,
+    "protein_g": 9.39,
+    "fiber_g": 1.93
+  },
+  {
+    "food_name": "Mutton chops",
+    "calories_kcal": 663.64,
+    "protein_g": 4.03,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Shammi kebab",
+    "calories_kcal": 685.69,
+    "protein_g": 4.52,
+    "fiber_g": 1.05
+  },
+  {
+    "food_name": "Scotch egg",
+    "calories_kcal": 676.89,
+    "protein_g": 4.05,
+    "fiber_g": 0.36
+  },
+  {
+    "food_name": "Shepherd's pie (with minced meat)",
+    "calories_kcal": 142.78,
+    "protein_g": 7.45,
+    "fiber_g": 1.05
+  },
+  {
+    "food_name": "Chicken curry",
+    "calories_kcal": 129.22,
+    "protein_g": 11.79,
+    "fiber_g": 1.41
+  },
+  {
+    "food_name": "Tandoori chicken",
+    "calories_kcal": 145.2,
+    "protein_g": 16.26,
+    "fiber_g": 0.5
+  },
+  {
+    "food_name": "Butter chicken",
+    "calories_kcal": 137.0,
+    "protein_g": 10.92,
+    "fiber_g": 1.32
+  },
+  {
+    "food_name": "Chicken kebab",
+    "calories_kcal": 729.41,
+    "protein_g": 3.71,
+    "fiber_g": 0.21
+  },
+  {
+    "food_name": "Chilli chicken",
+    "calories_kcal": 198.83,
+    "protein_g": 9.57,
+    "fiber_g": 0.99
+  },
+  {
+    "food_name": "Fried chicken with tomato sauce (Fried chicken tamatar ki chutney kay saath)",
+    "calories_kcal": 125.03,
+    "protein_g": 11.48,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Fish curry (Machli curry)",
+    "calories_kcal": 111.13,
+    "protein_g": 8.76,
+    "fiber_g": 1.89
+  },
+  {
+    "food_name": "Fried fish (Indian style) (Tali hui machli)",
+    "calories_kcal": 658.54,
+    "protein_g": 4.35,
+    "fiber_g": 0.61
+  },
+  {
+    "food_name": "Fried fish and Chips (English Style) (Tali hui machli aur chips)",
+    "calories_kcal": 651.75,
+    "protein_g": 3.36,
+    "fiber_g": 0.29
+  },
+  {
+    "food_name": "Tomato fish",
+    "calories_kcal": 489.79,
+    "protein_g": 2.39,
+    "fiber_g": 0.72
+  },
+  {
+    "food_name": "Baked fish with cheese sauce",
+    "calories_kcal": 113.96,
+    "protein_g": 8.64,
+    "fiber_g": 0.08
+  },
+  {
+    "food_name": "Fish tikka",
+    "calories_kcal": 117.33,
+    "protein_g": 16.0,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Tandoori fish",
+    "calories_kcal": 95.98,
+    "protein_g": 11.19,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Paneer, apple and pineapple salad",
+    "calories_kcal": 95.08,
+    "protein_g": 3.88,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Russian salad",
+    "calories_kcal": 114.83,
+    "protein_g": 4.26,
+    "fiber_g": 2.57
+  },
+  {
+    "food_name": "Pasta salad",
+    "calories_kcal": 190.36,
+    "protein_g": 4.15,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Deviled egg",
+    "calories_kcal": 98.56,
+    "protein_g": 4.97,
+    "fiber_g": 1.15
+  },
+  {
+    "food_name": "Hawain salad",
+    "calories_kcal": 175.23,
+    "protein_g": 4.27,
+    "fiber_g": 3.93
+  },
+  {
+    "food_name": "Mixed pulse and vegetable salad",
+    "calories_kcal": 83.12,
+    "protein_g": 4.74,
+    "fiber_g": 2.96
+  },
+  {
+    "food_name": "Sprouted moong salad ",
+    "calories_kcal": 37.81,
+    "protein_g": 2.29,
+    "fiber_g": 0.95
+  },
+  {
+    "food_name": "Tossed salad",
+    "calories_kcal": 62.96,
+    "protein_g": 1.02,
+    "fiber_g": 2.15
+  },
+  {
+    "food_name": "Mixed vegetable salad with curd sauce",
+    "calories_kcal": 60.28,
+    "protein_g": 4.23,
+    "fiber_g": 3.79
+  },
+  {
+    "food_name": "Potato salad (Aloo ka salaad)",
+    "calories_kcal": 89.91,
+    "protein_g": 1.4,
+    "fiber_g": 1.32
+  },
+  {
+    "food_name": "Waldroff salad",
+    "calories_kcal": 141.75,
+    "protein_g": 1.47,
+    "fiber_g": 1.87
+  },
+  {
+    "food_name": "Coleslaw",
+    "calories_kcal": 76.71,
+    "protein_g": 1.24,
+    "fiber_g": 2.34
+  },
+  {
+    "food_name": "Fruit salad (Phalon ka salaad)",
+    "calories_kcal": 78.14,
+    "protein_g": 0.91,
+    "fiber_g": 1.58
+  },
+  {
+    "food_name": "Tomato onion raita (Tamatar aur pyaaz ka raita)",
+    "calories_kcal": 59.0,
+    "protein_g": 3.74,
+    "fiber_g": 0.97
+  },
+  {
+    "food_name": "Peanut raita (Mungfali ka raita)",
+    "calories_kcal": 150.39,
+    "protein_g": 8.59,
+    "fiber_g": 1.89
+  },
+  {
+    "food_name": "Sprouted moong raita ",
+    "calories_kcal": 60.89,
+    "protein_g": 4.62,
+    "fiber_g": 0.16
+  },
+  {
+    "food_name": "Bottle gourd raita (Ghiya/Lauki ka raita)",
+    "calories_kcal": 56.31,
+    "protein_g": 3.98,
+    "fiber_g": 0.85
+  },
+  {
+    "food_name": "Cucumber raita (Kheere ka raita)",
+    "calories_kcal": 59.13,
+    "protein_g": 4.04,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Carrot and spinach raita (Gajar aur palak ka raita)",
+    "calories_kcal": 56.83,
+    "protein_g": 4.0,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Mint raita (Pudinay ka raita)",
+    "calories_kcal": 77.59,
+    "protein_g": 5.64,
+    "fiber_g": 0.34
+  },
+  {
+    "food_name": "Potato raita (Aloo ka raita)",
+    "calories_kcal": 75.38,
+    "protein_g": 4.22,
+    "fiber_g": 0.75
+  },
+  {
+    "food_name": "Boondi raita",
+    "calories_kcal": 687.72,
+    "protein_g": 2.19,
+    "fiber_g": 0.46
+  },
+  {
+    "food_name": "Sweet raita (Meetha raita)",
+    "calories_kcal": 99.24,
+    "protein_g": 3.24,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Dahi vadas/Dahi bhalla",
+    "calories_kcal": 667.73,
+    "protein_g": 2.96,
+    "fiber_g": 0.97
+  },
+  {
+    "food_name": "Gunjia",
+    "calories_kcal": 667.34,
+    "protein_g": 2.98,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Saunth/Sonth chutney with tamarind/imli",
+    "calories_kcal": 141.53,
+    "protein_g": 1.01,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Rice kheer (Chawal ki kheer)",
+    "calories_kcal": 75.03,
+    "protein_g": 2.3,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Makhana kheer",
+    "calories_kcal": 107.85,
+    "protein_g": 3.31,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Vermicelli kheer (Semiya/Seviyan ki kheer)",
+    "calories_kcal": 120.07,
+    "protein_g": 3.35,
+    "fiber_g": 0.5
+  },
+  {
+    "food_name": "Semolina kheer (Suji/Rava kheer)",
+    "calories_kcal": 113.21,
+    "protein_g": 3.43,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Paneer kheer",
+    "calories_kcal": 105.31,
+    "protein_g": 4.53,
+    "fiber_g": 0.07
+  },
+  {
+    "food_name": "Cabbage kheer (Pattagobhi ki kheer)",
+    "calories_kcal": 83.51,
+    "protein_g": 2.87,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Carrot kheer (Gajar ki kheer)",
+    "calories_kcal": 85.35,
+    "protein_g": 2.81,
+    "fiber_g": 0.73
+  },
+  {
+    "food_name": "Cauliflower kheer (Phoolgobhi ki kheer)",
+    "calories_kcal": 81.95,
+    "protein_g": 3.04,
+    "fiber_g": 0.55
+  },
+  {
+    "food_name": "Moong dal kheer",
+    "calories_kcal": 77.16,
+    "protein_g": 2.95,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Phirni",
+    "calories_kcal": 116.12,
+    "protein_g": 3.49,
+    "fiber_g": 0.36
+  },
+  {
+    "food_name": "Semolina halwa (Suji ka halwa)",
+    "calories_kcal": 225.65,
+    "protein_g": 2.16,
+    "fiber_g": 1.86
+  },
+  {
+    "food_name": "Shahi suji halwa",
+    "calories_kcal": 382.34,
+    "protein_g": 3.48,
+    "fiber_g": 2.96
+  },
+  {
+    "food_name": "Carrot halwa (Gajar ka halwa)",
+    "calories_kcal": 172.64,
+    "protein_g": 3.11,
+    "fiber_g": 2.65
+  },
+  {
+    "food_name": "Egg halwa (Ande ka halwa)",
+    "calories_kcal": 299.74,
+    "protein_g": 7.85,
+    "fiber_g": 0.49
+  },
+  {
+    "food_name": "Potato halwa (Aloo ka halwa)",
+    "calories_kcal": 151.66,
+    "protein_g": 1.53,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Pumpkin halwa (Kaddu ka halwa)",
+    "calories_kcal": 190.27,
+    "protein_g": 1.33,
+    "fiber_g": 2.97
+  },
+  {
+    "food_name": "Moong dal halwa",
+    "calories_kcal": 349.8,
+    "protein_g": 8.35,
+    "fiber_g": 2.65
+  },
+  {
+    "food_name": "Caramel custard (steamed)",
+    "calories_kcal": 121.58,
+    "protein_g": 4.97,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Baked custard",
+    "calories_kcal": 106.53,
+    "protein_g": 5.41,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Soft Custard (stirred)",
+    "calories_kcal": 109.18,
+    "protein_g": 5.01,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Chocolate ice cream",
+    "calories_kcal": 177.7,
+    "protein_g": 4.47,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Mango ice cream",
+    "calories_kcal": 125.69,
+    "protein_g": 3.4,
+    "fiber_g": 0.52
+  },
+  {
+    "food_name": "Fruit Ice cream (Phalon ka Ice cream)",
+    "calories_kcal": 171.46,
+    "protein_g": 4.37,
+    "fiber_g": 0.33
+  },
+  {
+    "food_name": "Caramel ice cream",
+    "calories_kcal": 173.52,
+    "protein_g": 4.31,
+    "fiber_g": 0.08
+  },
+  {
+    "food_name": "Lemon souffle",
+    "calories_kcal": 168.51,
+    "protein_g": 6.95,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Orange souffle",
+    "calories_kcal": 168.28,
+    "protein_g": 6.8,
+    "fiber_g": 0.22
+  },
+  {
+    "food_name": "Vanilla souffle",
+    "calories_kcal": 187.85,
+    "protein_g": 7.71,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Chocolate souffle",
+    "calories_kcal": 189.32,
+    "protein_g": 7.88,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Pineapple souffle ",
+    "calories_kcal": 196.14,
+    "protein_g": 8.06,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Apple mousse",
+    "calories_kcal": 106.92,
+    "protein_g": 4.21,
+    "fiber_g": 1.6
+  },
+  {
+    "food_name": "Rich chocolate mousse",
+    "calories_kcal": 188.26,
+    "protein_g": 7.96,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Mango mousse",
+    "calories_kcal": 124.98,
+    "protein_g": 3.21,
+    "fiber_g": 0.88
+  },
+  {
+    "food_name": "Orange and pineapple cream",
+    "calories_kcal": 101.18,
+    "protein_g": 1.44,
+    "fiber_g": 1.03
+  },
+  {
+    "food_name": "Charlotte rousse",
+    "calories_kcal": 188.29,
+    "protein_g": 3.95,
+    "fiber_g": 1.01
+  },
+  {
+    "food_name": "Triffle pudding",
+    "calories_kcal": 116.97,
+    "protein_g": 2.93,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Snow flakes pudding",
+    "calories_kcal": 95.21,
+    "protein_g": 4.67,
+    "fiber_g": 0.03
+  },
+  {
+    "food_name": "Kulfi",
+    "calories_kcal": 98.43,
+    "protein_g": 3.21,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Steamed orange pudding",
+    "calories_kcal": 278.03,
+    "protein_g": 2.34,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Meringue and rice pudding",
+    "calories_kcal": 112.93,
+    "protein_g": 4.84,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Cheese pudding",
+    "calories_kcal": 285.01,
+    "protein_g": 11.29,
+    "fiber_g": 0.05
+  },
+  {
+    "food_name": "Chocolate pudding",
+    "calories_kcal": 211.96,
+    "protein_g": 3.55,
+    "fiber_g": 0.53
+  },
+  {
+    "food_name": "Bread and butter pudding ",
+    "calories_kcal": 167.94,
+    "protein_g": 5.59,
+    "fiber_g": 0.98
+  },
+  {
+    "food_name": "Queen of pudding",
+    "calories_kcal": 132.92,
+    "protein_g": 5.51,
+    "fiber_g": 0.27
+  },
+  {
+    "food_name": "Pineapple upside down pudding",
+    "calories_kcal": 257.73,
+    "protein_g": 3.15,
+    "fiber_g": 0.8
+  },
+  {
+    "food_name": "Date and nut pie",
+    "calories_kcal": 322.42,
+    "protein_g": 3.93,
+    "fiber_g": 4.13
+  },
+  {
+    "food_name": "Stewed apple with custard",
+    "calories_kcal": 92.87,
+    "protein_g": 1.27,
+    "fiber_g": 1.01
+  },
+  {
+    "food_name": "Apple snowballs",
+    "calories_kcal": 101.51,
+    "protein_g": 0.86,
+    "fiber_g": 1.25
+  },
+  {
+    "food_name": "Hot orange souffle",
+    "calories_kcal": 179.97,
+    "protein_g": 6.87,
+    "fiber_g": 0.29
+  },
+  {
+    "food_name": "Hot chocolate souffle",
+    "calories_kcal": 226.09,
+    "protein_g": 6.7,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Hot vanilla souffle",
+    "calories_kcal": 192.93,
+    "protein_g": 6.87,
+    "fiber_g": 0.13
+  },
+  {
+    "food_name": "Plain burfi (Burfi)",
+    "calories_kcal": 408.32,
+    "protein_g": 9.82,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Coconut burfi (Nariyal ki burfi)",
+    "calories_kcal": 467.64,
+    "protein_g": 8.81,
+    "fiber_g": 3.5
+  },
+  {
+    "food_name": "Bottle gourd burfi (Ghiya/Lauki burfi)",
+    "calories_kcal": 275.96,
+    "protein_g": 5.86,
+    "fiber_g": 0.73
+  },
+  {
+    "food_name": "Chocolate burfi",
+    "calories_kcal": 339.33,
+    "protein_g": 13.0,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cashewnut burfi (Kaju burfi/Kaju katli)",
+    "calories_kcal": 421.74,
+    "protein_g": 5.48,
+    "fiber_g": 1.12
+  },
+  {
+    "food_name": "Gram flour burfi (Besan burfi)",
+    "calories_kcal": 421.79,
+    "protein_g": 11.19,
+    "fiber_g": 3.41
+  },
+  {
+    "food_name": "Semolina ladoo with khoya (Suji/Rava aur khoye ke ladoo )",
+    "calories_kcal": 428.71,
+    "protein_g": 6.71,
+    "fiber_g": 4.68
+  },
+  {
+    "food_name": "Semolina ladoo with coconut (Suji/Rava aur nariyal ke ladoo )",
+    "calories_kcal": 464.43,
+    "protein_g": 5.68,
+    "fiber_g": 6.69
+  },
+  {
+    "food_name": "Gram flour ladoo (Besan ladoo)",
+    "calories_kcal": 476.91,
+    "protein_g": 8.93,
+    "fiber_g": 4.43
+  },
+  {
+    "food_name": "Sesame ladoo (Til ke ladoo)",
+    "calories_kcal": 396.96,
+    "protein_g": 10.7,
+    "fiber_g": 7.72
+  },
+  {
+    "food_name": "Chenna murki",
+    "calories_kcal": 252.69,
+    "protein_g": 10.46,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Milk cake",
+    "calories_kcal": 127.41,
+    "protein_g": 3.01,
+    "fiber_g": 0.06
+  },
+  {
+    "food_name": "Ghujia/Lavang latika",
+    "calories_kcal": 768.98,
+    "protein_g": 1.86,
+    "fiber_g": 0.52
+  },
+  {
+    "food_name": "Gulab Jamun with khoya",
+    "calories_kcal": 586.06,
+    "protein_g": 2.03,
+    "fiber_g": 0.07
+  },
+  {
+    "food_name": "Mal pua",
+    "calories_kcal": 566.68,
+    "protein_g": 1.71,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Shahi tukre",
+    "calories_kcal": 189.81,
+    "protein_g": 2.76,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Potato pakora/pakoda (Aloo pakoda)",
+    "calories_kcal": 677.19,
+    "protein_g": 1.9,
+    "fiber_g": 1.03
+  },
+  {
+    "food_name": "Onion pakora/pakoda (Pyaaz ke pakode)",
+    "calories_kcal": 674.61,
+    "protein_g": 1.9,
+    "fiber_g": 1.11
+  },
+  {
+    "food_name": "Cauliflower pakora/pakoda (Phoolgobhi ke pakode)",
+    "calories_kcal": 671.63,
+    "protein_g": 1.98,
+    "fiber_g": 1.26
+  },
+  {
+    "food_name": "Mixed vegetable pakora/pakoda",
+    "calories_kcal": 673.81,
+    "protein_g": 1.94,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Spinach pakora/pakoda (Palak pakoda)",
+    "calories_kcal": 712.62,
+    "protein_g": 1.96,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Methi pakora/pakoda (Methi ke pakode)",
+    "calories_kcal": 713.25,
+    "protein_g": 2.06,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Egg pakora/pakoda (Ande ke pakode)",
+    "calories_kcal": 710.51,
+    "protein_g": 2.83,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Bread pakora/pakoda",
+    "calories_kcal": 710.99,
+    "protein_g": 2.57,
+    "fiber_g": 1.11
+  },
+  {
+    "food_name": "Paneer pakora/pakoda",
+    "calories_kcal": 718.12,
+    "protein_g": 3.27,
+    "fiber_g": 0.89
+  },
+  {
+    "food_name": "Potato bonda (Aloo bonda)",
+    "calories_kcal": 632.84,
+    "protein_g": 1.09,
+    "fiber_g": 0.83
+  },
+  {
+    "food_name": "Potato samosa (Aloo ka samosa)",
+    "calories_kcal": 577.39,
+    "protein_g": 1.71,
+    "fiber_g": 1.19
+  },
+  {
+    "food_name": "Minced meat samosa (Keema ka samosa)",
+    "calories_kcal": 620.99,
+    "protein_g": 4.43,
+    "fiber_g": 0.39
+  },
+  {
+    "food_name": "Paneer and pea samosa (Paneer matar ka samosa)",
+    "calories_kcal": 623.81,
+    "protein_g": 4.02,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Mathri",
+    "calories_kcal": 805.12,
+    "protein_g": 1.75,
+    "fiber_g": 0.6
+  },
+  {
+    "food_name": "Khasta kachori",
+    "calories_kcal": 712.73,
+    "protein_g": 2.51,
+    "fiber_g": 0.97
+  },
+  {
+    "food_name": "Vegetable cutlet",
+    "calories_kcal": 665.45,
+    "protein_g": 1.25,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Flattened rice cutlet (Chirwa cutlet/Chivda cutlet/Poha cutlet)",
+    "calories_kcal": 701.71,
+    "protein_g": 1.76,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Peanut cutlet (Mungfali ke cutlet)",
+    "calories_kcal": 698.77,
+    "protein_g": 2.63,
+    "fiber_g": 1.21
+  },
+  {
+    "food_name": "Fish cutlet (Machli ka cutlet)",
+    "calories_kcal": 654.64,
+    "protein_g": 2.77,
+    "fiber_g": 0.54
+  },
+  {
+    "food_name": "Paneer potato cutlet (Paneer aloo cutlet)",
+    "calories_kcal": 672.94,
+    "protein_g": 2.47,
+    "fiber_g": 0.41
+  },
+  {
+    "food_name": "Spinach chickpeas cutlet (Palak channa dal cutlet)",
+    "calories_kcal": 688.03,
+    "protein_g": 1.44,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Cheese toast",
+    "calories_kcal": 785.37,
+    "protein_g": 1.98,
+    "fiber_g": 0.31
+  },
+  {
+    "food_name": "Vegetable burger",
+    "calories_kcal": 519.93,
+    "protein_g": 3.26,
+    "fiber_g": 1.7
+  },
+  {
+    "food_name": "Cheese pizza",
+    "calories_kcal": 249.5,
+    "protein_g": 5.79,
+    "fiber_g": 1.95
+  },
+  {
+    "food_name": "Vegetable seekh kebab",
+    "calories_kcal": 690.73,
+    "protein_g": 1.57,
+    "fiber_g": 0.59
+  },
+  {
+    "food_name": "Masala vada",
+    "calories_kcal": 826.02,
+    "protein_g": 1.69,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Peanut sago vada (Sabudana mungfali vada)",
+    "calories_kcal": 749.89,
+    "protein_g": 1.01,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Vegeterian scotch egg",
+    "calories_kcal": 681.67,
+    "protein_g": 2.16,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Paneer shaslik/tikka",
+    "calories_kcal": 93.85,
+    "protein_g": 5.11,
+    "fiber_g": 1.23
+  },
+  {
+    "food_name": "Peanut brittle (Moongfali ki chikki)",
+    "calories_kcal": 320.46,
+    "protein_g": 6.94,
+    "fiber_g": 2.63
+  },
+  {
+    "food_name": "Spring roll",
+    "calories_kcal": 623.87,
+    "protein_g": 1.81,
+    "fiber_g": 0.67
+  },
+  {
+    "food_name": "Dry mango chutney (Sookhe aam ki chutney)",
+    "calories_kcal": 298.13,
+    "protein_g": 2.43,
+    "fiber_g": 3.74
+  },
+  {
+    "food_name": "Peanut chutney (Mungfali ki chutney)",
+    "calories_kcal": 258.37,
+    "protein_g": 11.8,
+    "fiber_g": 5.73
+  },
+  {
+    "food_name": "Coconut chutney (Nariyal ki chutney)",
+    "calories_kcal": 265.92,
+    "protein_g": 3.59,
+    "fiber_g": 6.73
+  },
+  {
+    "food_name": "Mint and coriander chutney (Pudinay aur dhaniye ki chutney)",
+    "calories_kcal": 102.6,
+    "protein_g": 2.81,
+    "fiber_g": 4.33
+  },
+  {
+    "food_name": "Custard tart",
+    "calories_kcal": 225.6,
+    "protein_g": 3.72,
+    "fiber_g": 0.91
+  },
+  {
+    "food_name": "Lemon tart",
+    "calories_kcal": 303.35,
+    "protein_g": 6.12,
+    "fiber_g": 0.81
+  },
+  {
+    "food_name": "Jam tart",
+    "calories_kcal": 360.72,
+    "protein_g": 4.42,
+    "fiber_g": 1.14
+  },
+  {
+    "food_name": "Orange cream tart",
+    "calories_kcal": 197.16,
+    "protein_g": 2.58,
+    "fiber_g": 0.64
+  },
+  {
+    "food_name": "Pineapple tart",
+    "calories_kcal": 195.4,
+    "protein_g": 2.29,
+    "fiber_g": 0.87
+  },
+  {
+    "food_name": "Cheese and mushroom tart",
+    "calories_kcal": 246.1,
+    "protein_g": 5.51,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Cottage cheese pie",
+    "calories_kcal": 238.98,
+    "protein_g": 7.45,
+    "fiber_g": 2.21
+  },
+  {
+    "food_name": "Minced meat pie",
+    "calories_kcal": 221.55,
+    "protein_g": 7.38,
+    "fiber_g": 2.33
+  },
+  {
+    "food_name": "Apple cinnamon pie",
+    "calories_kcal": 258.73,
+    "protein_g": 3.35,
+    "fiber_g": 1.77
+  },
+  {
+    "food_name": "Lemon meringue pie",
+    "calories_kcal": 224.43,
+    "protein_g": 3.88,
+    "fiber_g": 0.44
+  },
+  {
+    "food_name": "Chocolate meringue pie",
+    "calories_kcal": 214.76,
+    "protein_g": 4.98,
+    "fiber_g": 0.37
+  },
+  {
+    "food_name": "Cream puffs",
+    "calories_kcal": 221.33,
+    "protein_g": 4.7,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Chocolate eclairs",
+    "calories_kcal": 239.42,
+    "protein_g": 4.24,
+    "fiber_g": 0.33
+  },
+  {
+    "food_name": "Cheese balls",
+    "calories_kcal": 681.28,
+    "protein_g": 2.21,
+    "fiber_g": 0.18
+  },
+  {
+    "food_name": "Minced meat patties",
+    "calories_kcal": 265.72,
+    "protein_g": 6.88,
+    "fiber_g": 0.77
+  },
+  {
+    "food_name": "Cheese patties",
+    "calories_kcal": 324.01,
+    "protein_g": 7.38,
+    "fiber_g": 1.24
+  },
+  {
+    "food_name": "Hot cheese souffle",
+    "calories_kcal": 177.1,
+    "protein_g": 9.18,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Hot potato souffle",
+    "calories_kcal": 125.64,
+    "protein_g": 5.51,
+    "fiber_g": 0.66
+  },
+  {
+    "food_name": "Hot fish souffle",
+    "calories_kcal": 142.92,
+    "protein_g": 11.23,
+    "fiber_g": 0.1
+  },
+  {
+    "food_name": "Hot spinach souffle",
+    "calories_kcal": 104.25,
+    "protein_g": 5.43,
+    "fiber_g": 0.99
+  },
+  {
+    "food_name": "Plain cream cake",
+    "calories_kcal": 353.94,
+    "protein_g": 6.18,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Apple cake (Seb ka cake)",
+    "calories_kcal": 290.08,
+    "protein_g": 4.94,
+    "fiber_g": 1.22
+  },
+  {
+    "food_name": "Marble cake",
+    "calories_kcal": 354.11,
+    "protein_g": 6.3,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Chocolate cake",
+    "calories_kcal": 335.61,
+    "protein_g": 6.01,
+    "fiber_g": 0.64
+  },
+  {
+    "food_name": "Orange cake",
+    "calories_kcal": 357.61,
+    "protein_g": 6.1,
+    "fiber_g": 0.83
+  },
+  {
+    "food_name": "Fruit Loaf ",
+    "calories_kcal": 324.19,
+    "protein_g": 5.36,
+    "fiber_g": 0.87
+  },
+  {
+    "food_name": "Banana cake (Kele ka cake)",
+    "calories_kcal": 389.51,
+    "protein_g": 5.77,
+    "fiber_g": 1.14
+  },
+  {
+    "food_name": "Chocolate chiffon cake",
+    "calories_kcal": 311.71,
+    "protein_g": 5.76,
+    "fiber_g": 0.7
+  },
+  {
+    "food_name": "Christmas cake",
+    "calories_kcal": 372.95,
+    "protein_g": 5.49,
+    "fiber_g": 1.49
+  },
+  {
+    "food_name": "Strawberry and vanilla cake with butter icing",
+    "calories_kcal": 370.54,
+    "protein_g": 3.89,
+    "fiber_g": 0.79
+  },
+  {
+    "food_name": "Eggless cake",
+    "calories_kcal": 318.08,
+    "protein_g": 8.12,
+    "fiber_g": 0.68
+  },
+  {
+    "food_name": "Swiss roll",
+    "calories_kcal": 251.87,
+    "protein_g": 7.3,
+    "fiber_g": 0.55
+  },
+  {
+    "food_name": "Pineapple pastry ",
+    "calories_kcal": 208.21,
+    "protein_g": 6.06,
+    "fiber_g": 0.72
+  },
+  {
+    "food_name": "Black forest pastry",
+    "calories_kcal": 233.55,
+    "protein_g": 6.09,
+    "fiber_g": 0.54
+  },
+  {
+    "food_name": "Coconut finger",
+    "calories_kcal": 274.86,
+    "protein_g": 7.09,
+    "fiber_g": 1.87
+  },
+  {
+    "food_name": "Pineapple cake ",
+    "calories_kcal": 195.57,
+    "protein_g": 5.01,
+    "fiber_g": 0.76
+  },
+  {
+    "food_name": "Chocolate walnut cookies (Chocolate aur akhrot ke cookies)",
+    "calories_kcal": 424.8,
+    "protein_g": 6.56,
+    "fiber_g": 1.54
+  },
+  {
+    "food_name": "Chocolate chip cookies",
+    "calories_kcal": 425.29,
+    "protein_g": 5.79,
+    "fiber_g": 1.05
+  },
+  {
+    "food_name": "Sweet plain biscuit",
+    "calories_kcal": 380.76,
+    "protein_g": 5.86,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Chocolate biscuit",
+    "calories_kcal": 379.76,
+    "protein_g": 5.88,
+    "fiber_g": 1.01
+  },
+  {
+    "food_name": "Coconut biscuit (Nariyal ke biscuit)",
+    "calories_kcal": 434.98,
+    "protein_g": 5.78,
+    "fiber_g": 3.64
+  },
+  {
+    "food_name": "Sweet and salty biscuit (Meethay aur namkeen biscuit)",
+    "calories_kcal": 407.96,
+    "protein_g": 6.15,
+    "fiber_g": 1.68
+  },
+  {
+    "food_name": "Peanut biscuit",
+    "calories_kcal": 401.05,
+    "protein_g": 8.45,
+    "fiber_g": 2.48
+  },
+  {
+    "food_name": "Pin wheel biscuit",
+    "calories_kcal": 404.6,
+    "protein_g": 5.4,
+    "fiber_g": 1.16
+  },
+  {
+    "food_name": "Saffron biscuit (Kesar biscuit)",
+    "calories_kcal": 458.61,
+    "protein_g": 6.05,
+    "fiber_g": 1.9
+  },
+  {
+    "food_name": "Masala biscuit",
+    "calories_kcal": 393.64,
+    "protein_g": 6.06,
+    "fiber_g": 2.14
+  },
+  {
+    "food_name": "Ice box cookies",
+    "calories_kcal": 374.24,
+    "protein_g": 5.7,
+    "fiber_g": 1.28
+  },
+  {
+    "food_name": "Ginger bread man",
+    "calories_kcal": 365.0,
+    "protein_g": 6.61,
+    "fiber_g": 1.6
+  },
+  {
+    "food_name": "Danish cookies",
+    "calories_kcal": 475.33,
+    "protein_g": 5.33,
+    "fiber_g": 1.37
+  },
+  {
+    "food_name": "Short bread cookies",
+    "calories_kcal": 443.09,
+    "protein_g": 6.03,
+    "fiber_g": 1.57
+  },
+  {
+    "food_name": "Coffee biscuit",
+    "calories_kcal": 416.57,
+    "protein_g": 6.9,
+    "fiber_g": 1.59
+  },
+  {
+    "food_name": "Melting moments",
+    "calories_kcal": 437.91,
+    "protein_g": 5.71,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Ginger biscuit (Adarak ke biscuit)",
+    "calories_kcal": 417.91,
+    "protein_g": 5.98,
+    "fiber_g": 1.49
+  },
+  {
+    "food_name": "Soyabean muthias",
+    "calories_kcal": 839.33,
+    "protein_g": 2.46,
+    "fiber_g": 1.47
+  },
+  {
+    "food_name": "Soyabean tikki",
+    "calories_kcal": 698.17,
+    "protein_g": 3.53,
+    "fiber_g": 2.2
+  },
+  {
+    "food_name": "Soyabean namak paras",
+    "calories_kcal": 838.46,
+    "protein_g": 2.65,
+    "fiber_g": 1.41
+  },
+  {
+    "food_name": "Peanut burfi (Moongfali ki burfi)",
+    "calories_kcal": 550.99,
+    "protein_g": 9.31,
+    "fiber_g": 4.09
+  },
+  {
+    "food_name": "Spinach peanut namak paras (Palak moongfali namak paras)",
+    "calories_kcal": 740.16,
+    "protein_g": 1.65,
+    "fiber_g": 0.81
+  },
+  {
+    "food_name": "Gram flour and semolina chilla/cheela/savory pancake (Besan suji chilla/cheela)",
+    "calories_kcal": 758.89,
+    "protein_g": 2.08,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Rice moong dal cheela (Chawal aur moong dal ka cheela)",
+    "calories_kcal": 798.26,
+    "protein_g": 2.74,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Split bengal gram sweet rice (Channa dal sweet rice)",
+    "calories_kcal": 190.21,
+    "protein_g": 4.15,
+    "fiber_g": 2.23
+  },
+  {
+    "food_name": "Sweet poori (Meethi poori)",
+    "calories_kcal": 782.75,
+    "protein_g": 2.12,
+    "fiber_g": 1.54
+  },
+  {
+    "food_name": "Wheat flour and moong dal burfi (Atta aur moong dal ki burfi)",
+    "calories_kcal": 441.08,
+    "protein_g": 9.84,
+    "fiber_g": 6.02
+  },
+  {
+    "food_name": "Spinach burfi (Palak burfi)",
+    "calories_kcal": 121.17,
+    "protein_g": 2.71,
+    "fiber_g": 1.17
+  },
+  {
+    "food_name": "Sweet split chickpea roti (Sweet channa dal roti/Puranpoli)",
+    "calories_kcal": 366.59,
+    "protein_g": 9.51,
+    "fiber_g": 8.16
+  },
+  {
+    "food_name": "Sprouted moong daliya ",
+    "calories_kcal": 111.56,
+    "protein_g": 2.81,
+    "fiber_g": 3.12
+  },
+  {
+    "food_name": "Sprouted moong poha ",
+    "calories_kcal": 192.6,
+    "protein_g": 5.59,
+    "fiber_g": 3.13
+  },
+  {
+    "food_name": "Pearl millet ladoo (Bajra ladoo)",
+    "calories_kcal": 319.66,
+    "protein_g": 9.61,
+    "fiber_g": 6.0
+  },
+  {
+    "food_name": "Paushtik ladoo",
+    "calories_kcal": 485.87,
+    "protein_g": 7.65,
+    "fiber_g": 4.57
+  },
+  {
+    "food_name": "Paushtik roti",
+    "calories_kcal": 149.26,
+    "protein_g": 7.17,
+    "fiber_g": 5.74
+  },
+  {
+    "food_name": "Semolina carrot vada (Suji gajar vada)",
+    "calories_kcal": 699.53,
+    "protein_g": 1.56,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Dhokla",
+    "calories_kcal": 216.49,
+    "protein_g": 13.45,
+    "fiber_g": 4.95
+  },
+  {
+    "food_name": "Kashmiri tea (Kehwa)",
+    "calories_kcal": 24.9,
+    "protein_g": 0.17,
+    "fiber_g": 0.16
+  },
+  {
+    "food_name": "Steeped hot coffee",
+    "calories_kcal": 15.91,
+    "protein_g": 0.39,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Hot chocolate",
+    "calories_kcal": 90.01,
+    "protein_g": 3.43,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold coffee (with cream)",
+    "calories_kcal": 82.76,
+    "protein_g": 1.93,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Banana milkshake with ice cream (Kele ka milkshake ice cream ke saath)",
+    "calories_kcal": 76.45,
+    "protein_g": 2.01,
+    "fiber_g": 0.27
+  },
+  {
+    "food_name": "Flavoured milkshake",
+    "calories_kcal": 66.78,
+    "protein_g": 2.06,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Jal jeera",
+    "calories_kcal": 30.24,
+    "protein_g": 0.44,
+    "fiber_g": 0.95
+  },
+  {
+    "food_name": "Gingo",
+    "calories_kcal": 48.02,
+    "protein_g": 0.14,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Mintade",
+    "calories_kcal": 40.32,
+    "protein_g": 0.03,
+    "fiber_g": 0.03
+  },
+  {
+    "food_name": "Canjee",
+    "calories_kcal": 6.61,
+    "protein_g": 0.24,
+    "fiber_g": 0.36
+  },
+  {
+    "food_name": "Cauliflower canjee (Phoolgobhi ki canjee)",
+    "calories_kcal": 6.9,
+    "protein_g": 0.39,
+    "fiber_g": 0.49
+  },
+  {
+    "food_name": "Potato canjee (Aloo canjee)",
+    "calories_kcal": 16.26,
+    "protein_g": 0.44,
+    "fiber_g": 0.43
+  },
+  {
+    "food_name": "Vermicelli porridge (Semiya/Seviyan porridge)",
+    "calories_kcal": 78.4,
+    "protein_g": 2.5,
+    "fiber_g": 0.48
+  },
+  {
+    "food_name": "Semolina upma (Suji/Rava upma)",
+    "calories_kcal": 147.89,
+    "protein_g": 3.3,
+    "fiber_g": 3.24
+  },
+  {
+    "food_name": "Vermicelli upma (Semiya/Seviyan upma)",
+    "calories_kcal": 149.11,
+    "protein_g": 3.11,
+    "fiber_g": 3.21
+  },
+  {
+    "food_name": "Rice upma",
+    "calories_kcal": 151.27,
+    "protein_g": 2.63,
+    "fiber_g": 2.12
+  },
+  {
+    "food_name": "Bread upma",
+    "calories_kcal": 129.51,
+    "protein_g": 2.8,
+    "fiber_g": 1.96
+  },
+  {
+    "food_name": "Vegetable upma",
+    "calories_kcal": 146.47,
+    "protein_g": 4.73,
+    "fiber_g": 4.19
+  },
+  {
+    "food_name": "Poha",
+    "calories_kcal": 294.53,
+    "protein_g": 6.09,
+    "fiber_g": 3.72
+  },
+  {
+    "food_name": "Vegetable poha",
+    "calories_kcal": 180.52,
+    "protein_g": 4.89,
+    "fiber_g": 3.76
+  },
+  {
+    "food_name": "Moong dal stuffed cheela/chilla (Moong dal ka cheela/chilla)",
+    "calories_kcal": 154.89,
+    "protein_g": 6.97,
+    "fiber_g": 4.25
+  },
+  {
+    "food_name": "Paneer stuffed cheela/chilla",
+    "calories_kcal": 205.19,
+    "protein_g": 11.44,
+    "fiber_g": 4.03
+  },
+  {
+    "food_name": "Indian style egg bhujia (Anda bhujia (Indian style))",
+    "calories_kcal": 102.83,
+    "protein_g": 6.1,
+    "fiber_g": 1.53
+  },
+  {
+    "food_name": "French omelette/omlet",
+    "calories_kcal": 211.04,
+    "protein_g": 10.03,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Puffy omelette/omlet",
+    "calories_kcal": 188.15,
+    "protein_g": 8.82,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Orange omelette/omlet",
+    "calories_kcal": 194.66,
+    "protein_g": 8.93,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cheese and mushroom omelette/omlet",
+    "calories_kcal": 205.63,
+    "protein_g": 9.69,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Spanish omelette/omlet",
+    "calories_kcal": 157.45,
+    "protein_g": 8.25,
+    "fiber_g": 2.54
+  },
+  {
+    "food_name": "Mixed stock",
+    "calories_kcal": 25.19,
+    "protein_g": 2.06,
+    "fiber_g": 0.15
+  },
+  {
+    "food_name": "Meat stock",
+    "calories_kcal": 24.48,
+    "protein_g": 2.1,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "White stock",
+    "calories_kcal": 6.99,
+    "protein_g": 0.07,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Meat consomme (with mutton)",
+    "calories_kcal": 29.76,
+    "protein_g": 14.86,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Consomme au julienne",
+    "calories_kcal": 27.76,
+    "protein_g": 12.49,
+    "fiber_g": 1.38
+  },
+  {
+    "food_name": "Consomme au vermicelli",
+    "calories_kcal": 29.94,
+    "protein_g": 15.23,
+    "fiber_g": 0.81
+  },
+  {
+    "food_name": "Green pea soup (Matar ka soup)",
+    "calories_kcal": 39.81,
+    "protein_g": 11.06,
+    "fiber_g": 2.49
+  },
+  {
+    "food_name": "Spinach soup (Palak ka soup)",
+    "calories_kcal": 32.59,
+    "protein_g": 10.54,
+    "fiber_g": 1.98
+  },
+  {
+    "food_name": "Mixed vegetable soup",
+    "calories_kcal": 35.71,
+    "protein_g": 8.22,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Cheese soup",
+    "calories_kcal": 41.13,
+    "protein_g": 12.39,
+    "fiber_g": 1.8
+  },
+  {
+    "food_name": "Mulligatawny soup",
+    "calories_kcal": 54.42,
+    "protein_g": 11.26,
+    "fiber_g": 2.6
+  },
+  {
+    "food_name": "Cream of carrot soup",
+    "calories_kcal": 59.77,
+    "protein_g": 8.27,
+    "fiber_g": 1.98
+  },
+  {
+    "food_name": "Cream of broccoli soup",
+    "calories_kcal": 56.14,
+    "protein_g": 8.97,
+    "fiber_g": 1.89
+  },
+  {
+    "food_name": "Cream of potato soup",
+    "calories_kcal": 60.2,
+    "protein_g": 8.1,
+    "fiber_g": 1.51
+  },
+  {
+    "food_name": "Almond soup (Badam ka soup)",
+    "calories_kcal": 78.65,
+    "protein_g": 10.13,
+    "fiber_g": 0.91
+  },
+  {
+    "food_name": "Cold cucumber cream soup ",
+    "calories_kcal": 11.88,
+    "protein_g": 0.34,
+    "fiber_g": 0.73
+  },
+  {
+    "food_name": "Cold tomato soup",
+    "calories_kcal": 16.9,
+    "protein_g": 0.11,
+    "fiber_g": 0.16
+  },
+  {
+    "food_name": "Chicken stew",
+    "calories_kcal": 127.55,
+    "protein_g": 7.19,
+    "fiber_g": 1.82
+  },
+  {
+    "food_name": "Veg paneer stew",
+    "calories_kcal": 145.55,
+    "protein_g": 6.98,
+    "fiber_g": 3.08
+  },
+  {
+    "food_name": "Onion-green chilli parantha/paratha (Pyaaz aur hari mirch ka parantha/paratha)",
+    "calories_kcal": 191.27,
+    "protein_g": 4.37,
+    "fiber_g": 5.16
+  },
+  {
+    "food_name": "Methi parantha/paratha",
+    "calories_kcal": 148.36,
+    "protein_g": 4.27,
+    "fiber_g": 5.09
+  },
+  {
+    "food_name": "Bathua poori",
+    "calories_kcal": 598.79,
+    "protein_g": 2.35,
+    "fiber_g": 1.87
+  },
+  {
+    "food_name": "Gram flour poori (Besan poori)",
+    "calories_kcal": 697.66,
+    "protein_g": 2.59,
+    "fiber_g": 1.94
+  },
+  {
+    "food_name": "Beetroot poori (Chukandar ki poori)",
+    "calories_kcal": 527.66,
+    "protein_g": 1.91,
+    "fiber_g": 1.4
+  },
+  {
+    "food_name": "Peas poori (Matar ki poori)",
+    "calories_kcal": 592.83,
+    "protein_g": 3.04,
+    "fiber_g": 2.25
+  },
+  {
+    "food_name": "Peas kachori (Matar kachori)",
+    "calories_kcal": 584.68,
+    "protein_g": 3.21,
+    "fiber_g": 2.03
+  },
+  {
+    "food_name": "Pizza",
+    "calories_kcal": 146.77,
+    "protein_g": 6.85,
+    "fiber_g": 1.71
+  },
+  {
+    "food_name": "Bacon and mushroom pancake",
+    "calories_kcal": 157.67,
+    "protein_g": 6.82,
+    "fiber_g": 1.59
+  },
+  {
+    "food_name": "Cheese and tomato pancake",
+    "calories_kcal": 147.39,
+    "protein_g": 5.15,
+    "fiber_g": 1.06
+  },
+  {
+    "food_name": "Minced meat pancake (with chicken)",
+    "calories_kcal": 116.04,
+    "protein_g": 12.01,
+    "fiber_g": 0.7
+  },
+  {
+    "food_name": "Eggplant/Brinjal rice (Vangi bhat)",
+    "calories_kcal": 184.8,
+    "protein_g": 5.28,
+    "fiber_g": 4.44
+  },
+  {
+    "food_name": "Kashmiri 'tahar'",
+    "calories_kcal": 98.21,
+    "protein_g": 1.95,
+    "fiber_g": 0.98
+  },
+  {
+    "food_name": "Cumin pulao (Jeera/Zeera pulao)",
+    "calories_kcal": 135.24,
+    "protein_g": 2.47,
+    "fiber_g": 1.4
+  },
+  {
+    "food_name": "Peas pulao (Matar pulao)",
+    "calories_kcal": 108.87,
+    "protein_g": 3.89,
+    "fiber_g": 3.21
+  },
+  {
+    "food_name": "Split bengal gram dal and vegetable pulao (Channa dal and vegetable pulao)",
+    "calories_kcal": 116.53,
+    "protein_g": 3.6,
+    "fiber_g": 3.16
+  },
+  {
+    "food_name": "Black channa pulao/ Bengal gram pulao (Kale chane ka pulao)",
+    "calories_kcal": 125.51,
+    "protein_g": 3.44,
+    "fiber_g": 2.69
+  },
+  {
+    "food_name": "Mutton pulao",
+    "calories_kcal": 130.77,
+    "protein_g": 6.52,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Chicken pulao",
+    "calories_kcal": 108.24,
+    "protein_g": 6.07,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Mexican rice",
+    "calories_kcal": 120.57,
+    "protein_g": 4.62,
+    "fiber_g": 1.64
+  },
+  {
+    "food_name": "Plain khitchdi (Plain khichri/khichdi)",
+    "calories_kcal": 57.03,
+    "protein_g": 1.72,
+    "fiber_g": 0.85
+  },
+  {
+    "food_name": "Instant idli (with semolina)",
+    "calories_kcal": 247.29,
+    "protein_g": 9.16,
+    "fiber_g": 7.13
+  },
+  {
+    "food_name": "Plain dosa",
+    "calories_kcal": 380.91,
+    "protein_g": 10.34,
+    "fiber_g": 5.23
+  },
+  {
+    "food_name": "Masala dosa mixed vegetable fillings",
+    "calories_kcal": 144.53,
+    "protein_g": 4.84,
+    "fiber_g": 4.31
+  },
+  {
+    "food_name": "Masala dosa paneer fillings",
+    "calories_kcal": 243.12,
+    "protein_g": 10.31,
+    "fiber_g": 3.11
+  },
+  {
+    "food_name": "Uttapam",
+    "calories_kcal": 255.95,
+    "protein_g": 6.18,
+    "fiber_g": 4.4
+  },
+  {
+    "food_name": "Appam",
+    "calories_kcal": 267.7,
+    "protein_g": 3.12,
+    "fiber_g": 6.19
+  },
+  {
+    "food_name": "Beans and macaroni",
+    "calories_kcal": 136.08,
+    "protein_g": 4.58,
+    "fiber_g": 2.05
+  },
+  {
+    "food_name": "Spaghetti bolognese",
+    "calories_kcal": 97.43,
+    "protein_g": 9.35,
+    "fiber_g": 1.08
+  },
+  {
+    "food_name": "Meat and macaroni casserole",
+    "calories_kcal": 161.55,
+    "protein_g": 9.15,
+    "fiber_g": 1.19
+  },
+  {
+    "food_name": "Spaghetti with meat balls and tomato sauce",
+    "calories_kcal": 158.13,
+    "protein_g": 5.61,
+    "fiber_g": 1.11
+  },
+  {
+    "food_name": "Spaghetti with paneer balls and tomato sauce",
+    "calories_kcal": 158.54,
+    "protein_g": 3.95,
+    "fiber_g": 1.25
+  },
+  {
+    "food_name": "Lasagne with meat sauce",
+    "calories_kcal": 63.38,
+    "protein_g": 2.9,
+    "fiber_g": 0.47
+  },
+  {
+    "food_name": "Lasagne with vegetables",
+    "calories_kcal": 49.23,
+    "protein_g": 1.71,
+    "fiber_g": 0.66
+  },
+  {
+    "food_name": "Home made egg noodles",
+    "calories_kcal": 240.84,
+    "protein_g": 6.55,
+    "fiber_g": 1.6
+  },
+  {
+    "food_name": "Sour lentils (Khatti dal)",
+    "calories_kcal": 34.79,
+    "protein_g": 2.22,
+    "fiber_g": 1.22
+  },
+  {
+    "food_name": "Urad special dehusked",
+    "calories_kcal": 69.43,
+    "protein_g": 3.14,
+    "fiber_g": 2.5
+  },
+  {
+    "food_name": "Arhar with spinach (Arhar dal aur palak)",
+    "calories_kcal": 52.84,
+    "protein_g": 2.05,
+    "fiber_g": 1.3
+  },
+  {
+    "food_name": "Moong dal with vadi",
+    "calories_kcal": 24.08,
+    "protein_g": 0.4,
+    "fiber_g": 0.39
+  },
+  {
+    "food_name": "Rasam with tamarind (Puli rasam/ Chintapandu rasam/ Charu/Saaru)",
+    "calories_kcal": 26.74,
+    "protein_g": 1.13,
+    "fiber_g": 1.6
+  },
+  {
+    "food_name": "Rasam with lemon (Nimmakaya rasam/Nimmakaya charu/Elumichai rasam/Nimbe hannina saaru)",
+    "calories_kcal": 24.41,
+    "protein_g": 1.11,
+    "fiber_g": 1.54
+  },
+  {
+    "food_name": "Green gram whole with baghar (Sabut moong dal with tadka)",
+    "calories_kcal": 63.43,
+    "protein_g": 3.23,
+    "fiber_g": 3.02
+  },
+  {
+    "food_name": "Urad sabut special",
+    "calories_kcal": 79.39,
+    "protein_g": 2.33,
+    "fiber_g": 2.15
+  },
+  {
+    "food_name": "Kabuli channa curry",
+    "calories_kcal": 68.57,
+    "protein_g": 2.92,
+    "fiber_g": 1.12
+  },
+  {
+    "food_name": "Besan gatte curry",
+    "calories_kcal": 189.38,
+    "protein_g": 7.75,
+    "fiber_g": 3.25
+  },
+  {
+    "food_name": "Dry masala chops",
+    "calories_kcal": 135.07,
+    "protein_g": 9.08,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Mutton korma",
+    "calories_kcal": 115.64,
+    "protein_g": 7.09,
+    "fiber_g": 0.78
+  },
+  {
+    "food_name": "Shahi keema kofta curry",
+    "calories_kcal": 418.13,
+    "protein_g": 4.14,
+    "fiber_g": 0.91
+  },
+  {
+    "food_name": "Minced meat ball curry",
+    "calories_kcal": 109.79,
+    "protein_g": 6.82,
+    "fiber_g": 1.49
+  },
+  {
+    "food_name": "Boti kebab",
+    "calories_kcal": 132.86,
+    "protein_g": 9.22,
+    "fiber_g": 0.76
+  },
+  {
+    "food_name": "Mutton seekh kebab",
+    "calories_kcal": 133.94,
+    "protein_g": 11.25,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Indian lamb and egg curry (Nargisi kofta)",
+    "calories_kcal": 335.75,
+    "protein_g": 3.84,
+    "fiber_g": 0.6
+  },
+  {
+    "food_name": "Soya chunks sweet and sour (Nutrinugget sweet and sour)",
+    "calories_kcal": 500.94,
+    "protein_g": 2.85,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Soya chunks korma (Nutrinugget korma)",
+    "calories_kcal": 131.43,
+    "protein_g": 3.86,
+    "fiber_g": 2.57
+  },
+  {
+    "food_name": "Mushroom matar",
+    "calories_kcal": 70.77,
+    "protein_g": 2.79,
+    "fiber_g": 3.13
+  },
+  {
+    "food_name": "Soya chunks and peas (Nutrinugget matar)",
+    "calories_kcal": 82.62,
+    "protein_g": 3.03,
+    "fiber_g": 2.86
+  },
+  {
+    "food_name": "Vegetable yakhni",
+    "calories_kcal": 406.06,
+    "protein_g": 1.18,
+    "fiber_g": 0.61
+  },
+  {
+    "food_name": "Spinach mushroom (Palak mushroom)",
+    "calories_kcal": 47.63,
+    "protein_g": 1.94,
+    "fiber_g": 2.27
+  },
+  {
+    "food_name": "Vegetarian nargisi kofta curry",
+    "calories_kcal": 332.15,
+    "protein_g": 2.29,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Roast chicken",
+    "calories_kcal": 199.9,
+    "protein_g": 20.49,
+    "fiber_g": 0.03
+  },
+  {
+    "food_name": "Shahi chicken masala",
+    "calories_kcal": 163.7,
+    "protein_g": 9.82,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Tomato chicken",
+    "calories_kcal": 111.68,
+    "protein_g": 10.57,
+    "fiber_g": 1.42
+  },
+  {
+    "food_name": "Creamy chicken",
+    "calories_kcal": 152.87,
+    "protein_g": 13.52,
+    "fiber_g": 0.69
+  },
+  {
+    "food_name": "Broccoli chicken ala king",
+    "calories_kcal": 119.56,
+    "protein_g": 7.97,
+    "fiber_g": 1.92
+  },
+  {
+    "food_name": "Ginger chicken",
+    "calories_kcal": 129.17,
+    "protein_g": 8.24,
+    "fiber_g": 1.21
+  },
+  {
+    "food_name": "Chicken sweet and sour",
+    "calories_kcal": 445.09,
+    "protein_g": 6.92,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Chicken korma",
+    "calories_kcal": 147.96,
+    "protein_g": 9.83,
+    "fiber_g": 1.82
+  },
+  {
+    "food_name": "Bengal fish curry (Bengali machli curry)",
+    "calories_kcal": 109.43,
+    "protein_g": 7.26,
+    "fiber_g": 1.93
+  },
+  {
+    "food_name": "Fish finger",
+    "calories_kcal": 542.9,
+    "protein_g": 5.66,
+    "fiber_g": 0.34
+  },
+  {
+    "food_name": "Fish in coconut milk (Nariyal ke doodh ke saath machli)",
+    "calories_kcal": 86.21,
+    "protein_g": 8.66,
+    "fiber_g": 1.52
+  },
+  {
+    "food_name": "Prawn curry (with coconut) (Jhinga curry)",
+    "calories_kcal": 109.55,
+    "protein_g": 8.54,
+    "fiber_g": 1.56
+  },
+  {
+    "food_name": "Baked stuffed fish",
+    "calories_kcal": 121.96,
+    "protein_g": 16.14,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Fish pie",
+    "calories_kcal": 120.9,
+    "protein_g": 9.25,
+    "fiber_g": 0.76
+  },
+  {
+    "food_name": "Crispy baked fish",
+    "calories_kcal": 138.4,
+    "protein_g": 10.95,
+    "fiber_g": 1.21
+  },
+  {
+    "food_name": "Fish souffle",
+    "calories_kcal": 139.71,
+    "protein_g": 10.51,
+    "fiber_g": 0.19
+  },
+  {
+    "food_name": "Potato curry (Aloo ki sabzi)",
+    "calories_kcal": 89.56,
+    "protein_g": 1.52,
+    "fiber_g": 2.42
+  },
+  {
+    "food_name": "Egg curry (Anda curry)",
+    "calories_kcal": 117.52,
+    "protein_g": 5.38,
+    "fiber_g": 2.09
+  },
+  {
+    "food_name": "Vegetable curry with coconut ",
+    "calories_kcal": 83.07,
+    "protein_g": 2.77,
+    "fiber_g": 3.35
+  },
+  {
+    "food_name": "Curd with potatoes (Dahi aloo)",
+    "calories_kcal": 59.9,
+    "protein_g": 1.56,
+    "fiber_g": 1.19
+  },
+  {
+    "food_name": "Potato kofta curry (Aloo kofta curry)",
+    "calories_kcal": 455.4,
+    "protein_g": 0.56,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Yam kofta curry (Zimikand/Suran kofta curry)",
+    "calories_kcal": 322.88,
+    "protein_g": 0.71,
+    "fiber_g": 1.04
+  },
+  {
+    "food_name": "Jackfruit kofta curry (Kathal ka kofta curry)",
+    "calories_kcal": 321.08,
+    "protein_g": 0.8,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Spinach and potato (Palak aloo)",
+    "calories_kcal": 57.17,
+    "protein_g": 1.63,
+    "fiber_g": 2.04
+  },
+  {
+    "food_name": "Mooli bhujia",
+    "calories_kcal": 91.2,
+    "protein_g": 1.69,
+    "fiber_g": 2.36
+  },
+  {
+    "food_name": "Bathua bhujia",
+    "calories_kcal": 90.9,
+    "protein_g": 2.26,
+    "fiber_g": 3.8
+  },
+  {
+    "food_name": "Cabbage rolls (dry) ((Pattagobhi rolls) (dry))",
+    "calories_kcal": 142.48,
+    "protein_g": 8.21,
+    "fiber_g": 1.84
+  },
+  {
+    "food_name": "Cabbage rolls (curry) ((Pattagobhi rolls)(curry))",
+    "calories_kcal": 124.63,
+    "protein_g": 5.76,
+    "fiber_g": 2.35
+  },
+  {
+    "food_name": "Dry arbi (Sookhi arbi)",
+    "calories_kcal": 134.95,
+    "protein_g": 2.12,
+    "fiber_g": 2.47
+  },
+  {
+    "food_name": "Masala arbi",
+    "calories_kcal": 185.38,
+    "protein_g": 3.01,
+    "fiber_g": 3.1
+  },
+  {
+    "food_name": "Peas brinjal bhartha (Matar baingan bhartha)",
+    "calories_kcal": 84.55,
+    "protein_g": 2.05,
+    "fiber_g": 3.63
+  },
+  {
+    "food_name": "Okra/Lady's fingers fry (Bhindi sabzi/sabji/subji)",
+    "calories_kcal": 110.81,
+    "protein_g": 1.83,
+    "fiber_g": 3.57
+  },
+  {
+    "food_name": "Crispy okra/Crispy lady's fingers (Karare bhindi)",
+    "calories_kcal": 657.76,
+    "protein_g": 1.91,
+    "fiber_g": 1.75
+  },
+  {
+    "food_name": "Beans foogath",
+    "calories_kcal": 105.06,
+    "protein_g": 2.03,
+    "fiber_g": 4.15
+  },
+  {
+    "food_name": "Stuffed bittergourd (wet) (Bharwa karele)",
+    "calories_kcal": 162.36,
+    "protein_g": 1.36,
+    "fiber_g": 2.86
+  },
+  {
+    "food_name": "Jackfruit/Kathal (dry)",
+    "calories_kcal": 488.97,
+    "protein_g": 0.93,
+    "fiber_g": 1.33
+  },
+  {
+    "food_name": "Yam fried (Zimikand/Suran fried)",
+    "calories_kcal": 491.76,
+    "protein_g": 0.79,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Cauliflower, pea and potato bhujia (Phoolgobhi, matar aur aloo bhujia)",
+    "calories_kcal": 95.67,
+    "protein_g": 2.75,
+    "fiber_g": 3.26
+  },
+  {
+    "food_name": "Vegetable jalfrezi",
+    "calories_kcal": 68.48,
+    "protein_g": 1.4,
+    "fiber_g": 2.97
+  },
+  {
+    "food_name": "Vegetables stir fry ",
+    "calories_kcal": 30.78,
+    "protein_g": 1.04,
+    "fiber_g": 1.37
+  },
+  {
+    "food_name": "Broccoli delight",
+    "calories_kcal": 40.7,
+    "protein_g": 2.49,
+    "fiber_g": 2.83
+  },
+  {
+    "food_name": "Dhansak (vegetarian)",
+    "calories_kcal": 82.8,
+    "protein_g": 3.32,
+    "fiber_g": 4.17
+  },
+  {
+    "food_name": "Cauliflower basket",
+    "calories_kcal": 90.95,
+    "protein_g": 5.21,
+    "fiber_g": 2.4
+  },
+  {
+    "food_name": "Stuffed bottle gourd (Stuffed ghiya/lauki)",
+    "calories_kcal": 93.19,
+    "protein_g": 5.84,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Ducheese potato",
+    "calories_kcal": 140.54,
+    "protein_g": 3.6,
+    "fiber_g": 1.29
+  },
+  {
+    "food_name": "Roast potatoes ",
+    "calories_kcal": 87.32,
+    "protein_g": 1.53,
+    "fiber_g": 1.71
+  },
+  {
+    "food_name": "Stuffed baked potatoes ",
+    "calories_kcal": 100.2,
+    "protein_g": 3.82,
+    "fiber_g": 1.31
+  },
+  {
+    "food_name": "Potato nests",
+    "calories_kcal": 111.62,
+    "protein_g": 5.71,
+    "fiber_g": 2.49
+  },
+  {
+    "food_name": "Parsley potato",
+    "calories_kcal": 119.51,
+    "protein_g": 1.49,
+    "fiber_g": 1.59
+  },
+  {
+    "food_name": "Creamed spinach and mushroom",
+    "calories_kcal": 419.62,
+    "protein_g": 2.28,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Fricassee of Mushroom",
+    "calories_kcal": 106.66,
+    "protein_g": 3.65,
+    "fiber_g": 1.23
+  },
+  {
+    "food_name": "Cauliflower au gratin",
+    "calories_kcal": 145.9,
+    "protein_g": 4.45,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Vegetable and cheese pie",
+    "calories_kcal": 126.88,
+    "protein_g": 4.03,
+    "fiber_g": 1.91
+  },
+  {
+    "food_name": "Spinach souffle ",
+    "calories_kcal": 150.18,
+    "protein_g": 7.36,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Beetroot and egg salad (Chukandar aur ande ka salad)",
+    "calories_kcal": 84.92,
+    "protein_g": 3.36,
+    "fiber_g": 0.55
+  },
+  {
+    "food_name": "Sour cream potato salad",
+    "calories_kcal": 121.9,
+    "protein_g": 2.89,
+    "fiber_g": 1.21
+  },
+  {
+    "food_name": "Tossed green salad",
+    "calories_kcal": 49.88,
+    "protein_g": 1.33,
+    "fiber_g": 1.33
+  },
+  {
+    "food_name": "Spring basket salad",
+    "calories_kcal": 160.46,
+    "protein_g": 3.36,
+    "fiber_g": 3.09
+  },
+  {
+    "food_name": "Cucumber and yogurt salad (Kheere aur dahi ka salad)",
+    "calories_kcal": 36.13,
+    "protein_g": 2.09,
+    "fiber_g": 1.66
+  },
+  {
+    "food_name": "Chicken and tomato towers",
+    "calories_kcal": 100.55,
+    "protein_g": 6.9,
+    "fiber_g": 1.14
+  },
+  {
+    "food_name": "Jellied sunshine fruit salad",
+    "calories_kcal": 48.86,
+    "protein_g": 5.85,
+    "fiber_g": 1.8
+  },
+  {
+    "food_name": "Tomato aspic",
+    "calories_kcal": 50.37,
+    "protein_g": 6.87,
+    "fiber_g": 1.58
+  },
+  {
+    "food_name": "Frozen frosty fruit salad (Phalon ka salaad)",
+    "calories_kcal": 103.51,
+    "protein_g": 1.68,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "French dressing",
+    "calories_kcal": 733.77,
+    "protein_g": 0.32,
+    "fiber_g": 0.22
+  },
+  {
+    "food_name": "Mayonnaise without eggs",
+    "calories_kcal": 329.05,
+    "protein_g": 2.13,
+    "fiber_g": 0.04
+  },
+  {
+    "food_name": "Curd dressing ",
+    "calories_kcal": 78.8,
+    "protein_g": 5.59,
+    "fiber_g": 0.22
+  },
+  {
+    "food_name": "Carrot raita (Gajar ka raita)",
+    "calories_kcal": 64.78,
+    "protein_g": 4.14,
+    "fiber_g": 1.69
+  },
+  {
+    "food_name": "Pumpkin raita (Kaddu ka raita)",
+    "calories_kcal": 55.6,
+    "protein_g": 3.74,
+    "fiber_g": 1.04
+  },
+  {
+    "food_name": "Mint and peanut raita (Pudinay aur moongfali ka raita)",
+    "calories_kcal": 112.05,
+    "protein_g": 7.05,
+    "fiber_g": 1.79
+  },
+  {
+    "food_name": "Spinach raita (Palak ka raita)",
+    "calories_kcal": 52.75,
+    "protein_g": 3.95,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Bathua raita",
+    "calories_kcal": 54.4,
+    "protein_g": 4.13,
+    "fiber_g": 2.19
+  },
+  {
+    "food_name": "Pineapple raita (Ananas ka raita)",
+    "calories_kcal": 67.74,
+    "protein_g": 3.9,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Banana raita (Kele ka raita)",
+    "calories_kcal": 89.03,
+    "protein_g": 4.13,
+    "fiber_g": 1.0
+  },
+  {
+    "food_name": "Mango raita (Aam ka raita)",
+    "calories_kcal": 67.37,
+    "protein_g": 3.9,
+    "fiber_g": 0.89
+  },
+  {
+    "food_name": "Guava raita (Amarood ka raita)",
+    "calories_kcal": 64.36,
+    "protein_g": 4.19,
+    "fiber_g": 3.0
+  },
+  {
+    "food_name": "Grapes raita (Angoor ka raita)",
+    "calories_kcal": 72.59,
+    "protein_g": 3.98,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Bottle gourd kheer (Ghiya/Lauki kheer)",
+    "calories_kcal": 84.07,
+    "protein_g": 2.7,
+    "fiber_g": 0.55
+  },
+  {
+    "food_name": "Pumpkin kheer (Kaddu ki kheer)",
+    "calories_kcal": 86.35,
+    "protein_g": 2.76,
+    "fiber_g": 0.63
+  },
+  {
+    "food_name": "Apple kheer (Seb ki kheer)",
+    "calories_kcal": 81.3,
+    "protein_g": 2.14,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Caramel custard (baked)",
+    "calories_kcal": 122.7,
+    "protein_g": 5.11,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Vanilla ice cream without egg",
+    "calories_kcal": 228.67,
+    "protein_g": 2.69,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Vanilla ice cream with egg",
+    "calories_kcal": 214.85,
+    "protein_g": 4.16,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Strawberry ice cream",
+    "calories_kcal": 215.61,
+    "protein_g": 4.15,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Chocochip ice cream",
+    "calories_kcal": 241.45,
+    "protein_g": 4.23,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Choconut ice cream",
+    "calories_kcal": 273.96,
+    "protein_g": 5.04,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Pear chocholate sunday",
+    "calories_kcal": 183.49,
+    "protein_g": 2.08,
+    "fiber_g": 0.07
+  },
+  {
+    "food_name": "Chocolate sauce",
+    "calories_kcal": 263.2,
+    "protein_g": 1.91,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Coffee ice cream",
+    "calories_kcal": 150.62,
+    "protein_g": 3.15,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Coffee pear alaska",
+    "calories_kcal": 203.99,
+    "protein_g": 2.88,
+    "fiber_g": 0.15
+  },
+  {
+    "food_name": "Crunchy butterscotch",
+    "calories_kcal": 277.32,
+    "protein_g": 3.11,
+    "fiber_g": 0.47
+  },
+  {
+    "food_name": "Peach melba ice cream",
+    "calories_kcal": 200.85,
+    "protein_g": 2.06,
+    "fiber_g": 0.06
+  },
+  {
+    "food_name": "Vanilla ice cream with apples in hot cherry sauce",
+    "calories_kcal": 196.32,
+    "protein_g": 1.73,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Grape and orange whip",
+    "calories_kcal": 57.39,
+    "protein_g": 1.41,
+    "fiber_g": 0.97
+  },
+  {
+    "food_name": "Honey banana cream",
+    "calories_kcal": 125.49,
+    "protein_g": 2.78,
+    "fiber_g": 0.7
+  },
+  {
+    "food_name": "Raspberry bavarian cream",
+    "calories_kcal": 150.1,
+    "protein_g": 3.34,
+    "fiber_g": 2.19
+  },
+  {
+    "food_name": "Fruit delight",
+    "calories_kcal": 107.09,
+    "protein_g": 2.09,
+    "fiber_g": 0.09
+  },
+  {
+    "food_name": "Creamy chocolate mousse",
+    "calories_kcal": 230.52,
+    "protein_g": 6.85,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold lemon souffle",
+    "calories_kcal": 169.87,
+    "protein_g": 5.89,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold orange souffle",
+    "calories_kcal": 173.19,
+    "protein_g": 5.94,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Cold pineapple souffle",
+    "calories_kcal": 181.22,
+    "protein_g": 6.23,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold vanilla souffle",
+    "calories_kcal": 179.54,
+    "protein_g": 6.22,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Cold chocolate souffle",
+    "calories_kcal": 187.53,
+    "protein_g": 6.37,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Stewed fruit (with pear)",
+    "calories_kcal": 74.32,
+    "protein_g": 0.25,
+    "fiber_g": 2.84
+  },
+  {
+    "food_name": "Apricot fool",
+    "calories_kcal": 240.79,
+    "protein_g": 1.54,
+    "fiber_g": 1.0
+  },
+  {
+    "food_name": "Pavlova",
+    "calories_kcal": 200.6,
+    "protein_g": 1.84,
+    "fiber_g": 0.06
+  },
+  {
+    "food_name": "Apple crumb pudding",
+    "calories_kcal": 220.85,
+    "protein_g": 1.54,
+    "fiber_g": 1.33
+  },
+  {
+    "food_name": "Steamed cake with chocolate sauce",
+    "calories_kcal": 301.91,
+    "protein_g": 4.49,
+    "fiber_g": 0.29
+  },
+  {
+    "food_name": "Hot lemon souffle",
+    "calories_kcal": 155.25,
+    "protein_g": 5.29,
+    "fiber_g": 0.14
+  },
+  {
+    "food_name": "Gulab jamun with milk powder",
+    "calories_kcal": 471.15,
+    "protein_g": 0.85,
+    "fiber_g": 0.05
+  },
+  {
+    "food_name": "Chum chum",
+    "calories_kcal": 130.05,
+    "protein_g": 1.52,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Dil bahar",
+    "calories_kcal": 130.05,
+    "protein_g": 1.52,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Rasbhari",
+    "calories_kcal": 130.05,
+    "protein_g": 1.52,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Rajbogh",
+    "calories_kcal": 133.7,
+    "protein_g": 1.71,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Rasgulla",
+    "calories_kcal": 118.64,
+    "protein_g": 1.38,
+    "fiber_g": 0.01
+  },
+  {
+    "food_name": "Rasmalai",
+    "calories_kcal": 135.55,
+    "protein_g": 1.61,
+    "fiber_g": 0.07
+  },
+  {
+    "food_name": "Khoa coconut burfi",
+    "calories_kcal": 411.45,
+    "protein_g": 9.98,
+    "fiber_g": 4.07
+  },
+  {
+    "food_name": "Danedar burfi",
+    "calories_kcal": 102.68,
+    "protein_g": 3.24,
+    "fiber_g": 0.09
+  },
+  {
+    "food_name": "Semolina burfi (Suji/Rava burfi)",
+    "calories_kcal": 348.67,
+    "protein_g": 3.47,
+    "fiber_g": 2.8
+  },
+  {
+    "food_name": "Pumpkin coconut burfi (Kaddu aur nariyal ki burfi)",
+    "calories_kcal": 186.18,
+    "protein_g": 1.75,
+    "fiber_g": 4.29
+  },
+  {
+    "food_name": "Khoa ladoo",
+    "calories_kcal": 396.02,
+    "protein_g": 12.21,
+    "fiber_g": 3.08
+  },
+  {
+    "food_name": "Wheat and gram flour ladoo (Atta besan ladoo)",
+    "calories_kcal": 501.7,
+    "protein_g": 9.38,
+    "fiber_g": 6.01
+  },
+  {
+    "food_name": "Semolina ladoo with nuts (Suji/Rava ladoo with nuts)",
+    "calories_kcal": 441.84,
+    "protein_g": 5.44,
+    "fiber_g": 4.27
+  },
+  {
+    "food_name": "Sesame chickpeas brittle (Til aur channe ki chikki)",
+    "calories_kcal": 282.74,
+    "protein_g": 8.5,
+    "fiber_g": 5.54
+  },
+  {
+    "food_name": "Murmura chikki",
+    "calories_kcal": 253.82,
+    "protein_g": 2.12,
+    "fiber_g": 0.37
+  },
+  {
+    "food_name": "Masala onion pakora/pakoda (Pyaaz ke pakode)",
+    "calories_kcal": 551.64,
+    "protein_g": 2.05,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Masala green chilli pakora/pakoda (Hari mirch kay pakode)",
+    "calories_kcal": 668.76,
+    "protein_g": 2.22,
+    "fiber_g": 1.34
+  },
+  {
+    "food_name": "Chicken pakora/pakoda",
+    "calories_kcal": 590.09,
+    "protein_g": 6.03,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Fish pakora/pakoda",
+    "calories_kcal": 577.03,
+    "protein_g": 5.97,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Paneer cutlet",
+    "calories_kcal": 672.2,
+    "protein_g": 4.59,
+    "fiber_g": 0.39
+  },
+  {
+    "food_name": "Sago cutlet/vadas (Sabudana cutlet/vadas)",
+    "calories_kcal": 558.76,
+    "protein_g": 0.56,
+    "fiber_g": 0.54
+  },
+  {
+    "food_name": "Poshtik cutlet",
+    "calories_kcal": 496.45,
+    "protein_g": 2.0,
+    "fiber_g": 1.35
+  },
+  {
+    "food_name": "Egg cutlet (Anda cutlet)",
+    "calories_kcal": 575.02,
+    "protein_g": 2.45,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Minced meat cutlet",
+    "calories_kcal": 531.86,
+    "protein_g": 5.1,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Vegetable samosa",
+    "calories_kcal": 443.11,
+    "protein_g": 2.21,
+    "fiber_g": 1.52
+  },
+  {
+    "food_name": "Plain urad dal vada (Uzunne vada/Minapa garelu/Ulundu vadai/Medu vada)",
+    "calories_kcal": 745.5,
+    "protein_g": 4.39,
+    "fiber_g": 2.27
+  },
+  {
+    "food_name": "Masala urad dal vada",
+    "calories_kcal": 703.78,
+    "protein_g": 4.32,
+    "fiber_g": 2.71
+  },
+  {
+    "food_name": "Khaman (dhokla)",
+    "calories_kcal": 54.73,
+    "protein_g": 1.92,
+    "fiber_g": 1.49
+  },
+  {
+    "food_name": "Instant dhokla",
+    "calories_kcal": 207.11,
+    "protein_g": 7.66,
+    "fiber_g": 3.57
+  },
+  {
+    "food_name": "Tomato ginger chutney (Tamatar adarak ki chutney)",
+    "calories_kcal": 44.66,
+    "protein_g": 1.05,
+    "fiber_g": 2.14
+  },
+  {
+    "food_name": "Mint tomato chutney (Pudinay aur tamatar ki chutney)",
+    "calories_kcal": 43.65,
+    "protein_g": 1.53,
+    "fiber_g": 2.63
+  },
+  {
+    "food_name": "Coriander chutney (Hare dhaniye ki chutney)",
+    "calories_kcal": 42.86,
+    "protein_g": 1.38,
+    "fiber_g": 2.47
+  },
+  {
+    "food_name": "Gooseberry chutney (Amla chutney)",
+    "calories_kcal": 43.02,
+    "protein_g": 1.44,
+    "fiber_g": 4.58
+  },
+  {
+    "food_name": "Walnut chutney (Akhrot ki chutney)",
+    "calories_kcal": 370.43,
+    "protein_g": 9.44,
+    "fiber_g": 3.04
+  },
+  {
+    "food_name": "Saunth/Sonth chutney with ginger",
+    "calories_kcal": 84.22,
+    "protein_g": 0.28,
+    "fiber_g": 0.31
+  },
+  {
+    "food_name": "Gun powder chutney",
+    "calories_kcal": 312.34,
+    "protein_g": 21.55,
+    "fiber_g": 13.95
+  },
+  {
+    "food_name": "Dessicated coconut chutney (Sookhe kase nariyal ki chutney) ",
+    "calories_kcal": 346.36,
+    "protein_g": 12.88,
+    "fiber_g": 13.16
+  },
+  {
+    "food_name": "Curd mint dip ",
+    "calories_kcal": 76.13,
+    "protein_g": 4.82,
+    "fiber_g": 0.77
+  },
+  {
+    "food_name": "Curd vegetable dip",
+    "calories_kcal": 56.21,
+    "protein_g": 3.88,
+    "fiber_g": 0.63
+  },
+  {
+    "food_name": "Mayonnaise vegetable dip",
+    "calories_kcal": 241.27,
+    "protein_g": 3.01,
+    "fiber_g": 0.41
+  },
+  {
+    "food_name": "Tomato and cucumber sandwich (Tamatar aur kheere ka sandwich)",
+    "calories_kcal": 150.68,
+    "protein_g": 4.03,
+    "fiber_g": 2.1
+  },
+  {
+    "food_name": "Tomato sandwich (grilled)",
+    "calories_kcal": 189.92,
+    "protein_g": 6.26,
+    "fiber_g": 1.91
+  },
+  {
+    "food_name": "French sandwich (toasted)",
+    "calories_kcal": 186.75,
+    "protein_g": 6.82,
+    "fiber_g": 1.37
+  },
+  {
+    "food_name": "Peanut butter cucumber sandwich",
+    "calories_kcal": 243.33,
+    "protein_g": 9.04,
+    "fiber_g": 3.35
+  },
+  {
+    "food_name": "Mint and peanut sandwich",
+    "calories_kcal": 273.59,
+    "protein_g": 7.18,
+    "fiber_g": 3.67
+  },
+  {
+    "food_name": "Spicy chutney sandwich",
+    "calories_kcal": 249.58,
+    "protein_g": 8.74,
+    "fiber_g": 3.73
+  },
+  {
+    "food_name": "Chicken walnut sandwich (Chicken aur akhrot ke sandwich)",
+    "calories_kcal": 285.78,
+    "protein_g": 12.58,
+    "fiber_g": 1.53
+  },
+  {
+    "food_name": "Rolled sandwich",
+    "calories_kcal": 293.07,
+    "protein_g": 6.45,
+    "fiber_g": 2.07
+  },
+  {
+    "food_name": "Ribbon sandwich",
+    "calories_kcal": 239.26,
+    "protein_g": 6.26,
+    "fiber_g": 2.92
+  },
+  {
+    "food_name": "Checker board sandwich",
+    "calories_kcal": 348.37,
+    "protein_g": 7.37,
+    "fiber_g": 2.22
+  },
+  {
+    "food_name": "Submarine sandwich",
+    "calories_kcal": 216.92,
+    "protein_g": 6.09,
+    "fiber_g": 1.24
+  },
+  {
+    "food_name": "Cheese open sandwich",
+    "calories_kcal": 274.07,
+    "protein_g": 9.84,
+    "fiber_g": 1.74
+  },
+  {
+    "food_name": "Sunset and sunrise open sandwich",
+    "calories_kcal": 241.31,
+    "protein_g": 8.58,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Danish luncheon sandwich",
+    "calories_kcal": 193.82,
+    "protein_g": 9.03,
+    "fiber_g": 1.52
+  },
+  {
+    "food_name": "Chicken and corn open sandwich",
+    "calories_kcal": 188.16,
+    "protein_g": 8.63,
+    "fiber_g": 1.67
+  },
+  {
+    "food_name": "Chocolate sponge cake",
+    "calories_kcal": 239.86,
+    "protein_g": 9.13,
+    "fiber_g": 0.52
+  },
+  {
+    "food_name": "Chocolate swiss roll",
+    "calories_kcal": 306.08,
+    "protein_g": 6.01,
+    "fiber_g": 0.29
+  },
+  {
+    "food_name": "Lemon curd filling",
+    "calories_kcal": 225.62,
+    "protein_g": 3.43,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Jam filling",
+    "calories_kcal": 184.62,
+    "protein_g": 0.0,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Chocolate pastry",
+    "calories_kcal": 243.37,
+    "protein_g": 7.05,
+    "fiber_g": 0.32
+  },
+  {
+    "food_name": "Assorted pastry",
+    "calories_kcal": 230.74,
+    "protein_g": 6.78,
+    "fiber_g": 0.43
+  },
+  {
+    "food_name": "Orange gateau",
+    "calories_kcal": 178.05,
+    "protein_g": 4.78,
+    "fiber_g": 0.68
+  },
+  {
+    "food_name": "Black forest gateau",
+    "calories_kcal": 217.82,
+    "protein_g": 5.94,
+    "fiber_g": 0.28
+  },
+  {
+    "food_name": "Lemon cake",
+    "calories_kcal": 373.85,
+    "protein_g": 5.29,
+    "fiber_g": 0.62
+  },
+  {
+    "food_name": "Dundee cake",
+    "calories_kcal": 396.62,
+    "protein_g": 7.78,
+    "fiber_g": 1.81
+  },
+  {
+    "food_name": "Victorian sandwich cake",
+    "calories_kcal": 373.09,
+    "protein_g": 5.18,
+    "fiber_g": 0.59
+  },
+  {
+    "food_name": "Chocolate eggless cake",
+    "calories_kcal": 312.01,
+    "protein_g": 6.66,
+    "fiber_g": 0.32
+  },
+  {
+    "food_name": "Orange eggless cake",
+    "calories_kcal": 355.62,
+    "protein_g": 7.16,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Chocolate glace icing",
+    "calories_kcal": 436.29,
+    "protein_g": 3.22,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Butter icing",
+    "calories_kcal": 500.72,
+    "protein_g": 0.19,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Chocolate butter icing",
+    "calories_kcal": 469.59,
+    "protein_g": 3.21,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Almond biscuit (Badam ke biscuit)",
+    "calories_kcal": 407.74,
+    "protein_g": 6.25,
+    "fiber_g": 1.5
+  },
+  {
+    "food_name": "Orange biscuit",
+    "calories_kcal": 354.78,
+    "protein_g": 3.63,
+    "fiber_g": 0.75
+  },
+  {
+    "food_name": "Gingerman biscuit",
+    "calories_kcal": 357.43,
+    "protein_g": 6.26,
+    "fiber_g": 2.0
+  },
+  {
+    "food_name": "Coffee drops",
+    "calories_kcal": 443.07,
+    "protein_g": 7.57,
+    "fiber_g": 1.88
+  },
+  {
+    "food_name": "Christmas biscuit",
+    "calories_kcal": 406.07,
+    "protein_g": 5.67,
+    "fiber_g": 2.17
+  },
+  {
+    "food_name": "Christmas wreath biscuit",
+    "calories_kcal": 386.05,
+    "protein_g": 5.43,
+    "fiber_g": 2.28
+  },
+  {
+    "food_name": "Christmas bell biscuit",
+    "calories_kcal": 404.85,
+    "protein_g": 5.66,
+    "fiber_g": 2.33
+  },
+  {
+    "food_name": "Christmas star biscuit",
+    "calories_kcal": 392.03,
+    "protein_g": 3.54,
+    "fiber_g": 1.47
+  },
+  {
+    "food_name": "Christmas tree biscuit",
+    "calories_kcal": 385.63,
+    "protein_g": 5.43,
+    "fiber_g": 2.65
+  },
+  {
+    "food_name": "Chocolate cream shells",
+    "calories_kcal": 427.17,
+    "protein_g": 5.1,
+    "fiber_g": 0.9
+  },
+  {
+    "food_name": "Jelly biscuit",
+    "calories_kcal": 404.61,
+    "protein_g": 4.23,
+    "fiber_g": 2.02
+  },
+  {
+    "food_name": "Cherry and walnut cookies",
+    "calories_kcal": 422.6,
+    "protein_g": 5.63,
+    "fiber_g": 1.3
+  },
+  {
+    "food_name": "Cheese straws",
+    "calories_kcal": 382.0,
+    "protein_g": 9.83,
+    "fiber_g": 1.29
+  },
+  {
+    "food_name": "Butterfly biscuit",
+    "calories_kcal": 341.45,
+    "protein_g": 9.98,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Flan pastry",
+    "calories_kcal": 445.8,
+    "protein_g": 6.72,
+    "fiber_g": 1.58
+  },
+  {
+    "food_name": "Fruit flan",
+    "calories_kcal": 261.35,
+    "protein_g": 3.3,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Orange cream flan",
+    "calories_kcal": 280.28,
+    "protein_g": 4.73,
+    "fiber_g": 0.63
+  },
+  {
+    "food_name": "Fruit puree tart",
+    "calories_kcal": 286.5,
+    "protein_g": 3.35,
+    "fiber_g": 1.31
+  },
+  {
+    "food_name": "Apple banana pie",
+    "calories_kcal": 243.99,
+    "protein_g": 3.13,
+    "fiber_g": 1.89
+  },
+  {
+    "food_name": "Lemon chiffon pie",
+    "calories_kcal": 259.31,
+    "protein_g": 4.88,
+    "fiber_g": 0.66
+  },
+  {
+    "food_name": "Orange chiffon pie",
+    "calories_kcal": 207.57,
+    "protein_g": 3.89,
+    "fiber_g": 0.7
+  },
+  {
+    "food_name": "Cream buns",
+    "calories_kcal": 215.74,
+    "protein_g": 4.45,
+    "fiber_g": 0.31
+  },
+  {
+    "food_name": "Savoury puffs",
+    "calories_kcal": 190.79,
+    "protein_g": 9.51,
+    "fiber_g": 0.33
+  },
+  {
+    "food_name": "Choux swans",
+    "calories_kcal": 216.34,
+    "protein_g": 4.35,
+    "fiber_g": 0.35
+  },
+  {
+    "food_name": "Potato aigrettes",
+    "calories_kcal": 530.03,
+    "protein_g": 2.35,
+    "fiber_g": 0.45
+  },
+  {
+    "food_name": "Cream horns",
+    "calories_kcal": 408.23,
+    "protein_g": 3.42,
+    "fiber_g": 0.6
+  },
+  {
+    "food_name": "Savoury cheese horns",
+    "calories_kcal": 295.15,
+    "protein_g": 5.66,
+    "fiber_g": 0.73
+  },
+  {
+    "food_name": "Paneer patties",
+    "calories_kcal": 338.58,
+    "protein_g": 7.6,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Vegetable patties ",
+    "calories_kcal": 261.92,
+    "protein_g": 4.01,
+    "fiber_g": 2.62
+  },
+  {
+    "food_name": "Pearl millet infant food (Bajra shishu aahaar)",
+    "calories_kcal": 362.44,
+    "protein_g": 11.98,
+    "fiber_g": 7.84
+  },
+  {
+    "food_name": "Sajina",
+    "calories_kcal": 345.26,
+    "protein_g": 10.81,
+    "fiber_g": 7.62
+  },
+  {
+    "food_name": "Cereal mix ",
+    "calories_kcal": 120.81,
+    "protein_g": 3.32,
+    "fiber_g": 2.03
+  },
+  {
+    "food_name": "Pulse mix",
+    "calories_kcal": 83.29,
+    "protein_g": 3.16,
+    "fiber_g": 2.25
+  },
+  {
+    "food_name": "Shishu ahar",
+    "calories_kcal": 93.37,
+    "protein_g": 2.61,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Cereal pulse mix with amylase rice flour",
+    "calories_kcal": 151.57,
+    "protein_g": 4.27,
+    "fiber_g": 3.47
+  },
+  {
+    "food_name": "Banana groundnut paste/puree",
+    "calories_kcal": 213.19,
+    "protein_g": 4.27,
+    "fiber_g": 1.7
+  },
+  {
+    "food_name": "Rice dal porridge (Chawal dal ki khichdi/khichri)",
+    "calories_kcal": 383.33,
+    "protein_g": 10.8,
+    "fiber_g": 4.51
+  },
+  {
+    "food_name": "Lentils and semolina porridge (Dal suji porridge/daliya)",
+    "calories_kcal": 117.29,
+    "protein_g": 3.26,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Spinach khichri (Palak khichri/khichdi)",
+    "calories_kcal": 102.18,
+    "protein_g": 3.43,
+    "fiber_g": 1.56
+  },
+  {
+    "food_name": "Vegetable mix",
+    "calories_kcal": 174.21,
+    "protein_g": 4.7,
+    "fiber_g": 1.93
+  },
+  {
+    "food_name": "Lentils and wheat porridge (Dal wheat porridge/daliya )",
+    "calories_kcal": 52.54,
+    "protein_g": 2.71,
+    "fiber_g": 1.28
+  },
+  {
+    "food_name": "Maize porridge",
+    "calories_kcal": 89.57,
+    "protein_g": 2.14,
+    "fiber_g": 1.68
+  },
+  {
+    "food_name": "Spinach peanut burfi (Palak aur mungfali ki burfi)",
+    "calories_kcal": 105.37,
+    "protein_g": 3.36,
+    "fiber_g": 2.07
+  },
+  {
+    "food_name": "Split bengal gram burfi/fudge (Channa dal burfi)",
+    "calories_kcal": 287.36,
+    "protein_g": 4.65,
+    "fiber_g": 2.06
+  },
+  {
+    "food_name": "Chickpea flour cookies (Sweet besan rounds/cookies)",
+    "calories_kcal": 207.01,
+    "protein_g": 4.29,
+    "fiber_g": 2.56
+  },
+  {
+    "food_name": "Pearl millet mathri (Bajra mathri)",
+    "calories_kcal": 785.08,
+    "protein_g": 1.82,
+    "fiber_g": 1.36
+  },
+  {
+    "food_name": "Sesame biscuit (Til ke biscuit)",
+    "calories_kcal": 424.03,
+    "protein_g": 8.27,
+    "fiber_g": 6.83
+  },
+  {
+    "food_name": "Fermented bengal gram vada (Khameerikrit/Ufna hua channa dal ka vada)",
+    "calories_kcal": 657.57,
+    "protein_g": 4.05,
+    "fiber_g": 2.65
+  },
+  {
+    "food_name": "Poshtik namak paras",
+    "calories_kcal": 613.39,
+    "protein_g": 6.49,
+    "fiber_g": 4.55
+  },
+  {
+    "food_name": "Soya chikki",
+    "calories_kcal": 423.7,
+    "protein_g": 7.18,
+    "fiber_g": 3.55
+  },
+  {
+    "food_name": "Besan bathua chilla/cheela",
+    "calories_kcal": 373.82,
+    "protein_g": 11.48,
+    "fiber_g": 7.79
+  },
+  {
+    "food_name": "Wheat flour and nuts ladoos (Atta nuts ladoos)",
+    "calories_kcal": 391.9,
+    "protein_g": 9.46,
+    "fiber_g": 7.3
+  },
+  {
+    "food_name": "Gram flour and semolina dhokla (Besan suji dhokla)",
+    "calories_kcal": 198.91,
+    "protein_g": 8.52,
+    "fiber_g": 4.59
+  },
+  {
+    "food_name": "Atta dal burfi ",
+    "calories_kcal": 298.8,
+    "protein_g": 6.66,
+    "fiber_g": 4.08
+  },
+  {
+    "food_name": "Soya roti",
+    "calories_kcal": 283.96,
+    "protein_g": 9.18,
+    "fiber_g": 8.71
+  },
+  {
+    "food_name": "Poshtik khichdi/khichri",
+    "calories_kcal": 93.37,
+    "protein_g": 3.04,
+    "fiber_g": 2.0
+  },
+  {
+    "food_name": "Namkeen daliya",
+    "calories_kcal": 295.11,
+    "protein_g": 8.29,
+    "fiber_g": 8.57
+  },
+  {
+    "food_name": "Sprouts upma ",
+    "calories_kcal": 316.25,
+    "protein_g": 9.5,
+    "fiber_g": 7.16
+  },
+  {
+    "food_name": "Semolina idli (Suji/Rava idli)",
+    "calories_kcal": 206.39,
+    "protein_g": 9.34,
+    "fiber_g": 5.85
+  },
+  {
+    "food_name": "Poshtik chilla/cheela",
+    "calories_kcal": 159.53,
+    "protein_g": 4.85,
+    "fiber_g": 4.91
+  },
+  {
+    "food_name": "Stuffed bittergourd (dry) (Bharwa karela)",
+    "calories_kcal": 217.65,
+    "protein_g": 1.29,
+    "fiber_g": 3.0
+  },
+  {
+    "food_name": "Cauliflower potato canjee",
+    "calories_kcal": 16.79,
+    "protein_g": 0.57,
+    "fiber_g": 0.69
+  },
+  {
+    "food_name": "Creamed spinach",
+    "calories_kcal": 96.91,
+    "protein_g": 5.18,
+    "fiber_g": 1.33
+  },
+  {
+    "food_name": "Mango milkshake with ice cream (Aam milkshake ice cream ke saath)",
+    "calories_kcal": 68.35,
+    "protein_g": 1.93,
+    "fiber_g": 0.23
+  },
+  {
+    "food_name": "Pineapple milkshake with ice cream (Ananas milkshake ice cream ke saath)",
+    "calories_kcal": 68.49,
+    "protein_g": 1.93,
+    "fiber_g": 0.42
+  },
+  {
+    "food_name": "Orange milkshake with ice cream (Narangi milkshake ice cream ke saath)",
+    "calories_kcal": 67.82,
+    "protein_g": 1.95,
+    "fiber_g": 0.16
+  },
+  {
+    "food_name": "Woodapple juice (Bel ka sharbat)",
+    "calories_kcal": 34.18,
+    "protein_g": 0.63,
+    "fiber_g": 1.03
+  },
+  {
+    "food_name": "Sattu drink",
+    "calories_kcal": 23.38,
+    "protein_g": 0.56,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Apple and honey sorbet (Seb aur shehad ka sharbat)",
+    "calories_kcal": 121.3,
+    "protein_g": 0.15,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Thandai",
+    "calories_kcal": 101.18,
+    "protein_g": 3.59,
+    "fiber_g": 0.8
+  },
+  {
+    "food_name": "Cucumber sharbat (Kheere ka sharbat)",
+    "calories_kcal": 27.28,
+    "protein_g": 0.26,
+    "fiber_g": 0.78
+  },
+  {
+    "food_name": "Apple oats chia seed smoothie",
+    "calories_kcal": 85.64,
+    "protein_g": 3.49,
+    "fiber_g": 1.44
+  },
+  {
+    "food_name": "Nannari sharbat",
+    "calories_kcal": 88.79,
+    "protein_g": 0.01,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Semolina milk drink (Thari kanji)",
+    "calories_kcal": 44.16,
+    "protein_g": 0.98,
+    "fiber_g": 0.72
+  },
+  {
+    "food_name": "Saffron milk (Kesariya doodh)",
+    "calories_kcal": 102.18,
+    "protein_g": 3.17,
+    "fiber_g": 0.14
+  },
+  {
+    "food_name": "Black rice kheer (Chak-hao kheer)",
+    "calories_kcal": 147.94,
+    "protein_g": 4.37,
+    "fiber_g": 0.76
+  },
+  {
+    "food_name": "Coconut kheer (Nariyal ki kheer)",
+    "calories_kcal": 162.61,
+    "protein_g": 3.4,
+    "fiber_g": 1.53
+  },
+  {
+    "food_name": "Apple sago payasam (Seb aur sabudana ki kheer)",
+    "calories_kcal": 136.5,
+    "protein_g": 3.13,
+    "fiber_g": 0.38
+  },
+  {
+    "food_name": "Kesari bath",
+    "calories_kcal": 244.57,
+    "protein_g": 2.4,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Putharekulu",
+    "calories_kcal": 318.3,
+    "protein_g": 3.66,
+    "fiber_g": 1.75
+  },
+  {
+    "food_name": "Mango malpua",
+    "calories_kcal": 334.64,
+    "protein_g": 1.65,
+    "fiber_g": 2.08
+  },
+  {
+    "food_name": "Mango vanilla custard",
+    "calories_kcal": 147.63,
+    "protein_g": 3.43,
+    "fiber_g": 0.99
+  },
+  {
+    "food_name": "Kiwi granola pudding",
+    "calories_kcal": 280.99,
+    "protein_g": 5.6,
+    "fiber_g": 3.71
+  },
+  {
+    "food_name": "Oats burfi",
+    "calories_kcal": 425.19,
+    "protein_g": 8.89,
+    "fiber_g": 4.96
+  },
+  {
+    "food_name": "Lotus seed halwa (Kamal gattay ka halwa)",
+    "calories_kcal": 370.55,
+    "protein_g": 7.79,
+    "fiber_g": 0.42
+  },
+  {
+    "food_name": "Amaranth ladoo (Rajgira ladoo)",
+    "calories_kcal": 454.15,
+    "protein_g": 10.12,
+    "fiber_g": 5.11
+  },
+  {
+    "food_name": "Chhena poda",
+    "calories_kcal": 344.57,
+    "protein_g": 13.68,
+    "fiber_g": 1.4
+  },
+  {
+    "food_name": "Sweet couscous dessert",
+    "calories_kcal": 196.2,
+    "protein_g": 3.81,
+    "fiber_g": 2.18
+  },
+  {
+    "food_name": "Sweetened yogurt (Shrikhand)",
+    "calories_kcal": 107.18,
+    "protein_g": 5.27,
+    "fiber_g": 0.08
+  },
+  {
+    "food_name": "Thickened sweetened milk (Rabri)",
+    "calories_kcal": 102.79,
+    "protein_g": 3.52,
+    "fiber_g": 0.19
+  },
+  {
+    "food_name": "Gram flour halwa (Besan halwa)",
+    "calories_kcal": 276.79,
+    "protein_g": 5.88,
+    "fiber_g": 1.82
+  },
+  {
+    "food_name": "Prawn sandwich",
+    "calories_kcal": 169.65,
+    "protein_g": 10.36,
+    "fiber_g": 1.55
+  },
+  {
+    "food_name": "Watercress sandwich",
+    "calories_kcal": 229.42,
+    "protein_g": 5.17,
+    "fiber_g": 2.26
+  },
+  {
+    "food_name": "Fish sandwich ",
+    "calories_kcal": 150.2,
+    "protein_g": 4.72,
+    "fiber_g": 1.23
+  },
+  {
+    "food_name": "Kidney bean sandwich with cottage cheese",
+    "calories_kcal": 176.64,
+    "protein_g": 9.85,
+    "fiber_g": 3.66
+  },
+  {
+    "food_name": "Finger millet biscuit (Ragi biscuit)",
+    "calories_kcal": 458.56,
+    "protein_g": 4.03,
+    "fiber_g": 5.97
+  },
+  {
+    "food_name": "Buttermilk biscuit",
+    "calories_kcal": 322.54,
+    "protein_g": 5.76,
+    "fiber_g": 1.18
+  },
+  {
+    "food_name": "Lemon cookies",
+    "calories_kcal": 394.48,
+    "protein_g": 5.63,
+    "fiber_g": 0.78
+  },
+  {
+    "food_name": "Sweet potato biscuit (Shakarkand ke biscuit)",
+    "calories_kcal": 296.4,
+    "protein_g": 5.14,
+    "fiber_g": 2.27
+  },
+  {
+    "food_name": "Raspberry shortbread cookies",
+    "calories_kcal": 441.12,
+    "protein_g": 3.0,
+    "fiber_g": 0.75
+  },
+  {
+    "food_name": "Pumpkin cookies ",
+    "calories_kcal": 218.4,
+    "protein_g": 2.51,
+    "fiber_g": 1.06
+  },
+  {
+    "food_name": "Greenpea cookies",
+    "calories_kcal": 159.42,
+    "protein_g": 6.53,
+    "fiber_g": 5.32
+  },
+  {
+    "food_name": "Sunflower cookies",
+    "calories_kcal": 520.62,
+    "protein_g": 9.49,
+    "fiber_g": 3.95
+  },
+  {
+    "food_name": "Cardamom cookies (Elaichi cookies)",
+    "calories_kcal": 400.49,
+    "protein_g": 5.1,
+    "fiber_g": 2.79
+  },
+  {
+    "food_name": "Hazelnut cookies",
+    "calories_kcal": 493.32,
+    "protein_g": 6.25,
+    "fiber_g": 2.45
+  },
+  {
+    "food_name": "Milk cookies",
+    "calories_kcal": 459.43,
+    "protein_g": 10.49,
+    "fiber_g": 0.99
+  },
+  {
+    "food_name": "Cranberry cookies",
+    "calories_kcal": 272.48,
+    "protein_g": 3.92,
+    "fiber_g": 1.13
+  },
+  {
+    "food_name": "Olive biscuit",
+    "calories_kcal": 438.29,
+    "protein_g": 3.2,
+    "fiber_g": 0.82
+  },
+  {
+    "food_name": "Tutti fruitti biscuit",
+    "calories_kcal": 420.78,
+    "protein_g": 5.21,
+    "fiber_g": 5.43
+  },
+  {
+    "food_name": "Peach blueberry preserves",
+    "calories_kcal": 177.38,
+    "protein_g": 0.53,
+    "fiber_g": 1.14
+  },
+  {
+    "food_name": "Pear preserves (Naashpati ka murabba)",
+    "calories_kcal": 101.24,
+    "protein_g": 0.25,
+    "fiber_g": 3.06
+  },
+  {
+    "food_name": "Starfruit preserves ",
+    "calories_kcal": 128.93,
+    "protein_g": 0.24,
+    "fiber_g": 0.78
+  },
+  {
+    "food_name": "Gooseberry pickle (Amla ka achaar)",
+    "calories_kcal": 278.58,
+    "protein_g": 1.55,
+    "fiber_g": 3.7
+  },
+  {
+    "food_name": "Lotus stem pickle (Kamal kakdi ka achar)",
+    "calories_kcal": 102.69,
+    "protein_g": 1.44,
+    "fiber_g": 8.58
+  },
+  {
+    "food_name": "Date pickle (Khajoor ka achaar)",
+    "calories_kcal": 182.29,
+    "protein_g": 1.68,
+    "fiber_g": 5.2
+  },
+  {
+    "food_name": "Garlic pickle (Lahasun ka achar)",
+    "calories_kcal": 413.62,
+    "protein_g": 3.72,
+    "fiber_g": 5.13
+  },
+  {
+    "food_name": "Fermented bamboo shoot pickle (Mesu pickle)",
+    "calories_kcal": 59.83,
+    "protein_g": 1.58,
+    "fiber_g": 2.24
+  },
+  {
+    "food_name": "Sweet peach pickle (Aadoo ka achaar)",
+    "calories_kcal": 144.64,
+    "protein_g": 0.46,
+    "fiber_g": 1.32
+  },
+  {
+    "food_name": "Pickled mustard greens ",
+    "calories_kcal": 13.12,
+    "protein_g": 1.51,
+    "fiber_g": 1.7
+  },
+  {
+    "food_name": "Small onion pickle ",
+    "calories_kcal": 16.86,
+    "protein_g": 1.65,
+    "fiber_g": 1.09
+  },
+  {
+    "food_name": "Green tomato pickle (Haray tamatar ka achaar)",
+    "calories_kcal": 193.26,
+    "protein_g": 1.23,
+    "fiber_g": 1.74
+  },
+  {
+    "food_name": "Pickled cabbage ",
+    "calories_kcal": 13.69,
+    "protein_g": 0.39,
+    "fiber_g": 0.61
+  },
+  {
+    "food_name": "Coconut pickle (Nariyal ka aachar)",
+    "calories_kcal": 517.26,
+    "protein_g": 3.02,
+    "fiber_g": 6.35
+  },
+  {
+    "food_name": "Potato pickle (Aloo ka achaar)",
+    "calories_kcal": 369.14,
+    "protein_g": 2.07,
+    "fiber_g": 2.21
+  },
+  {
+    "food_name": "Mango murabba candy",
+    "calories_kcal": 293.35,
+    "protein_g": 0.27,
+    "fiber_g": 0.95
+  },
+  {
+    "food_name": "Afghani chicken",
+    "calories_kcal": 151.51,
+    "protein_g": 15.66,
+    "fiber_g": 0.31
+  },
+  {
+    "food_name": "Fish orly",
+    "calories_kcal": 563.7,
+    "protein_g": 5.87,
+    "fiber_g": 0.33
+  },
+  {
+    "food_name": "Hariyali Fish Tikka",
+    "calories_kcal": 150.24,
+    "protein_g": 14.01,
+    "fiber_g": 0.99
+  },
+  {
+    "food_name": "Chicken manchurian",
+    "calories_kcal": 142.34,
+    "protein_g": 9.53,
+    "fiber_g": 0.41
+  },
+  {
+    "food_name": "Handi chicken",
+    "calories_kcal": 166.02,
+    "protein_g": 12.32,
+    "fiber_g": 0.67
+  },
+  {
+    "food_name": "Lemon chicken",
+    "calories_kcal": 169.79,
+    "protein_g": 20.2,
+    "fiber_g": 0.16
+  },
+  {
+    "food_name": "Lemon butter fish",
+    "calories_kcal": 160.25,
+    "protein_g": 16.38,
+    "fiber_g": 0.36
+  },
+  {
+    "food_name": "Baked eggs in tomato sauce",
+    "calories_kcal": 80.05,
+    "protein_g": 4.92,
+    "fiber_g": 0.01
+  },
+  {
+    "food_name": "Egg in a pepper",
+    "calories_kcal": 128.78,
+    "protein_g": 12.64,
+    "fiber_g": 0.17
+  },
+  {
+    "food_name": "Spinach mushroom scrambled egg (Palak mushroom bhurji)",
+    "calories_kcal": 158.85,
+    "protein_g": 13.28,
+    "fiber_g": 0.39
+  },
+  {
+    "food_name": "Corn omelette/omlet",
+    "calories_kcal": 166.93,
+    "protein_g": 11.37,
+    "fiber_g": 0.02
+  },
+  {
+    "food_name": "Cajun chicken",
+    "calories_kcal": 184.94,
+    "protein_g": 12.69,
+    "fiber_g": 0.89
+  },
+  {
+    "food_name": "Paaner do pyaza",
+    "calories_kcal": 127.7,
+    "protein_g": 4.22,
+    "fiber_g": 0.84
+  },
+  {
+    "food_name": "Cabbage manchurian (Pattagobhi manchurian)",
+    "calories_kcal": 224.26,
+    "protein_g": 0.64,
+    "fiber_g": 0.37
+  },
+  {
+    "food_name": "Gobi 65",
+    "calories_kcal": 278.29,
+    "protein_g": 0.56,
+    "fiber_g": 0.57
+  },
+  {
+    "food_name": "Paneer lababdar",
+    "calories_kcal": 105.48,
+    "protein_g": 3.98,
+    "fiber_g": 1.16
+  },
+  {
+    "food_name": "Roasted cauliflower steak",
+    "calories_kcal": 78.68,
+    "protein_g": 2.05,
+    "fiber_g": 3.53
+  },
+  {
+    "food_name": "Sauteed radishes with green beans",
+    "calories_kcal": 94.32,
+    "protein_g": 2.41,
+    "fiber_g": 3.52
+  },
+  {
+    "food_name": "Garlic chutney/Poondu chutney (Lahasun ki chutney)",
+    "calories_kcal": 255.51,
+    "protein_g": 3.34,
+    "fiber_g": 5.15
+  },
+  {
+    "food_name": "Schezwan chutney",
+    "calories_kcal": 205.19,
+    "protein_g": 3.33,
+    "fiber_g": 5.72
+  },
+  {
+    "food_name": "Onion chutney (Pyaaz ki chutney/Vengaya chutney)",
+    "calories_kcal": 143.94,
+    "protein_g": 2.97,
+    "fiber_g": 4.6
+  },
+  {
+    "food_name": "Dates chutney (Khajoor ki chutney)",
+    "calories_kcal": 103.57,
+    "protein_g": 1.07,
+    "fiber_g": 3.41
+  },
+  {
+    "food_name": "Chicken salad",
+    "calories_kcal": 338.19,
+    "protein_g": 15.33,
+    "fiber_g": 2.0
+  },
+  {
+    "food_name": "Macaroni salad",
+    "calories_kcal": 262.19,
+    "protein_g": 5.02,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Cabbage raita (Pattagobhi raita)",
+    "calories_kcal": 84.84,
+    "protein_g": 3.24,
+    "fiber_g": 0.93
+  },
+  {
+    "food_name": "Pomegranate raita (Anaar ka raita)",
+    "calories_kcal": 72.64,
+    "protein_g": 4.05,
+    "fiber_g": 0.6
+  },
+  {
+    "food_name": "Onion raita (Pyaaz ka raita)",
+    "calories_kcal": 71.56,
+    "protein_g": 4.86,
+    "fiber_g": 0.65
+  },
+  {
+    "food_name": "Green chilli raita (Hari mirch ka raita)",
+    "calories_kcal": 77.13,
+    "protein_g": 5.58,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Kale salad",
+    "calories_kcal": 177.71,
+    "protein_g": 4.86,
+    "fiber_g": 1.36
+  },
+  {
+    "food_name": "Spinach and paneer souffle ",
+    "calories_kcal": 186.19,
+    "protein_g": 7.56,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Masala souffle ",
+    "calories_kcal": 123.51,
+    "protein_g": 6.38,
+    "fiber_g": 1.24
+  },
+  {
+    "food_name": "Chicken and cheese souffle",
+    "calories_kcal": 182.35,
+    "protein_g": 9.07,
+    "fiber_g": 0.26
+  },
+  {
+    "food_name": "Tamarind chutney (Chintapandu pachadi/Puli chutney)",
+    "calories_kcal": 109.15,
+    "protein_g": 0.88,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Pav bhaji masala",
+    "calories_kcal": 230.47,
+    "protein_g": 9.13,
+    "fiber_g": 24.3
+  },
+  {
+    "food_name": "Green chutney",
+    "calories_kcal": 79.42,
+    "protein_g": 5.42,
+    "fiber_g": 5.84
+  },
+  {
+    "food_name": "Sago khitchdi/khichri (Sabudana khitchdi/khichri)",
+    "calories_kcal": 187.16,
+    "protein_g": 2.72,
+    "fiber_g": 1.82
+  },
+  {
+    "food_name": "Gram flour chilla/cheela (Besan chilla/cheela)",
+    "calories_kcal": 135.93,
+    "protein_g": 7.8,
+    "fiber_g": 4.25
+  },
+  {
+    "food_name": "Vegetable namkeen jave",
+    "calories_kcal": 112.23,
+    "protein_g": 2.93,
+    "fiber_g": 2.86
+  },
+  {
+    "food_name": "Khakhra",
+    "calories_kcal": 178.5,
+    "protein_g": 4.78,
+    "fiber_g": 5.43
+  },
+  {
+    "food_name": "Moong bean dosa (Pesarattu)",
+    "calories_kcal": 285.96,
+    "protein_g": 12.32,
+    "fiber_g": 6.04
+  },
+  {
+    "food_name": "Methi thepla",
+    "calories_kcal": 346.16,
+    "protein_g": 8.98,
+    "fiber_g": 7.56
+  },
+  {
+    "food_name": "Rice puttu (Ari puttu)",
+    "calories_kcal": 81.98,
+    "protein_g": 1.26,
+    "fiber_g": 0.76
+  },
+  {
+    "food_name": "Buckwheat pancake (Khura)",
+    "calories_kcal": 263.3,
+    "protein_g": 2.91,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Quinoa khichdi/khichri",
+    "calories_kcal": 64.01,
+    "protein_g": 3.18,
+    "fiber_g": 2.58
+  },
+  {
+    "food_name": "Khakhra chaat",
+    "calories_kcal": 358.66,
+    "protein_g": 4.52,
+    "fiber_g": 3.04
+  },
+  {
+    "food_name": "Banana appam",
+    "calories_kcal": 469.81,
+    "protein_g": 1.17,
+    "fiber_g": 0.67
+  },
+  {
+    "food_name": "Veg manchurian",
+    "calories_kcal": 585.64,
+    "protein_g": 0.89,
+    "fiber_g": 1.16
+  },
+  {
+    "food_name": "Pav bhaji",
+    "calories_kcal": 96.53,
+    "protein_g": 2.66,
+    "fiber_g": 1.98
+  },
+  {
+    "food_name": "Rice murukku",
+    "calories_kcal": 593.99,
+    "protein_g": 5.41,
+    "fiber_g": 2.18
+  },
+  {
+    "food_name": "Bhel puri ",
+    "calories_kcal": 509.89,
+    "protein_g": 3.52,
+    "fiber_g": 2.24
+  },
+  {
+    "food_name": "Semolina dhokla (Suji/Rava dhokla)",
+    "calories_kcal": 194.91,
+    "protein_g": 5.44,
+    "fiber_g": 5.12
+  },
+  {
+    "food_name": "Spicy corn chaat ",
+    "calories_kcal": 479.8,
+    "protein_g": 4.61,
+    "fiber_g": 2.17
+  },
+  {
+    "food_name": "Jackfruit fritters (Ponsa mulik/Kathal ka pakora)",
+    "calories_kcal": 597.79,
+    "protein_g": 2.34,
+    "fiber_g": 1.5
+  },
+  {
+    "food_name": "Banana chips (Kele ke chips)",
+    "calories_kcal": 665.67,
+    "protein_g": 0.37,
+    "fiber_g": 0.65
+  },
+  {
+    "food_name": "Wheat cake",
+    "calories_kcal": 314.63,
+    "protein_g": 4.79,
+    "fiber_g": 2.76
+  },
+  {
+    "food_name": "Mango cheesecake",
+    "calories_kcal": 152.46,
+    "protein_g": 2.39,
+    "fiber_g": 1.14
+  },
+  {
+    "food_name": "Carrot cake (Gajar ka cake)",
+    "calories_kcal": 255.59,
+    "protein_g": 5.6,
+    "fiber_g": 2.93
+  },
+  {
+    "food_name": "Semolina cake (Suji/Rava cake)",
+    "calories_kcal": 374.14,
+    "protein_g": 6.58,
+    "fiber_g": 5.37
+  },
+  {
+    "food_name": "Finger millet cake (Ragi cake)",
+    "calories_kcal": 279.46,
+    "protein_g": 3.96,
+    "fiber_g": 2.35
+  },
+  {
+    "food_name": "Honey cake",
+    "calories_kcal": 333.59,
+    "protein_g": 3.08,
+    "fiber_g": 0.51
+  },
+  {
+    "food_name": "Almond cardamom cake (Badam elaichi cake)",
+    "calories_kcal": 356.35,
+    "protein_g": 7.18,
+    "fiber_g": 2.35
+  },
+  {
+    "food_name": "Tutti frutti cake",
+    "calories_kcal": 347.72,
+    "protein_g": 4.49,
+    "fiber_g": 0.85
+  },
+  {
+    "food_name": "Ham and Bean soup",
+    "calories_kcal": 96.04,
+    "protein_g": 10.61,
+    "fiber_g": 0.54
+  },
+  {
+    "food_name": "Whey soup",
+    "calories_kcal": 68.91,
+    "protein_g": 3.45,
+    "fiber_g": 0.84
+  },
+  {
+    "food_name": "Bottle gourd soup (Ghiya/Lauki soup)",
+    "calories_kcal": 23.05,
+    "protein_g": 0.45,
+    "fiber_g": 0.96
+  },
+  {
+    "food_name": "Baked potato soup",
+    "calories_kcal": 147.05,
+    "protein_g": 5.73,
+    "fiber_g": 0.3
+  },
+  {
+    "food_name": "Pumpkin soup",
+    "calories_kcal": 40.05,
+    "protein_g": 0.47,
+    "fiber_g": 1.19
+  },
+  {
+    "food_name": "Sweet corn soup",
+    "calories_kcal": 32.25,
+    "protein_g": 0.99,
+    "fiber_g": 0.31
+  },
+  {
+    "food_name": "Paneer soup",
+    "calories_kcal": 47.85,
+    "protein_g": 3.22,
+    "fiber_g": 0.28
+  },
+  {
+    "food_name": "Curried Cauliflower soup",
+    "calories_kcal": 37.32,
+    "protein_g": 6.72,
+    "fiber_g": 2.34
+  },
+  {
+    "food_name": "Millet soup",
+    "calories_kcal": 55.99,
+    "protein_g": 11.26,
+    "fiber_g": 2.82
+  },
+  {
+    "food_name": "Lemon coriander soup",
+    "calories_kcal": 108.06,
+    "protein_g": 2.27,
+    "fiber_g": 6.77
+  },
+  {
+    "food_name": "Garlic soup",
+    "calories_kcal": 194.86,
+    "protein_g": 2.38,
+    "fiber_g": 1.66
+  },
+  {
+    "food_name": "Dal makhani",
+    "calories_kcal": 74.04,
+    "protein_g": 3.32,
+    "fiber_g": 2.27
+  },
+  {
+    "food_name": "Dalma",
+    "calories_kcal": 118.93,
+    "protein_g": 4.91,
+    "fiber_g": 2.16
+  },
+  {
+    "food_name": "Split bengal gram dal (Channa dal)",
+    "calories_kcal": 99.67,
+    "protein_g": 4.15,
+    "fiber_g": 3.72
+  },
+  {
+    "food_name": "Horsegram dal (Kulthi dal) ",
+    "calories_kcal": 55.65,
+    "protein_g": 2.91,
+    "fiber_g": 1.52
+  },
+  {
+    "food_name": "Panchmel dal",
+    "calories_kcal": 111.22,
+    "protein_g": 4.63,
+    "fiber_g": 3.2
+  },
+  {
+    "food_name": "Dal dhokli",
+    "calories_kcal": 68.74,
+    "protein_g": 2.96,
+    "fiber_g": 1.86
+  },
+  {
+    "food_name": "Gujarati handvo ",
+    "calories_kcal": 207.09,
+    "protein_g": 8.24,
+    "fiber_g": 4.95
+  },
+  {
+    "food_name": "Sev (Omapodi/Karapusa)",
+    "calories_kcal": 609.14,
+    "protein_g": 5.12,
+    "fiber_g": 2.35
+  },
+  {
+    "food_name": "Papdi",
+    "calories_kcal": 708.96,
+    "protein_g": 1.83,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Jowar dosa",
+    "calories_kcal": 294.35,
+    "protein_g": 8.5,
+    "fiber_g": 5.56
+  },
+  {
+    "food_name": "Bread roll",
+    "calories_kcal": 435.46,
+    "protein_g": 2.85,
+    "fiber_g": 1.45
+  },
+  {
+    "food_name": "Soya seekh kebab",
+    "calories_kcal": 115.05,
+    "protein_g": 5.4,
+    "fiber_g": 2.24
+  },
+  {
+    "food_name": "Classic seasoned black beans",
+    "calories_kcal": 28.78,
+    "protein_g": 8.01,
+    "fiber_g": 3.51
+  },
+  {
+    "food_name": "Maa chaane ki dal",
+    "calories_kcal": 344.67,
+    "protein_g": 19.8,
+    "fiber_g": 13.45
+  },
+  {
+    "food_name": "Garlic chickpea soup (Lahasun aur chane ka shoraba)",
+    "calories_kcal": 89.53,
+    "protein_g": 4.45,
+    "fiber_g": 2.84
+  },
+  {
+    "food_name": "White sauce (thin)",
+    "calories_kcal": 115.17,
+    "protein_g": 3.31,
+    "fiber_g": 0.07
+  },
+  {
+    "food_name": "White sauce (medium)",
+    "calories_kcal": 151.27,
+    "protein_g": 3.36,
+    "fiber_g": 0.14
+  },
+  {
+    "food_name": "White sauce (thick)",
+    "calories_kcal": 209.69,
+    "protein_g": 3.43,
+    "fiber_g": 0.24
+  },
+  {
+    "food_name": "Cheese sauce",
+    "calories_kcal": 194.76,
+    "protein_g": 7.68,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Egg sauce",
+    "calories_kcal": 146.85,
+    "protein_g": 5.97,
+    "fiber_g": 0.12
+  },
+  {
+    "food_name": "Mushroom sauce",
+    "calories_kcal": 137.56,
+    "protein_g": 3.39,
+    "fiber_g": 0.47
+  },
+  {
+    "food_name": "Mustard sauce",
+    "calories_kcal": 158.58,
+    "protein_g": 3.98,
+    "fiber_g": 0.13
+  },
+  {
+    "food_name": "Brown sauce",
+    "calories_kcal": 109.18,
+    "protein_g": 11.92,
+    "fiber_g": 1.69
+  },
+  {
+    "food_name": "Classic italian pasta",
+    "calories_kcal": 42.12,
+    "protein_g": 0.57,
+    "fiber_g": 1.36
+  },
+  {
+    "food_name": "Pasta spinach sauce",
+    "calories_kcal": 85.46,
+    "protein_g": 1.76,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Pasta cheese sauce",
+    "calories_kcal": 149.26,
+    "protein_g": 4.33,
+    "fiber_g": 0.14
+  },
+  {
+    "food_name": "Mayonnaise",
+    "calories_kcal": 774.86,
+    "protein_g": 1.86,
+    "fiber_g": 0.11
+  },
+  {
+    "food_name": "Low calorie quick mayonnaise",
+    "calories_kcal": 242.89,
+    "protein_g": 1.41,
+    "fiber_g": 0.06
+  },
+  {
+    "food_name": "Thousand island dressing",
+    "calories_kcal": 407.87,
+    "protein_g": 1.37,
+    "fiber_g": 0.46
+  },
+  {
+    "food_name": "Curd dip",
+    "calories_kcal": 79.95,
+    "protein_g": 5.04,
+    "fiber_g": 0.1
+  },
+  {
+    "food_name": "Short crust pastry",
+    "calories_kcal": 422.1,
+    "protein_g": 6.11,
+    "fiber_g": 1.58
+  },
+  {
+    "food_name": "Choux pastry",
+    "calories_kcal": 222.37,
+    "protein_g": 5.55,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Flaky pastry",
+    "calories_kcal": 443.94,
+    "protein_g": 4.69,
+    "fiber_g": 1.25
+  },
+  {
+    "food_name": "Sponge cake ",
+    "calories_kcal": 253.77,
+    "protein_g": 9.18,
+    "fiber_g": 0.69
+  },
+  {
+    "food_name": "Glace icing",
+    "calories_kcal": 323.51,
+    "protein_g": 0.01,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Royal icing",
+    "calories_kcal": 332.58,
+    "protein_g": 1.74,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "American frosting",
+    "calories_kcal": 257.57,
+    "protein_g": 1.05,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Gum icing",
+    "calories_kcal": 223.07,
+    "protein_g": 5.94,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Channa murmura premix",
+    "calories_kcal": 339.09,
+    "protein_g": 10.59,
+    "fiber_g": 8.21
+  },
+  {
+    "food_name": "Cracked wheat and green gram dal premix (Dalia moong dal premix)",
+    "calories_kcal": 362.16,
+    "protein_g": 15.89,
+    "fiber_g": 11.66
+  },
+  {
+    "food_name": "Rice flakes and roasted channa ",
+    "calories_kcal": 333.4,
+    "protein_g": 10.57,
+    "fiber_g": 8.84
+  },
+  {
+    "food_name": "Spinach soup in milk ",
+    "calories_kcal": 56.72,
+    "protein_g": 2.89,
+    "fiber_g": 0.79
+  },
+  {
+    "food_name": "Vegetable soup",
+    "calories_kcal": 55.21,
+    "protein_g": 2.22,
+    "fiber_g": 3.01
+  },
+  {
+    "food_name": "Mashed banana with milk",
+    "calories_kcal": 95.43,
+    "protein_g": 2.51,
+    "fiber_g": 0.71
+  },
+  {
+    "food_name": "Poha with curd (Poha aur dahi)",
+    "calories_kcal": 173.32,
+    "protein_g": 6.01,
+    "fiber_g": 1.09
+  },
+  {
+    "food_name": "Potato with curd",
+    "calories_kcal": 73.18,
+    "protein_g": 3.19,
+    "fiber_g": 1.02
+  },
+  {
+    "food_name": "Sweet wheat porridge (Sweet dalia)",
+    "calories_kcal": 140.66,
+    "protein_g": 5.11,
+    "fiber_g": 2.37
+  },
+  {
+    "food_name": "Vegetable khichdi/khichri",
+    "calories_kcal": 143.17,
+    "protein_g": 5.61,
+    "fiber_g": 2.45
+  },
+  {
+    "food_name": "Moong dal mixture",
+    "calories_kcal": 158.84,
+    "protein_g": 4.62,
+    "fiber_g": 1.9
+  },
+  {
+    "food_name": "Cracked wheat khichri/khichdi (Dalia khichri/khichdi)",
+    "calories_kcal": 167.45,
+    "protein_g": 7.56,
+    "fiber_g": 3.74
+  },
+  {
+    "food_name": "Stewed apple",
+    "calories_kcal": 91.93,
+    "protein_g": 0.17,
+    "fiber_g": 1.48
+  },
+  {
+    "food_name": "Lemon squash (Nimbu ka squash)",
+    "calories_kcal": 184.56,
+    "protein_g": 0.15,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Orange squash (Santre ka squash)",
+    "calories_kcal": 193.26,
+    "protein_g": 0.22,
+    "fiber_g": 0.4
+  },
+  {
+    "food_name": "Lichi squash",
+    "calories_kcal": 198.33,
+    "protein_g": 0.3,
+    "fiber_g": 0.41
+  },
+  {
+    "food_name": "Mango squash (Aam ka squash)",
+    "calories_kcal": 194.66,
+    "protein_g": 0.17,
+    "fiber_g": 0.58
+  },
+  {
+    "food_name": "Pineapple squash (Ananas ka squash)",
+    "calories_kcal": 195.02,
+    "protein_g": 0.16,
+    "fiber_g": 1.06
+  },
+  {
+    "food_name": "Lemon and ginger squash (Nimbu aur adrak ka squash)",
+    "calories_kcal": 170.34,
+    "protein_g": 0.54,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Apple jam (Seb ka murabba)",
+    "calories_kcal": 188.79,
+    "protein_g": 0.14,
+    "fiber_g": 1.29
+  },
+  {
+    "food_name": "Plum jam (Aloo bukhara jam)",
+    "calories_kcal": 178.89,
+    "protein_g": 0.31,
+    "fiber_g": 1.0
+  },
+  {
+    "food_name": "Pineapple jam ",
+    "calories_kcal": 149.18,
+    "protein_g": 0.32,
+    "fiber_g": 2.2
+  },
+  {
+    "food_name": "Guava jelly (Amrood ki jelly)",
+    "calories_kcal": 115.74,
+    "protein_g": 1.11,
+    "fiber_g": 6.61
+  },
+  {
+    "food_name": "Orange marmalade (Santray ka murabba)",
+    "calories_kcal": 104.17,
+    "protein_g": 0.66,
+    "fiber_g": 1.97
+  },
+  {
+    "food_name": "Carrot murabba (Gajar ka murabba)",
+    "calories_kcal": 175.24,
+    "protein_g": 0.32,
+    "fiber_g": 1.39
+  },
+  {
+    "food_name": "Gooseberry marmalade (Amla murabba)",
+    "calories_kcal": 123.16,
+    "protein_g": 0.14,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Ginger candy (Adrak ki candy)",
+    "calories_kcal": 195.71,
+    "protein_g": 0.69,
+    "fiber_g": 1.67
+  },
+  {
+    "food_name": "Mango pickle (Aam ka achaar)",
+    "calories_kcal": 192.12,
+    "protein_g": 1.6,
+    "fiber_g": 3.68
+  },
+  {
+    "food_name": "Mixed vegetable pickle (Sabziyoon ka achaar)",
+    "calories_kcal": 211.2,
+    "protein_g": 1.9,
+    "fiber_g": 2.76
+  },
+  {
+    "food_name": "Sweet lemon pickle (Neembu ka meetha achaar)",
+    "calories_kcal": 69.54,
+    "protein_g": 1.22,
+    "fiber_g": 2.13
+  },
+  {
+    "food_name": "Plum chutney (Aloo bukhara ki chutney)",
+    "calories_kcal": 177.11,
+    "protein_g": 0.47,
+    "fiber_g": 1.37
+  },
+  {
+    "food_name": "Raw mango chutney (Kachhe aam/Kairi ki chutney)",
+    "calories_kcal": 193.13,
+    "protein_g": 0.51,
+    "fiber_g": 2.17
+  },
+  {
+    "food_name": "Tomato sauce",
+    "calories_kcal": 34.33,
+    "protein_g": 0.81,
+    "fiber_g": 1.79
+  },
+  {
+    "food_name": "Tomato puree",
+    "calories_kcal": 20.62,
+    "protein_g": 0.75,
+    "fiber_g": 1.56
+  },
+  {
+    "food_name": "Garam masala",
+    "calories_kcal": 254.21,
+    "protein_g": 9.89,
+    "fiber_g": 35.56
+  },
+  {
+    "food_name": "Chat masala",
+    "calories_kcal": 222.58,
+    "protein_g": 8.19,
+    "fiber_g": 18.62
+  },
+  {
+    "food_name": "Kashmiri masala",
+    "calories_kcal": 389.02,
+    "protein_g": 8.26,
+    "fiber_g": 12.12
+  },
+  {
+    "food_name": "Rasam powder (Rasam masala)",
+    "calories_kcal": 267.96,
+    "protein_g": 12.04,
+    "fiber_g": 35.71
+  },
+  {
+    "food_name": "Sambar powder (Sambar masala)",
+    "calories_kcal": 297.46,
+    "protein_g": 12.5,
+    "fiber_g": 34.56
+  },
+  {
+    "food_name": "Tartare sauce",
+    "calories_kcal": 610.93,
+    "protein_g": 1.44,
+    "fiber_g": 0.42
+  },
+  {
+    "food_name": "Barbeque sauce",
+    "calories_kcal": 121.93,
+    "protein_g": 0.96,
+    "fiber_g": 0.69
+  },
+  {
+    "food_name": "Bread sauce",
+    "calories_kcal": 111.04,
+    "protein_g": 3.46,
+    "fiber_g": 0.56
+  },
+  {
+    "food_name": "Green chilli sauce",
+    "calories_kcal": 46.06,
+    "protein_g": 1.25,
+    "fiber_g": 1.77
+  },
+  {
+    "food_name": "Home made plain noodles",
+    "calories_kcal": 238.78,
+    "protein_g": 6.21,
+    "fiber_g": 1.65
+  },
+  {
+    "food_name": "Dal moong",
+    "calories_kcal": 43.69,
+    "protein_g": 2.2,
+    "fiber_g": 1.08
+  },
+  {
+    "food_name": "Cumin seeds baghar (Jeera baghar/tadka)",
+    "calories_kcal": 736.81,
+    "protein_g": 3.34,
+    "fiber_g": 6.01
+  },
+  {
+    "food_name": "Onion tomato baghar (Pyaaz tamatar ka tadka)",
+    "calories_kcal": 137.52,
+    "protein_g": 1.26,
+    "fiber_g": 2.12
+  },
+  {
+    "food_name": "Mustard seeds baghar (Mustard seed tadka)",
+    "calories_kcal": 552.59,
+    "protein_g": 4.73,
+    "fiber_g": 9.74
+  },
+  {
+    "food_name": "Hot cherry sauce",
+    "calories_kcal": 252.74,
+    "protein_g": 0.13,
+    "fiber_g": 0.0
+  },
+  {
+    "food_name": "Apple jelly (Seb ki jelly)",
+    "calories_kcal": 152.13,
+    "protein_g": 0.1,
+    "fiber_g": 0.86
+  },
+  {
+    "food_name": "Marmalade (Murabba)",
+    "calories_kcal": 143.76,
+    "protein_g": 0.23,
+    "fiber_g": 0.43
+  },
+  {
+    "food_name": "Plum squash (Aloo bukhara squash)",
+    "calories_kcal": 211.17,
+    "protein_g": 0.16,
+    "fiber_g": 0.52
+  },
+  {
+    "food_name": "Lemon green chilli pickle (Nimboo aur hari mirch ka achaar)",
+    "calories_kcal": 14.07,
+    "protein_g": 0.85,
+    "fiber_g": 1.07
+  },
+  {
+    "food_name": "Brinjal pickle (Baingan ka achaar)",
+    "calories_kcal": 139.01,
+    "protein_g": 2.24,
+    "fiber_g": 4.62
+  },
+  {
+    "food_name": "Sweet and sour tomato pickle (Khatta meetha tamatar ka achaar)",
+    "calories_kcal": 60.88,
+    "protein_g": 1.26,
+    "fiber_g": 2.2
+  },
+  {
+    "food_name": "Jhatpat achar with carrot (Jhatpat achaar gajar ke saath)",
+    "calories_kcal": 91.21,
+    "protein_g": 1.98,
+    "fiber_g": 5.08
+  },
+  {
+    "food_name": "Tomato chutney (Tamatar ki chutney)",
+    "calories_kcal": 176.07,
+    "protein_g": 0.97,
+    "fiber_g": 1.49
+  },
+  {
+    "food_name": "Tomato ketchup",
+    "calories_kcal": 33.07,
+    "protein_g": 0.91,
+    "fiber_g": 1.9
+  },
+  {
+    "food_name": "Bengal 5 Spice Blend (Panch Phoran)",
+    "calories_kcal": 289.79,
+    "protein_g": 18.26,
+    "fiber_g": 18.4
+  }
+]

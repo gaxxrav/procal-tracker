@@ -22,6 +22,7 @@ export function SettingsPage() {
   const [displayName, setDisplayName] = useState('')
   const [calorieTarget, setCalorieTarget] = useState('')
   const [proteinTarget, setProteinTarget] = useState('')
+  const [fiberTarget, setFiberTarget] = useState('')
   const [busy, setBusy] = useState(false)
 
   // Personal stats
@@ -36,6 +37,7 @@ export function SettingsPage() {
     setDisplayName(profile.display_name ?? '')
     setCalorieTarget(String(profile.calorie_target))
     setProteinTarget(String(profile.protein_target))
+    setFiberTarget(String(profile.fiber_target ?? 30))
     setHeightCm(profile.height_cm == null ? '' : num(Number(profile.height_cm)))
     setWeightKg(profile.weight_kg == null ? '' : num(Number(profile.weight_kg)))
     setBirthDate(profile.birth_date ?? '')
@@ -92,7 +94,12 @@ export function SettingsPage() {
     if (!user) return
     const calories = Number(calorieTarget)
     const protein = Number(proteinTarget)
-    if (!Number.isInteger(calories) || calories <= 0 || !Number.isInteger(protein) || protein <= 0) {
+    const fiberT = Number(fiberTarget)
+    if (
+      !Number.isInteger(calories) || calories <= 0 ||
+      !Number.isInteger(protein) || protein <= 0 ||
+      !Number.isInteger(fiberT) || fiberT <= 0
+    ) {
       toast.error('Targets must be whole numbers above zero.')
       return
     }
@@ -102,6 +109,7 @@ export function SettingsPage() {
         display_name: displayName.trim() || null,
         calorie_target: calories,
         protein_target: protein,
+        fiber_target: fiberT,
       })
       await refreshProfile()
       toast.success('Targets updated')
@@ -135,9 +143,9 @@ export function SettingsPage() {
               />
             </div>
 
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-3">
               <div className="space-y-2">
-                <Label htmlFor="calorie-target">Calories (kcal)</Label>
+                <Label htmlFor="calorie-target">Calories</Label>
                 <Input
                   id="calorie-target"
                   type="number"
@@ -159,6 +167,19 @@ export function SettingsPage() {
                   step="1"
                   value={proteinTarget}
                   onChange={(e) => setProteinTarget(e.target.value)}
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="fiber-target">Fibre (g)</Label>
+                <Input
+                  id="fiber-target"
+                  type="number"
+                  inputMode="numeric"
+                  min="1"
+                  step="1"
+                  value={fiberTarget}
+                  onChange={(e) => setFiberTarget(e.target.value)}
                   required
                 />
               </div>

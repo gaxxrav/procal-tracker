@@ -121,7 +121,8 @@ export function FoodsPage() {
                     <div className="shrink-0 text-right tabular-nums">
                       <p>{kcal(Number(food.calories_per_serving))} kcal</p>
                       <p className="text-xs text-muted-foreground">
-                        {grams(Number(food.protein_per_serving))} protein
+                        {grams(Number(food.protein_per_serving))} P ·{' '}
+                        {grams(Number(food.fiber_per_serving ?? 0))} fib
                       </p>
                     </div>
                     <div className="flex shrink-0 gap-0.5 opacity-0 transition-opacity group-hover:opacity-100 focus-within:opacity-100">
@@ -183,6 +184,7 @@ function FoodDialog({
   const [servingUnit, setServingUnit] = useState(food?.serving_unit ?? 'g')
   const [calories, setCalories] = useState(food ? num(Number(food.calories_per_serving)) : '')
   const [protein, setProtein] = useState(food ? num(Number(food.protein_per_serving)) : '')
+  const [fiber, setFiber] = useState(food ? num(Number(food.fiber_per_serving ?? 0)) : '')
   const [busy, setBusy] = useState(false)
 
   async function onSubmit(event: React.FormEvent) {
@@ -193,6 +195,7 @@ function FoodDialog({
       serving_unit: servingUnit,
       calories_per_serving: Number(calories),
       protein_per_serving: Number(protein),
+      fiber_per_serving: fiber.trim() === '' ? 0 : Number(fiber),
     }
     if (!patch.name || !(patch.serving_size > 0)) {
       toast.error('A name and a serving size above zero are required.')
@@ -265,9 +268,9 @@ function FoodDialog({
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             <div className="space-y-2">
-              <Label htmlFor="food-calories">Calories (kcal)</Label>
+              <Label htmlFor="food-calories">Calories</Label>
               <Input
                 id="food-calories"
                 type="number"
@@ -290,6 +293,18 @@ function FoodDialog({
                 value={protein}
                 onChange={(e) => setProtein(e.target.value)}
                 required
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="food-fiber">Fibre (g)</Label>
+              <Input
+                id="food-fiber"
+                type="number"
+                inputMode="decimal"
+                step="any"
+                min="0"
+                value={fiber}
+                onChange={(e) => setFiber(e.target.value)}
               />
             </div>
           </div>

@@ -26,7 +26,7 @@ export function MacroMeter({ kind, label, value, target, unit, hero, className }
 
   // Overshooting calories is a miss; overshooting protein is a hit. Status
   // colour always ships with an icon + label so it never reads as colour alone.
-  const overIsGood = kind === 'protein'
+  const overIsGood = kind !== 'calories'
   const status = !over ? null : overIsGood ? 'good' : 'warning'
 
   return (

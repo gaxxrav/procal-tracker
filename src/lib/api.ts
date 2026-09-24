@@ -25,6 +25,7 @@ export async function updateProfile(
       | 'display_name'
       | 'calorie_target'
       | 'protein_target'
+      | 'fiber_target'
       | 'height_cm'
       | 'weight_kg'
       | 'birth_date'
@@ -58,6 +59,7 @@ export type NewEntry = {
   unit: string
   calories: number
   protein: number
+  fiber: number
   food_id?: string | null
 }
 
@@ -94,6 +96,7 @@ export type NewFood = {
   serving_unit: string
   calories_per_serving: number
   protein_per_serving: number
+  fiber_per_serving: number
 }
 
 export async function upsertFood(userId: string, food: NewFood): Promise<Food> {
@@ -132,7 +135,10 @@ export async function upsertDailyLog(
   userId: string,
   dateKey: string,
   patch: Partial<
-    Pick<DailyLog, 'calorie_target' | 'protein_target' | 'weight_kg' | 'energy_level' | 'notes'>
+    Pick<
+      DailyLog,
+      'calorie_target' | 'protein_target' | 'fiber_target' | 'weight_kg' | 'energy_level' | 'notes'
+    >
   >,
 ): Promise<DailyLog> {
   return unwrap(

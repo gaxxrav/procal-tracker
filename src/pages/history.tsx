@@ -102,6 +102,7 @@ export function HistoryPage() {
 
   const calorieTarget = profile?.calorie_target ?? 2400
   const proteinTarget = profile?.protein_target ?? 140
+  const fiberTarget = profile?.fiber_target ?? 30
 
   const energyByDate = useMemo(() => {
     const map = new Map<string, number>()
@@ -144,7 +145,8 @@ export function HistoryPage() {
         {/* ---------------------------------------------------- nutrition */}
         <TabsContent value="nutrition" className="space-y-5 pt-4">
           <p className="px-1 text-xs text-muted-foreground">
-            Targets {calorieTarget.toLocaleString()} kcal · {proteinTarget}g protein.
+            Targets {calorieTarget.toLocaleString()} kcal · {proteinTarget}g protein ·{' '}
+            {fiberTarget}g fibre.
           </p>
           {food.length === 0 ? (
             <Empty>
@@ -160,7 +162,7 @@ export function HistoryPage() {
                 key={month}
                 month={month}
                 caption={`Daily calories and protein for ${month}, with target hits marked.`}
-                headers={['Day', 'Calories', 'Protein']}
+                headers={['Day', 'Calories', 'Protein', 'Fibre']}
               >
                 {days.map((day) => {
                   const calories = Number(day.calories)
@@ -185,7 +187,7 @@ export function HistoryPage() {
                           {kcal(calories)} kcal
                         </span>
                       </td>
-                      <td className="whitespace-nowrap px-4 py-2.5 text-right tabular-nums text-muted-foreground">
+                      <td className="whitespace-nowrap px-2 py-2.5 text-right tabular-nums text-muted-foreground">
                         <span className="inline-flex items-center gap-1">
                           {protein >= proteinTarget && (
                             <Check
@@ -194,8 +196,11 @@ export function HistoryPage() {
                               aria-label="protein target hit"
                             />
                           )}
-                          {grams(protein)}
+                          {grams(protein)} P
                         </span>
+                      </td>
+                      <td className="whitespace-nowrap px-4 py-2.5 text-right tabular-nums text-muted-foreground">
+                        {grams(Number(day.fiber ?? 0))} fib
                       </td>
                     </tr>
                   )

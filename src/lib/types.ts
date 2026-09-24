@@ -1,5 +1,5 @@
 /** Each metric owns a hue app-wide: meters, stat tiles and charts. */
-export type Metric = 'calories' | 'protein' | 'volume' | 'bodyweight'
+export type Metric = 'calories' | 'protein' | 'fiber' | 'volume' | 'bodyweight'
 
 export const MEALS = ['breakfast', 'lunch', 'dinner', 'snack'] as const
 export type Meal = (typeof MEALS)[number]
@@ -40,6 +40,7 @@ export type Profile = {
   display_name: string | null
   calorie_target: number
   protein_target: number
+  fiber_target: number
   height_cm: number | null
   weight_kg: number | null
   /** `yyyy-MM-dd`. Age is derived from this, never stored. */
@@ -72,6 +73,7 @@ export type Food = {
   serving_unit: string
   calories_per_serving: number
   protein_per_serving: number
+  fiber_per_serving: number
   created_at: string
   updated_at: string
 }
@@ -89,6 +91,7 @@ export type FoodEntry = {
   /** Total for this entry, not per serving. */
   calories: number
   protein: number
+  fiber: number
   created_at: string
   updated_at: string
 }
@@ -99,6 +102,7 @@ export type DailyLog = {
   logged_on: string
   calorie_target: number | null
   protein_target: number | null
+  fiber_target: number | null
   weight_kg: number | null
   /** 1–5, optional. See ENERGY_LABELS. */
   energy_level: number | null
@@ -112,6 +116,7 @@ export type DailyTotals = {
   logged_on: string
   calories: number
   protein: number
+  fiber: number
   entry_count: number
 }
 
@@ -122,4 +127,17 @@ export type DailyWorkoutTotals = {
   total_sets: number
   total_reps: number
   exercises: number
+}
+
+/**
+ * A food from the bundled reference library (prepared dishes, per 100 g).
+ * Read-only: selecting one prefills the form, and whatever the user saves
+ * becomes their own entry.
+ */
+export type ReferenceFood = {
+  name: string
+  /** All figures are per 100 g. */
+  calories: number
+  protein: number
+  fiber: number
 }

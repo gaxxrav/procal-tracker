@@ -20,7 +20,12 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { createEntry, upsertFood, type NewEntry } from '@/lib/api'
 import { grams, kcal, num, round } from '@/lib/format'
-import { MEAL_LABELS, MEALS, UNITS, type Food, type Meal } from '@/lib/types'
+import {
+  REFERENCE_SERVING_G,
+  scaleReference,
+  searchReferenceFoods,
+} from '@/lib/reference-foods'
+import { MEAL_LABELS, MEALS, UNITS, type Food, type Meal, type ReferenceFood } from '@/lib/types'
 import { cn } from '@/lib/utils'
 import { Loader2, Search } from 'lucide-react'
 import { useMemo, useState } from 'react'
@@ -34,9 +39,13 @@ type Props = {
   defaultMeal: Meal
   foods: Food[]
   onSaved: () => void
-  /** Called when a new saved food is created, so the library can refresh. */
   onFoodCreated: () => void
 }
+
+/** A saved food and a library food, reduced to what the picker needs. */
+type Pick_ =
+  | { source: 'saved'; food: Food }
+  | { source: 'library'; food: ReferenceFood }
 
 export function AddFoodDialog({
   open,
@@ -51,53 +60,80 @@ export function AddFoodDialog({
   const [meal, setMeal] = useState<Meal>(defaultMeal)
   const [busy, setBusy] = useState(false)
 
-  // Saved-food tab
+  // Search tab
   const [query, setQuery] = useState('')
-  const [selected, setSelected] = useState<Food | null>(null)
-  const [savedQty, setSavedQty] = useState('')
+  const [selected, setSelected] = useState<Pick_ | null>(null)
+  const [qty, setQty] = useState('')
 
-  // Custom tab
+  // One-off tab
   const [name, setName] = useState('')
-  const [qty, setQty] = useState('1')
+  const [customQty, setCustomQty] = useState('1')
   const [unit, setUnit] = useState<string>('g')
   const [calories, setCalories] = useState('')
   const [protein, setProtein] = useState('')
+  const [fiber, setFiber] = useState('')
   const [alsoSave, setAlsoSave] = useState(false)
 
-  const matches = useMemo(() => {
+  const savedMatches = useMemo(() => {
     const q = query.trim().toLowerCase()
     const list = q ? foods.filter((f) => f.name.toLowerCase().includes(q)) : foods
-    return list.slice(0, 8)
+    return list.slice(0, 6)
   }, [foods, query])
 
-  // Saved foods store per-serving values; scale them to the logged quantity.
+  // Your own foods always rank above the library; the library only fills in
+  // once you've typed something.
+  const libraryMatches = useMemo(() => {
+    if (!query.trim()) return []
+    const ownNames = new Set(foods.map((f) => f.name.toLowerCase()))
+    return searchReferenceFoods(query, 30)
+      .filter((f) => !ownNames.has(f.name.toLowerCase()))
+      .slice(0, 12)
+  }, [query, foods])
+
   const scaled = useMemo(() => {
     if (!selected) return null
-    const quantity = Number(savedQty)
+    const quantity = Number(qty)
     if (!Number.isFinite(quantity) || quantity <= 0) return null
-    const factor = quantity / selected.serving_size
+
+    if (selected.source === 'library') {
+      return { quantity, unit: 'g', ...scaleReference(selected.food, quantity) }
+    }
+    const f = selected.food
+    const factor = quantity / Number(f.serving_size)
     return {
       quantity,
-      calories: round(selected.calories_per_serving * factor, 2),
-      protein: round(selected.protein_per_serving * factor, 2),
+      unit: f.serving_unit,
+      calories: round(Number(f.calories_per_serving) * factor, 2),
+      protein: round(Number(f.protein_per_serving) * factor, 2),
+      fiber: round(Number(f.fiber_per_serving ?? 0) * factor, 2),
     }
-  }, [selected, savedQty])
+  }, [selected, qty])
 
   function reset() {
     setQuery('')
     setSelected(null)
-    setSavedQty('')
+    setQty('')
     setName('')
-    setQty('1')
+    setCustomQty('1')
     setUnit('g')
     setCalories('')
     setProtein('')
+    setFiber('')
     setAlsoSave(false)
   }
 
   function close() {
     onOpenChange(false)
     reset()
+  }
+
+  function choose(pick: Pick_) {
+    setSelected(pick)
+    setQty(
+      pick.source === 'library'
+        ? String(REFERENCE_SERVING_G)
+        : num(Number(pick.food.serving_size)),
+    )
   }
 
   async function submit(entry: NewEntry, saveAsFood?: { serving_size: number; unit: string }) {
@@ -111,6 +147,7 @@ export function AddFoodDialog({
           serving_unit: saveAsFood.unit,
           calories_per_serving: entry.calories,
           protein_per_serving: entry.protein,
+          fiber_per_serving: entry.fiber,
         })
         onFoodCreated()
       }
@@ -124,27 +161,29 @@ export function AddFoodDialog({
     }
   }
 
-  function submitSaved(event: React.FormEvent) {
+  function submitSelected(event: React.FormEvent) {
     event.preventDefault()
     if (!selected || !scaled) return
     void submit({
       logged_on: dateKey,
       meal,
-      food_name: selected.name,
+      food_name: selected.food.name,
       quantity: scaled.quantity,
-      unit: selected.serving_unit,
+      unit: scaled.unit,
       calories: scaled.calories,
       protein: scaled.protein,
-      food_id: selected.id,
+      fiber: scaled.fiber,
+      food_id: selected.source === 'saved' ? selected.food.id : null,
     })
   }
 
   function submitCustom(event: React.FormEvent) {
     event.preventDefault()
-    const quantity = Number(qty)
+    const quantity = Number(customQty)
     const cal = Number(calories)
     const pro = Number(protein)
-    if (!name.trim() || !(quantity > 0) || !(cal >= 0) || !(pro >= 0)) {
+    const fib = fiber.trim() === '' ? 0 : Number(fiber)
+    if (!name.trim() || !(quantity > 0) || !(cal >= 0) || !(pro >= 0) || !(fib >= 0)) {
       toast.error('Fill in a name, quantity, calories and protein.')
       return
     }
@@ -157,10 +196,13 @@ export function AddFoodDialog({
         unit,
         calories: cal,
         protein: pro,
+        fiber: fib,
       },
       alsoSave ? { serving_size: quantity, unit } : undefined,
     )
   }
+
+  const nothingFound = query.trim() && savedMatches.length === 0 && libraryMatches.length === 0
 
   return (
     <Dialog
@@ -192,80 +234,93 @@ export function AddFoodDialog({
           </Select>
         </div>
 
-        <Tabs defaultValue={foods.length ? 'saved' : 'custom'}>
+        <Tabs defaultValue="search">
           <TabsList className="w-full">
-            <TabsTrigger value="saved" className="flex-1">
-              My foods
+            <TabsTrigger value="search" className="flex-1">
+              Search
             </TabsTrigger>
             <TabsTrigger value="custom" className="flex-1">
               One-off
             </TabsTrigger>
           </TabsList>
 
-          {/* ------------------------------------------------- saved foods */}
-          <TabsContent value="saved" className="space-y-3 pt-3">
-            <form onSubmit={submitSaved} className="space-y-3">
+          {/* ------------------------------------------------------ search */}
+          <TabsContent value="search" className="space-y-3 pt-3">
+            <form onSubmit={submitSelected} className="space-y-3">
               <div className="relative">
                 <Search className="pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
-                  placeholder="Search your foods"
+                  placeholder="Search your foods and the library"
                   className="pl-8"
                   value={query}
-                  onChange={(e) => setQuery(e.target.value)}
+                  onChange={(e) => {
+                    setQuery(e.target.value)
+                    setSelected(null)
+                  }}
+                  autoComplete="off"
                 />
               </div>
 
-              {foods.length === 0 ? (
-                <p className="py-6 text-center text-sm text-muted-foreground">
-                  No saved foods yet. Log a one-off and tick “Save to my foods”.
-                </p>
-              ) : (
-                <ul className="max-h-52 space-y-1 overflow-y-auto">
-                  {matches.map((food) => {
-                    const active = selected?.id === food.id
-                    return (
-                      <li key={food.id}>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setSelected(food)
-                            setSavedQty(num(food.serving_size))
-                          }}
-                          className={cn(
-                            'flex w-full items-baseline justify-between gap-3 rounded-lg px-2.5 py-2 text-left text-sm transition-colors',
-                            active ? 'bg-muted' : 'hover:bg-muted/60',
-                          )}
-                        >
-                          <span className="truncate font-medium">{food.name}</span>
-                          <span className="shrink-0 text-xs tabular-nums text-muted-foreground">
-                            {kcal(food.calories_per_serving)} kcal ·{' '}
-                            {grams(food.protein_per_serving)} / {num(food.serving_size)}
-                            {food.serving_unit}
-                          </span>
-                        </button>
-                      </li>
-                    )
-                  })}
-                  {matches.length === 0 && (
-                    <li className="py-6 text-center text-sm text-muted-foreground">
-                      Nothing matches “{query}”.
-                    </li>
-                  )}
-                </ul>
-              )}
+              <div className="max-h-56 space-y-3 overflow-y-auto">
+                {savedMatches.length > 0 && (
+                  <Group label="My foods">
+                    {savedMatches.map((food) => (
+                      <Row
+                        key={food.id}
+                        active={selected?.source === 'saved' && selected.food.id === food.id}
+                        name={food.name}
+                        detail={`${kcal(Number(food.calories_per_serving))} kcal · ${grams(
+                          Number(food.protein_per_serving),
+                        )} P / ${num(Number(food.serving_size))}${food.serving_unit}`}
+                        onSelect={() => choose({ source: 'saved', food })}
+                      />
+                    ))}
+                  </Group>
+                )}
+
+                {libraryMatches.length > 0 && (
+                  <Group label={`Library · per ${REFERENCE_SERVING_G} g`}>
+                    {libraryMatches.map((food) => (
+                      <Row
+                        key={food.name}
+                        active={selected?.source === 'library' && selected.food.name === food.name}
+                        name={food.name}
+                        detail={`${kcal(food.calories)} kcal · ${grams(food.protein)} P · ${grams(
+                          food.fiber,
+                        )} fib`}
+                        onSelect={() => choose({ source: 'library', food })}
+                      />
+                    ))}
+                  </Group>
+                )}
+
+                {nothingFound && (
+                  <p className="py-6 text-center text-sm text-muted-foreground">
+                    Nothing matches “{query}”. Use the One-off tab.
+                  </p>
+                )}
+                {!query.trim() && foods.length === 0 && (
+                  <p className="py-6 text-center text-sm text-muted-foreground">
+                    Start typing to search 1,000+ dishes.
+                  </p>
+                )}
+              </div>
 
               {selected && (
                 <div className="space-y-3 rounded-lg border p-3">
                   <div className="space-y-2">
-                    <Label htmlFor="saved-qty">Quantity ({selected.serving_unit})</Label>
+                    <Label htmlFor="qty">
+                      Quantity ({selected.source === 'library' ? 'g' : selected.food.serving_unit})
+                    </Label>
                     <Input
-                      id="saved-qty"
+                      id="qty"
                       type="number"
                       inputMode="decimal"
                       step="any"
                       min="0"
-                      value={savedQty}
-                      onChange={(e) => setSavedQty(e.target.value)}
+                      value={qty}
+                      onChange={(e) => setQty(e.target.value)}
+                      autoFocus
                     />
                   </div>
                   <p className="text-sm text-muted-foreground">
@@ -277,7 +332,8 @@ export function AddFoodDialog({
                         ·{' '}
                         <span className="font-medium text-foreground">
                           {grams(scaled.protein)} protein
-                        </span>
+                        </span>{' '}
+                        · <span className="font-medium text-foreground">{grams(scaled.fiber)} fibre</span>
                       </>
                     ) : (
                       'Enter a quantity.'
@@ -295,7 +351,7 @@ export function AddFoodDialog({
             </form>
           </TabsContent>
 
-          {/* -------------------------------------------------- custom food */}
+          {/* ------------------------------------------------------ one-off */}
           <TabsContent value="custom" className="space-y-3 pt-3">
             <form onSubmit={submitCustom} className="space-y-3">
               <div className="space-y-2">
@@ -311,15 +367,15 @@ export function AddFoodDialog({
 
               <div className="grid grid-cols-2 gap-3">
                 <div className="space-y-2">
-                  <Label htmlFor="qty">Quantity</Label>
+                  <Label htmlFor="custom-qty">Quantity</Label>
                   <Input
-                    id="qty"
+                    id="custom-qty"
                     type="number"
                     inputMode="decimal"
                     step="any"
                     min="0"
-                    value={qty}
-                    onChange={(e) => setQty(e.target.value)}
+                    value={customQty}
+                    onChange={(e) => setCustomQty(e.target.value)}
                     required
                   />
                 </div>
@@ -340,9 +396,9 @@ export function AddFoodDialog({
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-3 gap-3">
                 <div className="space-y-2">
-                  <Label htmlFor="calories">Calories (kcal)</Label>
+                  <Label htmlFor="calories">Calories</Label>
                   <Input
                     id="calories"
                     type="number"
@@ -369,6 +425,19 @@ export function AddFoodDialog({
                     required
                   />
                 </div>
+                <div className="space-y-2">
+                  <Label htmlFor="fiber">Fibre (g)</Label>
+                  <Input
+                    id="fiber"
+                    type="number"
+                    inputMode="decimal"
+                    step="any"
+                    min="0"
+                    placeholder="0"
+                    value={fiber}
+                    onChange={(e) => setFiber(e.target.value)}
+                  />
+                </div>
               </div>
 
               <div className="flex items-center gap-2">
@@ -383,7 +452,7 @@ export function AddFoodDialog({
               </div>
 
               <DialogFooter>
-                <Button type="submit" size="lg" disabled={busy} className="w-full">
+                <Button type="submit" size="lg" className="w-full" disabled={busy}>
                   {busy && <Loader2 className="animate-spin" />}
                   Add
                 </Button>
@@ -393,5 +462,42 @@ export function AddFoodDialog({
         </Tabs>
       </DialogContent>
     </Dialog>
+  )
+}
+
+function Group({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <p className="px-1 pb-1 text-xs font-medium text-muted-foreground">{label}</p>
+      <ul className="space-y-0.5">{children}</ul>
+    </div>
+  )
+}
+
+function Row({
+  active,
+  name,
+  detail,
+  onSelect,
+}: {
+  active: boolean
+  name: string
+  detail: string
+  onSelect: () => void
+}) {
+  return (
+    <li>
+      <button
+        type="button"
+        onClick={onSelect}
+        className={cn(
+          'flex w-full flex-col items-start gap-0.5 rounded-lg px-2.5 py-1.5 text-left transition-colors',
+          active ? 'bg-muted' : 'hover:bg-muted/60',
+        )}
+      >
+        <span className="w-full truncate text-sm font-medium">{name}</span>
+        <span className="text-xs tabular-nums text-muted-foreground">{detail}</span>
+      </button>
+    </li>
   )
 }
