@@ -1,11 +1,11 @@
-import data from '@/data/reference-foods.json'
+import { REFERENCE_FOOD_ROWS } from '@/data/reference-foods'
 import type { ReferenceFood } from '@/lib/types'
 
 /**
  * Bundled library of prepared dishes, all figures per 100 g. Read-only — it is
  * a source of suggestions, never a store of the user's data.
  */
-export const REFERENCE_FOODS = data as ReferenceFood[]
+export const REFERENCE_FOODS: ReferenceFood[] = REFERENCE_FOOD_ROWS
 
 /** The basis every figure in the library is quoted against. */
 export const REFERENCE_SERVING_G = 100

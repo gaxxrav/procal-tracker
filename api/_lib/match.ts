@@ -1,14 +1,8 @@
-import referenceFoods from '../../src/data/reference-foods.json'
+import { REFERENCE_FOOD_ROWS, type ReferenceFoodRow } from '../../src/data/reference-foods'
 
-type ReferenceFood = {
-  name: string
-  /** per 100 g */
-  calories: number
-  protein: number
-  fiber: number
-}
+type ReferenceFood = ReferenceFoodRow
 
-const FOODS = referenceFoods as ReferenceFood[]
+const FOODS: ReferenceFood[] = REFERENCE_FOOD_ROWS
 const REFERENCE_SERVING_G = 100
 
 const normalise = (value: string) =>
