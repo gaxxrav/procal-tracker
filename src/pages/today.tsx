@@ -1,5 +1,6 @@
 import { AddFoodDialog } from '@/components/add-food-dialog'
 import { MacroMeter } from '@/components/macro-meter'
+import { QuickLogSheet } from '@/components/quick-log-sheet'
 import { WeighInField } from '@/components/weigh-in-field'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -9,7 +10,7 @@ import { deleteEntry, getDailyLog, listEntries, listFoods, recordWeighIn } from 
 import { grams, kcal, longDateLabel, num, todayKey, toDateKey, fromDateKey } from '@/lib/format'
 import { MEAL_LABELS, MEALS, type DailyLog, type Food, type FoodEntry, type Meal } from '@/lib/types'
 import { addDays, isAfter, startOfDay } from 'date-fns'
-import { ChevronLeft, ChevronRight, Plus, Trash2 } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Plus, Sparkles, Trash2 } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { toast } from 'sonner'
 
@@ -22,6 +23,7 @@ export function TodayPage() {
   const [loading, setLoading] = useState(true)
   const [addOpen, setAddOpen] = useState(false)
   const [addMeal, setAddMeal] = useState<Meal>('breakfast')
+  const [quickOpen, setQuickOpen] = useState(false)
 
   const userId = user?.id
 
@@ -150,6 +152,10 @@ export function TodayPage() {
         </Button>
       </div>
 
+      <Button size="lg" className="w-full" onClick={() => setQuickOpen(true)}>
+        <Sparkles /> Quick log
+      </Button>
+
       {/* ------------------------------------------------------- the meters */}
       <Card>
         <CardContent className="grid gap-6 sm:grid-cols-3">
@@ -277,6 +283,19 @@ export function TodayPage() {
           )
         })}
       </div>
+
+      {userId && (
+        <QuickLogSheet
+          open={quickOpen}
+          onOpenChange={setQuickOpen}
+          userId={userId}
+          dateKey={dateKey}
+          onSaved={() => {
+            void loadDay()
+            void refreshProfile()
+          }}
+        />
+      )}
 
       {userId && (
         <AddFoodDialog

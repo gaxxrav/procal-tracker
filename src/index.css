@@ -167,8 +167,32 @@
     }
   body {
     @apply bg-background text-foreground;
+    /* Standalone iOS has no browser chrome to absorb an overscroll bounce. */
+    overscroll-behavior-y: none;
     }
   html {
     @apply font-sans;
+    /* Stops iOS Safari inflating text in landscape. */
+    -webkit-text-size-adjust: 100%;
     }
+  /* Tapping an input under 16px makes iOS zoom the whole page and never
+     zoom back out. */
+  input,
+  select,
+  textarea {
+    font-size: max(1rem, 16px);
+    }
+}
+
+/* Safe-area insets. With viewport-fit=cover the layout runs edge to edge, so
+   the sticky header and the fixed bottom tab bar have to pad themselves out
+   of the notch and the home indicator. */
+@utility pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+@utility pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@utility px-safe {
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
 }

@@ -36,7 +36,7 @@ export function AppShell() {
 
   return (
     <div className="min-h-svh bg-background">
-      <header className="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
+      <header className="pt-safe sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
         <div className="mx-auto flex h-14 max-w-3xl items-center gap-2 px-4">
           <span className="mr-2 font-semibold tracking-tight">procal</span>
 
@@ -98,12 +98,12 @@ export function AppShell() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-4 pb-24 pt-6 sm:pb-10">
+      <main className="mx-auto max-w-3xl px-4 pb-[calc(6rem+env(safe-area-inset-bottom,0px))] pt-6 sm:pb-10">
         <Outlet />
       </main>
 
       {/* Bottom tab bar on phones, where this app actually gets used. */}
-      <nav className="fixed inset-x-0 bottom-0 z-40 border-t bg-background/95 backdrop-blur sm:hidden">
+      <nav className="pb-safe fixed inset-x-0 bottom-0 z-40 border-t bg-background/95 backdrop-blur sm:hidden">
         <div className="mx-auto flex max-w-3xl">
           {NAV.map(({ to, label, icon: Icon, end }) => (
             <NavLink key={to} to={to} end={end} className="flex-1">
