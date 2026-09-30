@@ -1,4 +1,4 @@
-import { REFERENCE_FOOD_ROWS, type ReferenceFoodRow } from '../../src/data/reference-foods'
+import { REFERENCE_FOOD_ROWS, type ReferenceFoodRow } from './reference-foods.js'
 
 type ReferenceFood = ReferenceFoodRow
 

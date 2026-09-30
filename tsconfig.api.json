@@ -5,8 +5,8 @@
     "lib": [
       "ES2023"
     ],
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "types": [
       "node"
     ],

@@ -14,7 +14,7 @@ const source = process.argv[2] ?? 'data/Nutritional_Data_Sheet_Normalized.json'
 // JSON import under Node ESM needs an `with { type: 'json' }` attribute, and
 // the serverless function that consumes this runs as real Node ESM. A plain
 // module loads identically under Vite and under Node.
-const out = 'src/data/reference-foods.ts'
+const outputs = ['src/data/reference-foods.ts', 'api/_lib/reference-foods.ts']
 
 const rows = JSON.parse(readFileSync(source, 'utf8'))
 const round = (v, p = 2) => Math.round(v * 10 ** p) / 10 ** p
@@ -61,9 +61,9 @@ export type ReferenceFoodRow = {
 }
 
 export const REFERENCE_FOOD_ROWS: ReferenceFoodRow[] = `
-writeFileSync(out, header + JSON.stringify(clean) + '\n')
+for (const out of outputs) writeFileSync(out, header + JSON.stringify(clean) + '\n')
 
-console.log(`${clean.length} foods -> ${out}`)
+console.log(`${clean.length} foods -> ${outputs.join(', ')}`)
 if (rejected.length) {
   console.log(`${rejected.length} rejected:`)
   for (const [why, what] of rejected.slice(0, 20)) console.log(`  ${why}: ${typeof what === 'string' ? what : JSON.stringify(what)}`)

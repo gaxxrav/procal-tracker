@@ -1,7 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk'
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { verifySupabaseUser } from './_lib/auth'
-import { matchReferenceFood, scaleReference } from './_lib/match'
+import { verifySupabaseUser } from './_lib/auth.js'
+import { matchReferenceFood, scaleReference } from './_lib/match.js'
 
 /**
  * Turns one free-text utterance into structured log entries.
@@ -198,12 +198,13 @@ export default async function handler(request: VercelRequest, response: VercelRe
 
   try {
     const message = await client.messages.create({
-      model: 'claude-opus-5',
+      // Extraction, not reasoning — and the round trip sits in front of a
+      // person waiting to log a meal, so the cheapest capable model wins.
+      // Note: `output_config.effort` errors on Haiku 4.5, so it is absent
+      // here deliberately; structured outputs are supported.
+      model: 'claude-haiku-4-5',
       max_tokens: 4096,
-      // Low effort: this is extraction, not reasoning, and the round trip is
-      // in front of a person waiting to log a meal.
       output_config: {
-        effort: 'low',
         format: { type: 'json_schema', schema: SCHEMA as unknown as Record<string, unknown> },
       },
       system: systemPrompt(todayKey),
