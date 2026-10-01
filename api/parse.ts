@@ -23,10 +23,23 @@ type Meal = (typeof MEALS)[number]
 type Unit = (typeof UNITS)[number]
 
 /**
- * Flash models are the free tier. Overridable by env so the model can change
- * without a code edit if a newer Flash becomes preferable.
+ * Flash models are the free tier.
+ *
+ * `gemini-flash-latest` is an alias that tracks the current Flash, so it
+ * doesn't retire out from under us the way a pinned version does — a pinned
+ * `gemini-2.5-flash` is exactly what broke here. The concrete ids are a
+ * fallback for the case where the alias isn't served on this tier, newest
+ * first. GEMINI_MODEL overrides the whole chain.
  */
-const MODEL = process.env.GEMINI_MODEL ?? 'gemini-2.5-flash'
+const MODEL_CANDIDATES: string[] = process.env.GEMINI_MODEL
+  ? [process.env.GEMINI_MODEL]
+  : ['gemini-flash-latest', 'gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-3.1-flash-lite']
+
+/** True when the failure is about the model id rather than the request. */
+const isModelUnavailable = (message: string) =>
+  /not found|does not exist|unsupported|not supported|no longer available|deprecated|404/i.test(
+    message,
+  )
 
 /**
  * Standard JSON Schema, passed through `responseJsonSchema`.
@@ -281,21 +294,40 @@ export default async function handler(request: VercelRequest, response: VercelRe
       ? today
       : new Date().toISOString().slice(0, 10)
 
-  try {
-    const ai = new GoogleGenAI({ apiKey })
-    const result = await ai.models.generateContent({
-      model: MODEL,
-      contents: input,
-      config: {
-        systemInstruction: systemPrompt(todayKey),
-        responseMimeType: 'application/json',
-        responseJsonSchema: SCHEMA,
-        // Extraction should be repeatable, not creative.
-        temperature: 0,
-      },
-    })
+  const ai = new GoogleGenAI({ apiKey })
+  const config = {
+    systemInstruction: systemPrompt(todayKey),
+    responseMimeType: 'application/json',
+    responseJsonSchema: SCHEMA,
+    // Extraction should be repeatable, not creative.
+    temperature: 0,
+  }
 
-    const raw = result.text
+  let raw: string | undefined
+  let servedBy = ''
+  const attempts: string[] = []
+
+  try {
+    for (const model of MODEL_CANDIDATES) {
+      try {
+        const result = await ai.models.generateContent({ model, contents: input, config })
+        raw = result.text
+        servedBy = model
+        break
+      } catch (error) {
+        const message = error instanceof Error ? error.message : String(error)
+        attempts.push(`${model}: ${message}`)
+        // Only a model-availability problem is worth trying the next
+        // candidate for; anything else (bad key, quota) will fail identically.
+        if (!isModelUnavailable(message)) throw error
+      }
+    }
+
+    if (!servedBy) {
+      return response.status(502).json({
+        error: `No Gemini model was available. Tried — ${attempts.join(' | ')}`,
+      })
+    }
     if (!raw) return response.status(502).json({ error: 'The parser returned an empty response.' })
 
     let parsed: Record<string, unknown>
@@ -313,17 +345,13 @@ export default async function handler(request: VercelRequest, response: VercelRe
       weight_kg: coerceWeight(parsed.weight_kg),
       energy_level: coerceEnergy(parsed.energy_level),
       note: str(parsed.note) || null,
+      model: servedBy,
       unparsed: Array.isArray(parsed.unparsed)
         ? (parsed.unparsed as unknown[]).map(str).filter(Boolean)
         : [],
     })
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Could not parse that.'
-    // A wrong or retired model id is the likeliest failure and is otherwise
-    // invisible from the client, so name it.
-    const badModel = /not found|does not exist|unsupported|not supported/i.test(message)
-    return response.status(badModel ? 502 : 500).json({
-      error: badModel ? `Model "${MODEL}" was rejected — ${message}` : message,
-    })
+    return response.status(500).json({ error: message })
   }
 }

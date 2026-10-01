@@ -33,6 +33,8 @@ export type ParsedLog = {
   energy_level: number | null
   note: string | null
   unparsed: string[]
+  /** Which Gemini model actually served the request. */
+  model?: string
 }
 
 export function isEmptyParse(parsed: ParsedLog): boolean {
@@ -45,9 +47,9 @@ export function isEmptyParse(parsed: ParsedLog): boolean {
 }
 
 /**
- * Sends one utterance to the server-side parser. The Anthropic key never
- * reaches the browser, so this has to round-trip through /api/parse, which
- * verifies the Supabase session before spending anything.
+ * Sends one utterance to the server-side parser. The provider API key never
+ * reaches the browser, so this round-trips through /api/parse, which verifies
+ * the Supabase session before spending anything.
  */
 export async function parseQuickLog(text: string, todayKey: string): Promise<ParsedLog> {
   const { data } = await supabase.auth.getSession()
