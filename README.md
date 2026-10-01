@@ -14,12 +14,13 @@ Browser  ->  Vercel (static hosting / CDN)
 
 ## Stack
 
-| Layer    | Choice                                   |
-| -------- | ---------------------------------------- |
-| UI       | React 19, Vite 8, Tailwind v4, shadcn/ui |
-| Charts   | Recharts                                 |
-| Data     | Supabase (Postgres, Auth, RLS)           |
-| Hosting  | Vercel                                   |
+| Layer    | Choice                                        |
+| -------- | --------------------------------------------- |
+| UI       | React 19, Vite 8, Tailwind v4, shadcn/ui      |
+| Charts   | Recharts                                      |
+| Data     | Supabase (Postgres, Auth, RLS)                |
+| Parsing  | Gemini Flash via `/api/parse` (Vercel function) |
+| Hosting  | Vercel                                        |
 
 ## Getting started
 
@@ -68,7 +69,14 @@ schema change.
    is detected automatically (`npm run build` → `dist`).
 2. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` under **Settings →
    Environment Variables**, for all three environments.
-3. Deploy.
+3. Add `GEMINI_API_KEY` (from [aistudio.google.com/apikey](https://aistudio.google.com/apikey))
+   as a **Secret**. It has no `VITE_` prefix on purpose, so it is never bundled
+   into browser code — only `/api/parse` reads it.
+4. Deploy.
+
+`npm run dev` serves the UI but **not** `/api/parse` — Vite doesn't run Vercel
+functions. Quick log therefore only works against a deployment, or under
+`vercel dev`.
 
 `vercel.json` rewrites every path to `index.html` so client-side routes survive
 a hard refresh.
