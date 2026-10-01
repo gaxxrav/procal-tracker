@@ -64,8 +64,12 @@ const INDEX = FOODS.map((food) => ({
     return {
       text: alias,
       tokens: new Set(tokens),
-      /** English puts the head noun last: "chicken stew" is a stew. */
-      head: tokens.at(-1) ?? '',
+      /**
+       * English puts the head noun last: "chicken stew" is a stew.
+       * Indexed rather than `.at(-1)` — Vercel typechecks this directory with
+       * its own inferred tsconfig, whose lib predates Array.prototype.at.
+       */
+      head: tokens.length > 0 ? tokens[tokens.length - 1] : '',
     }
   }),
 }))

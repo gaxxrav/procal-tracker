@@ -35,9 +35,19 @@ const MODEL_CANDIDATES: string[] = process.env.GEMINI_MODEL
   ? [process.env.GEMINI_MODEL]
   : ['gemini-flash-latest', 'gemini-3.8-flash', 'gemini-3.5-flash', 'gemini-3.1-flash-lite']
 
-/** True when the failure is about the model id rather than the request. */
+/** The model id itself is wrong or retired — the next candidate may exist. */
 const isModelUnavailable = (message: string) =>
   /not found|does not exist|unsupported|not supported|no longer available|deprecated|404/i.test(
+    message,
+  )
+
+/**
+ * The model exists but has no capacity right now. Worth trying the next
+ * candidate, which draws on a different pool, and worth telling the user to
+ * retry rather than presenting it as a broken build.
+ */
+const isOverloaded = (message: string) =>
+  /high demand|overloaded|unavailable|resource_exhausted|rate.?limit|quota|too many requests|429|503/i.test(
     message,
   )
 
@@ -305,6 +315,7 @@ export default async function handler(request: VercelRequest, response: VercelRe
 
   let raw: string | undefined
   let servedBy = ''
+  let busy = false
   const attempts: string[] = []
 
   try {
@@ -317,16 +328,24 @@ export default async function handler(request: VercelRequest, response: VercelRe
       } catch (error) {
         const message = error instanceof Error ? error.message : String(error)
         attempts.push(`${model}: ${message}`)
-        // Only a model-availability problem is worth trying the next
-        // candidate for; anything else (bad key, quota) will fail identically.
-        if (!isModelUnavailable(message)) throw error
+        if (isOverloaded(message)) busy = true
+        // A wrong id or an out-of-capacity model can both be solved by the
+        // next candidate. Anything else (a bad key, a malformed request) fails
+        // identically on every model, so retrying only multiplies the wait.
+        if (!isModelUnavailable(message) && !isOverloaded(message)) throw error
       }
     }
 
     if (!servedBy) {
-      return response.status(502).json({
-        error: `No Gemini model was available. Tried — ${attempts.join(' | ')}`,
-      })
+      // Distinguish "come back in a minute" from "this is misconfigured" —
+      // they need completely different responses from the user.
+      return busy
+        ? response.status(503).json({
+            error: 'Gemini is busy right now. Try again in a moment.',
+          })
+        : response.status(502).json({
+            error: `No Gemini model was available. Tried — ${attempts.join(' | ')}`,
+          })
     }
     if (!raw) return response.status(502).json({ error: 'The parser returned an empty response.' })
 
